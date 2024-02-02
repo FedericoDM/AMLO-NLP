@@ -4,12 +4,10 @@
 # PAQUETES
 
 import re
-import pytz
 import logging
 import requests
 import numpy as np
 from bs4 import BeautifulSoup
-from datetime import datetime, timedelta
 
 
 # CONFIGURAR LOGGER
@@ -96,7 +94,7 @@ class AMLOScraper:
     # Necesitaremos extraer la conferencia del día de hoy con base en la fecha
     def get_conference(self, conference_links, date):
         """
-        Con una fecha dada, obtiene el url de la conferencia de dicho día.
+        Gets the url of a given conference date
         - conference_links: Links de todas las conferencias de AMLO
         - date: String con la fecha de interés
         """
@@ -131,16 +129,7 @@ class AMLOScraper:
 
         return clean_text, final_title
 
-    @staticmethod
-    def get_conference_id(todays_conference):
-        """
-        Obtiene el ID de la conferencia
-        """
-        digits = re.findall(r"\d+", todays_conference)
-        conference_id = "".join(digits)
-        return conference_id
-
-    def get_conferences_links(self):
+    def get_conferences_df(self):
         """
         Obtiene los links de las conferencias
         """
@@ -157,45 +146,29 @@ class AMLOScraper:
             conference_links = self.get_conference_links(raw_links)
             self.all_urls.extend(conference_links)
             print(f"Done with page {num_page}")
-        num_page += 1
 
-    def get_conferences_dates(self):
-        """
-        Uses RegEx to get the dates of the conferences
-        """
+            num_page += 1
+
         dates = []
+        conference_ids = []
         for url in self.all_urls:
-            date = re.findall(r"\d{4}/\d{2}/\d{2}", url)
+            date = re.findall(r"/\d+/\d+/\d+", url)[0]
+            date = date[1:]
+            digits = re.findall(r"\d+", url)
+            conference_id = "".join(digits)
+            conference_ids.append(conference_id)
             dates.append(date)
-        return dates
 
-    def lambda_handler(self):
-
-        # Sacar URL de la conferencia de hoy
-        raw_links = self.get_raw_links(url)
-        conference_links = self.get_conference_links(raw_links)
-        today = datetime.now(pytz.timezone("America/Mexico_city"))
-        today = today.strftime("%Y/%m/%d")
-        todays_conference = get_conference(conference_links, today)
-
-        if not isinstance(todays_conference, str):
-            logger.info(f"No data for {today} yet...")
-            return ()
-
-        # Sacar URL de la conferencia de hoy
-        clean_text, final_title = get_conference_text(todays_conference, today)
-        logger.info(f"Parsed conference text for {today}")
-
-        # Limpiar título
-        final_title = final_title.replace(
-            "Versión estenográfica de la conferencia", "Conferencia"
+        self.conferences_df = pd.DataFrame(
+            {"conference_id": conference_ids, "date": dates, "url": self.all_urls}
         )
 
-        # Crear diccionario en formato de ElasticSearch
-        amlo_json = {
-            "title": final_title,
-            "description": f"Conferencia de prensa matutina, {today}",
-            "publication_date": today.replace("/", "-"),
-            "url": todays_conference,
-            "es_id": conference_id,
-        }
+        return self.conferences_df
+
+
+# MAIN PIPELINE
+if __name__ == "__main__":
+    scraper = AMLOScraper(headers)
+    conferences_df = scraper.get_conferences_df()
+    conferences_df.to_csv("conferences_data.csv", index=False)
+    print("Done!")
