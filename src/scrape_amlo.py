@@ -37,6 +37,9 @@ class AMLOScraper:
     """
 
     URL = URL
+    # Strings to filter the URLs
+    STRING_1 = "version-estenografica-de"
+    STRING_2 = "conferencia-de-prensa"
 
     # Checked this by hand
     TOTAL_PAGES = 143
@@ -83,10 +86,11 @@ class AMLOScraper:
         """
         conference_links = []
         for raw_link in raw_links:
-            if "version-estenografica-de" in raw_link:
+            if self.STRING_1 in raw_link and self.STRING_2 in raw_link:
                 conference_links.append(raw_link)
+            else:
+                continue
         conference_links = list(set(conference_links))
-
         return conference_links
 
     # Necesitaremos extraer la conferencia del día de hoy con base en la fecha
@@ -127,6 +131,44 @@ class AMLOScraper:
 
         return clean_text, final_title
 
+    @staticmethod
+    def get_conference_id(todays_conference):
+        """
+        Obtiene el ID de la conferencia
+        """
+        digits = re.findall(r"\d+", todays_conference)
+        conference_id = "".join(digits)
+        return conference_id
+
+    def get_conferences_links(self):
+        """
+        Obtiene los links de las conferencias
+        """
+        self.all_urls = []
+        num_page = 1
+        total = self.TOTAL_PAGES
+        while num_page <= total:
+            if num_page == 1:
+                final_url = self.URL
+            else:
+                final_url = self.URL + f"/page/{num_page}"
+
+            raw_links = self.get_raw_links(final_url)
+            conference_links = self.get_conference_links(raw_links)
+            self.all_urls.extend(conference_links)
+            print(f"Done with page {num_page}")
+        num_page += 1
+
+    def get_conferences_dates(self):
+        """
+        Uses RegEx to get the dates of the conferences
+        """
+        dates = []
+        for url in self.all_urls:
+            date = re.findall(r"\d{4}/\d{2}/\d{2}", url)
+            dates.append(date)
+        return dates
+
     def lambda_handler(self):
 
         # Sacar URL de la conferencia de hoy
@@ -143,10 +185,6 @@ class AMLOScraper:
         # Sacar URL de la conferencia de hoy
         clean_text, final_title = get_conference_text(todays_conference, today)
         logger.info(f"Parsed conference text for {today}")
-
-        # Sacar ID
-        digits = re.findall(r"\d+", todays_conference)
-        conference_id = "".join(digits)
 
         # Limpiar título
         final_title = final_title.replace(
