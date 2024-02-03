@@ -3,31 +3,21 @@
 
 # PAQUETES
 
+import os
 import re
+import time
 import logging
 import requests
 import numpy as np
 import pandas as pd
 from bs4 import BeautifulSoup
 
+# Local imports
+from src.utils.constants import URL, HEADERS, DATA_PATH
 
 # CONFIGURAR LOGGER
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
-
-
-# PARÁMETROS
-URL = "https://lopezobrador.org.mx/secciones/version-estenografica/"
-
-headers = {
-    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36",
-    "authority": "lopezobrador.org.mx",
-    "Referer": "https://www.google.com/",
-    "sec-ch-ua": '''"Google Chrome";v="95", "Chromium";v="95", ";Not A Brand";v="99"''',
-    "sec-ch-ua-mobile": "?0",
-    "sec-ch-ua-platform": "Windows",
-    "Upgrade-Insecure-Requests": "1",
-}
 
 
 class AMLOScraper:
@@ -39,12 +29,15 @@ class AMLOScraper:
     # Strings to filter the URLs
     STRING_1 = "version-estenografica-de"
     STRING_2 = "conferencia-de-prensa"
+    CONFERENCES_DATA_PATH = f"{DATA_PATH}/text_files/"
+    COUNT_THRESHOLD = 10
 
     # Checked this by hand
     TOTAL_PAGES = 143
 
     def __init__(self, headers):
         self.headers = headers
+        self.sleep_time = 2
 
     def get_raw_links(self, url):
         """[Saca lista de todos los hrefs de la pagina de AMLO]
@@ -59,7 +52,7 @@ class AMLOScraper:
         raw_links: [list]
             [Lista con todos los urls de la página]
         """
-        r = requests.get(url, headers=headers)
+        r = requests.get(url, headers=self.headers)
         raw_html = r.text
         soup = BeautifulSoup(raw_html, "html.parser")
         a_elements = soup.find_all("a", href=True)
@@ -116,7 +109,7 @@ class AMLOScraper:
             - todays_conference: URL con la fecha de interés
             - date: string con la fecha para crear el título
         """
-        r = requests.get(todays_conference, headers=headers)
+        r = requests.get(todays_conference, headers=self.headers)
         # Parsear HTML
         soup = BeautifulSoup(r.text, "html.parser")
         title = soup.find("title")
@@ -166,10 +159,43 @@ class AMLOScraper:
 
         return self.conferences_df
 
+    def get_all_conferences_text(self):
+        """
+        Obtiene el texto de todas las conferencias
+        """
+        # Check if path exists
+        if not os.path.exists(self.CONFERENCES_DATA_PATH):
+            print("Creating data path")
+            os.makedirs(DATA_PATH)
+        else:
+            print("Data path already exists")
+
+        counter = 1
+
+        for index, row in self.conferences_df.iterrows():
+            date = row["date"]
+            url = row["url"]
+            text, title = self.get_conference_text(url, date)
+            with open(f"{self.CONFERENCES_DATA_PATH}/{title}.txt", "w") as file:
+                file.write(text)
+
+            print(f"Extracted and saved text {title}")
+
+            if counter % self.COUNT_THRESHOLD == 0:
+                print(f"Done with {counter} conferences")
+                time.sleep(self.sleep_time)
+
 
 # MAIN PIPELINE
 if __name__ == "__main__":
-    scraper = AMLOScraper(headers)
-    conferences_df = scraper.get_conferences_df()
-    conferences_df.to_csv("conferences_data.csv", index=False)
-    print("Done!")
+    scraper = AMLOScraper(HEADERS)
+
+    if os.path.exists(f"{DATA_PATH}conferences_data.csv"):
+        print("Data already exists")
+        conferences_df = pd.read_csv("conferences_data.csv")
+    else:
+        conferences_df = scraper.get_conferences_df()
+        conferences_df.to_csv("conferences_data.csv", index=False)
+        print("Done!")
+
+    scraper.get_all_conferences_text()
