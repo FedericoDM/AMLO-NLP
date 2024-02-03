@@ -13,7 +13,20 @@ import pandas as pd
 from bs4 import BeautifulSoup
 
 # Local imports
-from src.utils.constants import URL, HEADERS, DATA_PATH
+URL = "https://lopezobrador.org.mx/secciones/version-estenografica/"
+
+HEADERS = {
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36",
+    "authority": "lopezobrador.org.mx",
+    "Referer": "https://www.google.com/",
+    "sec-ch-ua": '''"Google Chrome";v="95", "Chromium";v="95", ";Not A Brand";v="99"''',
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "Windows",
+    "Upgrade-Insecure-Requests": "1",
+}
+
+DATA_PATH = "src/data/"
+
 
 # CONFIGURAR LOGGER
 logger = logging.getLogger()
@@ -30,7 +43,7 @@ class AMLOScraper:
     STRING_1 = "version-estenografica-de"
     STRING_2 = "conferencia-de-prensa"
     CONFERENCES_DATA_PATH = f"{DATA_PATH}/text_files/"
-    COUNT_THRESHOLD = 10
+    COUNT_THRESHOLD = 50
 
     # Checked this by hand
     TOTAL_PAGES = 143
@@ -166,7 +179,7 @@ class AMLOScraper:
         # Check if path exists
         if not os.path.exists(self.CONFERENCES_DATA_PATH):
             print("Creating data path")
-            os.makedirs(DATA_PATH)
+            os.makedirs(self.CONFERENCES_DATA_PATH)
         else:
             print("Data path already exists")
 
@@ -175,8 +188,14 @@ class AMLOScraper:
         for index, row in self.conferences_df.iterrows():
             date = row["date"]
             url = row["url"]
+            id = row["conference_id"]
             text, title = self.get_conference_text(url, date)
-            with open(f"{self.CONFERENCES_DATA_PATH}/{title}.txt", "w") as file:
+            with open(
+                f"{self.CONFERENCES_DATA_PATH}/{id}.txt", "w", encoding="utf-8"
+            ) as file:
+                # Add title to the file
+                file.write(title)
+                file.write("\n")
                 file.write(text)
 
             print(f"Extracted and saved text {title}")
@@ -185,14 +204,17 @@ class AMLOScraper:
                 print(f"Done with {counter} conferences")
                 time.sleep(self.sleep_time)
 
+            counter += 1
+
 
 # MAIN PIPELINE
 if __name__ == "__main__":
     scraper = AMLOScraper(HEADERS)
-
+    print("Getting conferences data")
     if os.path.exists(f"{DATA_PATH}conferences_data.csv"):
         print("Data already exists")
-        conferences_df = pd.read_csv("conferences_data.csv")
+        conferences_df = pd.read_csv(f"{DATA_PATH}conferences_data.csv")
+        scraper.conferences_df = conferences_df
     else:
         conferences_df = scraper.get_conferences_df()
         conferences_df.to_csv("conferences_data.csv", index=False)
