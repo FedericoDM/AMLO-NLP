@@ -174,6 +174,12 @@ class AMLOScraper:
             {"conference_id": conference_ids, "date": dates, "url": self.all_urls}
         )
 
+        # Remove duplicates
+
+        self.conferences_df = self.conferences_df.drop_duplicates(
+            subset=["conference_id"]
+        )
+
         return self.conferences_df
 
     def get_all_conferences_text(self):

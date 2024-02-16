@@ -162,4 +162,4 @@ cython_debug/
 # Ignore .txt files
 *.txt
 # Ignore certain .csv's
-*_important_words.csv
+*_word_scores.csv
