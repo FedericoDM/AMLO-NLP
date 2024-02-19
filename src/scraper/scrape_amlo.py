@@ -1,4 +1,5 @@
-# BOT PARA OBTENER LA VERSIÓN ESTENOGRÁFICA DE LAS MAÑANERAS DE AMLO
+"""This script scrapes AMLO's morning conferences from his official website"""
+
 # Autor: Federico Domínguez Molina
 
 # PAQUETES
@@ -11,6 +12,8 @@ import requests
 import numpy as np
 import pandas as pd
 from bs4 import BeautifulSoup
+
+import argparse
 
 # Local imports
 URL = "https://lopezobrador.org.mx/secciones/version-estenografica/"
@@ -46,7 +49,7 @@ class AMLOScraper:
     COUNT_THRESHOLD = 50
 
     # Checked this by hand
-    TOTAL_PAGES = 143
+    TOTAL_PAGES = 144
 
     def __init__(self, headers):
         self.headers = headers
@@ -108,7 +111,6 @@ class AMLOScraper:
         date_conference = np.nan
 
         for conference_link in conference_links:
-            print(conference_link)
             if date in conference_link:
                 date_conference = conference_link
                 return date_conference
@@ -141,18 +143,22 @@ class AMLOScraper:
         Obtiene los links de las conferencias
         """
         self.all_urls = []
-        num_page = 1
         total = self.TOTAL_PAGES
-        while num_page <= total:
+        for num_page in range(1, total + 1):
             if num_page == 1:
                 final_url = self.URL
             else:
                 final_url = self.URL + f"/page/{num_page}"
 
-            raw_links = self.get_raw_links(final_url)
-            conference_links = self.get_conference_links(raw_links)
-            self.all_urls.extend(conference_links)
-            print(f"Done with page {num_page}")
+            try:
+                raw_links = self.get_raw_links(final_url)
+                conference_links = self.get_conference_links(raw_links)
+                self.all_urls.extend(conference_links)
+                print(f"Done with page {num_page}")
+
+            except Exception as e:
+                print(f"Error with page {num_page}")
+                print(e)
 
             num_page += 1
 
@@ -161,14 +167,20 @@ class AMLOScraper:
         for url in self.all_urls:
             date = re.findall(r"/\d+/\d+/\d+", url)[0]
             date = date[1:]
-            digits = re.findall(r"\d+", url)
-            conference_id = "".join(digits)
+            conference_id = date.replace("/", "")
             conference_ids.append(conference_id)
             dates.append(date)
 
         self.conferences_df = pd.DataFrame(
             {"conference_id": conference_ids, "date": dates, "url": self.all_urls}
         )
+
+        # Remove duplicates and sort by date
+        self.conferences_data_df = self.conferences_data_df.drop_duplicates(
+            subset="conference_id", keep="first"
+        )
+        self.conferences_data_df.sort_values(by="date", ascending=True, inplace=True)
+        self.conferences_data_df = self.conferences_data_df.reset_index(drop=True)
 
         return self.conferences_df
 
@@ -208,16 +220,55 @@ class AMLOScraper:
 
 
 # MAIN PIPELINE
+
+parser = argparse.ArgumentParser(description="Get AMLO's morning conferences")
+
+parser.add_argument(
+    "mode",
+    type=str,
+    choices=["single conference", "all"],
+    help="Mode to run the scraper",
+)
+
+parser.add_argument("--date", type=str, help="Date of the conference to scrape")
+
+args = parser.parse_args()
+
 if __name__ == "__main__":
-    scraper = AMLOScraper(HEADERS)
-    print("Getting conferences data")
-    if os.path.exists(f"{DATA_PATH}conferences_data.csv"):
-        print("Data already exists")
-        conferences_df = pd.read_csv(f"{DATA_PATH}conferences_data.csv")
-        scraper.conferences_df = conferences_df
+
+    if args.mode == "single conference":
+
+        date = args.date
+        scraper = AMLOScraper(HEADERS)
+        print("Getting conference for date", date)
+
+        # Get raw links
+        raw_links = scraper.get_raw_links(URL)
+        conference_links = scraper.get_conference_links(raw_links)
+        todays_conference = scraper.get_conference(conference_links, date)
+        text, title = scraper.get_conference_text(todays_conference, date)
+
+        id = date.replace("/", "")
+        with open(f"{DATA_PATH}/{id}.txt", "w", encoding="utf-8") as file:
+            file.write(title)
+            file.write("\n")
+            file.write(text)
+
+        print(f"Extracted and saved text {title}")
+
+        # Add to the dataframe
+        conferences_df = pd.read_csv("conferences_data.csv")
+        new_row = {"conference_id": id, "date": date, "url": todays_conference}
+        conferences_df = conferences_df.append(new_row, ignore_index=True)
+        conferences_df.to_csv("conferences_data.csv", index=False)
+
+        print("Done!")
+
     else:
+
+        scraper = AMLOScraper(HEADERS)
+        print("Getting conferences data")
         conferences_df = scraper.get_conferences_df()
         conferences_df.to_csv("conferences_data.csv", index=False)
         print("Done!")
-
-    scraper.get_all_conferences_text()
+        scraper.get_all_conferences_text()
