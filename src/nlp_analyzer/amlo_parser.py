@@ -1,8 +1,10 @@
 import re
 import os
+from tqdm import tqdm
 
 
 PATH = "C:/Users/fdmol/Desktop/AMLO-NLP/src/data/text_files/"
+DIALOGUES_PATH = "C:/Users/fdmol/Desktop/AMLO-NLP/src/data/presidents_dialogues/"
 REGEX_PATTERNS = [
     r"copyright derechos reservados 2011-2020 - sitio oficial de andrés manuel lópez obrador",
     r"versión estenográfica de la conferencia de prensa matutina del presidente de méxico, andrés manuel lópez obrador – amlo \| \d+/\d+/\d+",
@@ -110,10 +112,11 @@ PRESIDENT_REGEXES = [
 ]
 
 
-class TextParser:
+class AMLOParser:
     REGEX_PATTERNS = REGEX_PATTERNS
     STOPWORDS = STOPWORDS
     PRESIDENT_REGEXES = PRESIDENT_REGEXES
+    DIALOGUES_PATH = DIALOGUES_PATH
 
     def __init__(self, path):
         self.path = path
@@ -182,19 +185,24 @@ class TextParser:
         text = text[1:]
         return text
 
-    def save_all_presidents_dialogues(self, filename):
+    def save_all_presidents_dialogues(self):
         """
         Save the president's dialogues to a text file
         """
 
         all_files = os.listdir(self.path)
 
-        for file in all_files:
+        for file in tqdm(all_files):
             if file.endswith(".txt"):
                 text = self.get_presidents_dialogues(file)
-                file_path = os.path.join(self.path, file)
+                file_path = os.path.join(self.DIALOGUES_PATH, file)
                 file_path = file_path.replace(".txt", "_president_dialogues.txt")
                 with open(file_path, "w", encoding="utf-8") as f:
                     for line in text:
                         f.write(line)
                         f.write("\n")
+
+
+if __name__ == "__main__":
+    parser = AMLOParser(PATH)
+    parser.save_all_presidents_dialogues()
