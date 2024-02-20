@@ -114,11 +114,36 @@ PRESIDENT_REGEXES = [
 ]
 
 
+CHARS_TO_REMOVE = [
+    ",",
+    ".",
+    "!",
+    "?",
+    "¡",
+    "¿",
+    "“",
+    "”",
+    ":",
+    ";",
+    "-",
+    "_",
+    "—",
+    "–",
+    "•",
+    "…",
+    "(",
+    ")",
+    "[",
+    "]",
+]
+
+
 class AMLOParser:
     REGEX_PATTERNS = REGEX_PATTERNS
     STOPWORDS = STOPWORDS
     PRESIDENT_REGEXES = PRESIDENT_REGEXES
     DIALOGUES_PATH = DIALOGUES_PATH
+    CHARS_TO_REMOVE = CHARS_TO_REMOVE
 
     def __init__(self, path):
         self.path = path
@@ -152,11 +177,16 @@ class AMLOParser:
         text = text.lower()
         text = re.sub(r"\s+", " ", text)
 
+        # Remove commas, periods, and other special characters
+
         for pattern in self.REGEX_PATTERNS:
             text = re.sub(pattern, "", text)
 
+        for char_to_remove in self.CHARS_TO_REMOVE:
+            text = text.replace(char_to_remove, "")
+
         # Remove special characters
-        text = re.sub(r"[^\w\sáéíóúÁÉÍÓÚñÑüÜ¿?]+", "", text)
+        text = re.sub(r"W", "", text)
 
         return text
 
