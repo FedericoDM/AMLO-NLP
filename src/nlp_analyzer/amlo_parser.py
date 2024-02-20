@@ -123,7 +123,6 @@ CHARS_TO_REMOVE = [
     "¿",
     "“",
     "”",
-    ":",
     ";",
     "-",
     "_",
@@ -185,9 +184,6 @@ class AMLOParser:
         for char_to_remove in self.CHARS_TO_REMOVE:
             text = text.replace(char_to_remove, "")
 
-        # Remove special characters
-        text = re.sub(r"W", "", text)
-
         return text
 
     def remove_stopwords(self, text):
@@ -217,7 +213,7 @@ class AMLOParser:
             text = [self.remove_stopwords(line) for line in text]
 
         text = [line.strip() for line in text if line.strip() != ""]
-        text = text[1:]
+
         return text
 
     def clean_text(self, text, remove_stopwords=False):
@@ -239,16 +235,16 @@ class AMLOParser:
         """
         Save the president's dialogues to a text file
         """
-
+        TEXT_INDEX = 1
         all_files = os.listdir(self.path)
 
         for file in tqdm(all_files):
             if file.endswith(".txt"):
-                text = self.get_presidents_dialogues(file)
+                text = self.get_presidents_dialogues(file, remove_stopwords=True)
                 file_path = os.path.join(self.DIALOGUES_PATH, file)
                 file_path = file_path.replace(".txt", "_president_dialogues.txt")
                 with open(file_path, "w", encoding="utf-8") as f:
-                    for line in text:
+                    for line in text[TEXT_INDEX:]:
                         f.write(line)
                         f.write("\n")
 
