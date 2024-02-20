@@ -185,13 +185,15 @@ class AMLOParser:
         text = text[1:]
         return text
 
-    def clean_text(self, text):
+    def clean_text(self, text, remove_stopwords=False):
         """
         This function is used to clean a particular text with the
         rules defined in this class
         """
         text = text.lower()
         text = re.sub(r"\s+", " ", text)
+        if remove_stopwords:
+            text = self.remove_stopwords(text)
 
         for pattern in self.REGEX_PATTERNS:
             text = re.sub(pattern, "", text)
