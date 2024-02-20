@@ -155,6 +155,9 @@ class AMLOParser:
         for pattern in self.REGEX_PATTERNS:
             text = re.sub(pattern, "", text)
 
+        # Remove special characters
+        text = re.sub(r"[^\w\sáéíóúÁÉÍÓÚñÑüÜ¿?]+", "", text)
+
         return text
 
     def remove_stopwords(self, text):
