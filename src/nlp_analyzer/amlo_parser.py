@@ -185,6 +185,19 @@ class AMLOParser:
         text = text[1:]
         return text
 
+    def clean_text(self, text):
+        """
+        This function is used to clean a particular text with the
+        rules defined in this class
+        """
+        text = text.lower()
+        text = re.sub(r"\s+", " ", text)
+
+        for pattern in self.REGEX_PATTERNS:
+            text = re.sub(pattern, "", text)
+
+        return text
+
     def save_all_presidents_dialogues(self):
         """
         Save the president's dialogues to a text file
