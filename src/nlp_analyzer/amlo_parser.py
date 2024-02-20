@@ -109,6 +109,8 @@ PRESIDENT_REGEXES = [
     r"interlocutor:.*",
     r"intervención:.*",
     r"interlocutora:.*",
+    r"voz hombre:.*",
+    r"voz mujer:.*",
 ]
 
 
