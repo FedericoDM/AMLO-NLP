@@ -69,10 +69,13 @@ class XGBoost:
 
         return df
 
-    def train_regression_model(self, df):
+    def train_xgboost(self, df):
         """
-        Trains a ridge regression model using the ratio of agressive phrases
+        Trains an XGBoost model to predict
+        the score of agressivity
         """
+
+        # Import the XGBoost library
         tfidf_vectorizer = TfidfVectorizer(max_features=1000)
 
         # Fit and transform the 'text' column
@@ -85,13 +88,24 @@ class XGBoost:
         X_train, X_test, y_train, y_test = train_test_split(
             X, y, test_size=0.2, random_state=42
         )
+        # Create the DMatrix
+        dtrain = xgb.DMatrix(X_train, label=y_train)
+        dtest = xgb.DMatrix(X_test, label=y_test)
 
-        # Initialize and train the Ridge Regression model
-        model = Ridge(alpha=1.0)
-        model.fit(X_train, y_train)
+        # Define the parameters
+        param = {
+            "max_depth": 8,
+            "eta": 0.15,
+            "objective": "reg:squarederror",
+            "eval_metric": "rmse",
+        }
 
-        # Predict on the test set
-        y_pred = model.predict(X_test)
+        # Train the model
+        num_round = 250
+        bst = xgb.train(param, dtrain, num_round)
+
+        # Make predictions
+        y_pred = bst.predict(dtest)
 
         # Evaluate the model
         mse = mean_squared_error(y_test, y_pred)
@@ -100,4 +114,4 @@ class XGBoost:
         print(f"Mean Squared Error: {mse}")
         print(f"R^2 Score: {r2}")
 
-        return model, tfidf_vectorizer
+        return bst, tfidf_vectorizer
