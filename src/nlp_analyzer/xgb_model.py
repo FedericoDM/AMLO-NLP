@@ -17,11 +17,15 @@ from sklearn.metrics import mean_squared_error, r2_score
 
 import xgboost as xgb
 
+# Local imports
+from src.nlp_analyzer.training_set import TrainingSet
+
 
 class XGBoost:
     def __init__(self, folder_path, dialogues_path):
         self.dialogues_path = dialogues_path
         self.folder_path = folder_path
+        self.training_set = TrainingSet(remove_stopwords=True)
 
     def create_regression_training_df(self):
         """
@@ -42,7 +46,6 @@ class XGBoost:
                     os.path.join(self.folder_path, file), "r", encoding="utf-8"
                 ) as f:
                     text = f.read()
-                if label == 1:
                     # Get text from president's dialogues
                     with open(
                         os.path.join(
@@ -53,6 +56,7 @@ class XGBoost:
                     ) as f:
                         dialogues = f.read()
 
+                if label == 1:
                     # Ratio of agressive phrases
                     length_agressive = len(text.split())
                     length_total = len(dialogues.split())
@@ -62,10 +66,41 @@ class XGBoost:
                     data.append({"id": id, "text": text, "score": ratio})
 
                 else:
-                    continue
+
+                    data.append({"id": id, "text": dialogues, "score": 0})
 
         # Convert the list to a DataFrame
         self.training_df = pd.DataFrame(data)
+
+    def create_unseen_df(training_set, df):
+        """
+        This function creates a DataFrame with the conferences
+        that have not been labeled yet
+        """
+        # Now, let us do it for the entire dataset
+        data = []
+
+        labeled_ids = df["id"].values
+
+        # Iterate through each file in the folder
+        for file in os.listdir(training_set.DIALOGUES_PATH):
+            if file.endswith(".txt"):
+                # Determine the label based on the file name
+                conference_id = int(re.findall(r"\d+", file)[0])
+
+                if conference_id not in labeled_ids:
+                    # Read the text file
+                    with open(
+                        os.path.join(training_set.DIALOGUES_PATH, file),
+                        "r",
+                        encoding="utf-8",
+                    ) as f:
+                        text = f.read()
+                        data.append({"id": conference_id, "text": text})
+
+        unseen_df = pd.DataFrame(data)
+
+        return unseen_df
 
     def train_xgboost(self):
         """
@@ -130,3 +165,26 @@ class XGBoost:
         unseen_df["score"] = y_unseen
 
         return unseen_df
+
+    def train_all(self):
+        """
+        Trains the model and predicts the unseen data
+        """
+        self.create_regression_training_df()
+        self.train_xgboost()
+        unseen_df = self.create_unseen_df(self.training_set, self.training_df)
+        results_df = self.predict_xgboost(unseen_df)
+
+        complete_df = pd.concat([self.training_df, results_df], ignore_index=True)
+
+        scaler = MinMaxScaler()
+        # Normalize the score
+        scores = np.array(complete_df["score"]).reshape(-1, 1)
+        scaler.fit(scores)
+        complete_df["score"] = scaler.transform(scores)
+
+        # Add a column with the length of the text
+        complete_df["num_words"] = complete_df["text"].apply(lambda x: len(x.split()))
+
+        # Save the complete DataFrame
+        return complete_df
