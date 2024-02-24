@@ -9,8 +9,6 @@ import numpy as np
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score, classification_report
 
 
 from sklearn.preprocessing import MinMaxScaler
@@ -42,12 +40,16 @@ class XGBoost:
                 label = 0 if "non" in file else 1
                 id = int(re.findall(r"\d+", file)[0])
                 # Read the text file
-                with open(os.path.join(folder_path, file), "r", encoding="utf-8") as f:
+                with open(
+                    os.path.join(self.folder_path, file), "r", encoding="utf-8"
+                ) as f:
                     text = f.read()
                 if label == 1:
                     # Get text from president's dialogues
                     with open(
-                        os.path.join(dialogues_path, f"{id}_president_dialogues.txt"),
+                        os.path.join(
+                            self.dialogues_path, f"{id}_president_dialogues.txt"
+                        ),
                         "r",
                         encoding="utf-8",
                     ) as f:
@@ -76,15 +78,16 @@ class XGBoost:
         """
 
         # Import the XGBoost library
-        tfidf_vectorizer = TfidfVectorizer(max_features=1000)
+        self.tfidf_vectorizer = TfidfVectorizer(max_features=1000)
 
         # Fit and transform the 'text' column
-        X = tfidf_vectorizer.fit_transform(df["text"])
+        X = self.tfidf_vectorizer.fit_transform(df["text"])
 
         # Assuming 'label' is your target variable
         y = df["score"]
 
-        # Assuming `X` is your matrix of embeddings and `y` is your vector of normalized aggressivity scores
+        # Assuming `X` is your matrix of embeddings and `y` is
+        # your vector of normalized aggressivity scores
         X_train, X_test, y_train, y_test = train_test_split(
             X, y, test_size=0.2, random_state=42
         )
@@ -102,10 +105,10 @@ class XGBoost:
 
         # Train the model
         num_round = 250
-        bst = xgb.train(param, dtrain, num_round)
+        self.model = xgb.train(param, dtrain, num_round)
 
         # Make predictions
-        y_pred = bst.predict(dtest)
+        y_pred = self.model.predict(dtest)
 
         # Evaluate the model
         mse = mean_squared_error(y_test, y_pred)
@@ -114,4 +117,20 @@ class XGBoost:
         print(f"Mean Squared Error: {mse}")
         print(f"R^2 Score: {r2}")
 
-        return bst, tfidf_vectorizer
+    def predict_xgboost(self, unseen_df):
+        """
+        Predicts the labels for the unseen data
+        """
+        # Fit and transform the 'text' column
+        X_unseen = self.tfidf_vectorizer.fit_transform(unseen_df["text"])
+
+        # Create the DMatrix
+        d_unseen = xgb.DMatrix(X_unseen)
+
+        # Make predictions
+        y_unseen = self.model.predict(d_unseen)
+
+        # Add the predictions to the DataFrame
+        unseen_df["score"] = y_unseen
+
+        return unseen_df
