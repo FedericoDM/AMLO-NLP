@@ -13,8 +13,6 @@ from sklearn.model_selection import train_test_split
 
 from sklearn.preprocessing import MinMaxScaler
 
-
-from sklearn.linear_model import Ridge
 from sklearn.metrics import mean_squared_error, r2_score
 
 import xgboost as xgb
@@ -67,11 +65,9 @@ class XGBoost:
                     continue
 
         # Convert the list to a DataFrame
-        df = pd.DataFrame(data)
+        self.training_df = pd.DataFrame(data)
 
-        return df
-
-    def train_xgboost(self, df):
+    def train_xgboost(self):
         """
         Trains an XGBoost model to predict
         the score of agressivity
@@ -81,10 +77,10 @@ class XGBoost:
         self.tfidf_vectorizer = TfidfVectorizer(max_features=1000)
 
         # Fit and transform the 'text' column
-        X = self.tfidf_vectorizer.fit_transform(df["text"])
+        X = self.tfidf_vectorizer.fit_transform(self.training_df["text"])
 
         # Assuming 'label' is your target variable
-        y = df["score"]
+        y = self.training_df["score"]
 
         # Assuming `X` is your matrix of embeddings and `y` is
         # your vector of normalized aggressivity scores
