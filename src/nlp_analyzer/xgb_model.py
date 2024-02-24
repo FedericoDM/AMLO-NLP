@@ -18,13 +18,14 @@ from sklearn.metrics import mean_squared_error, r2_score
 import xgboost as xgb
 
 # Local imports
-from src.nlp_analyzer.training_set import TrainingSet
+from training_set import TrainingSet
 
 
 class XGBoost:
-    def __init__(self, folder_path, dialogues_path):
+    def __init__(self, folder_path, dialogues_path, xgb_params):
         self.dialogues_path = dialogues_path
         self.folder_path = folder_path
+        self.xgb_params = xgb_params
         self.training_set = TrainingSet(remove_stopwords=True)
 
     def create_regression_training_df(self):
@@ -72,7 +73,9 @@ class XGBoost:
         # Convert the list to a DataFrame
         self.training_df = pd.DataFrame(data)
 
-    def create_unseen_df(training_set, df):
+    def create_unseen_df(
+        self,
+    ):
         """
         This function creates a DataFrame with the conferences
         that have not been labeled yet
@@ -80,10 +83,10 @@ class XGBoost:
         # Now, let us do it for the entire dataset
         data = []
 
-        labeled_ids = df["id"].values
+        labeled_ids = self.training_df["id"].values
 
         # Iterate through each file in the folder
-        for file in os.listdir(training_set.DIALOGUES_PATH):
+        for file in os.listdir(self.training_set.DIALOGUES_PATH):
             if file.endswith(".txt"):
                 # Determine the label based on the file name
                 conference_id = int(re.findall(r"\d+", file)[0])
@@ -91,16 +94,14 @@ class XGBoost:
                 if conference_id not in labeled_ids:
                     # Read the text file
                     with open(
-                        os.path.join(training_set.DIALOGUES_PATH, file),
+                        os.path.join(self.training_set.DIALOGUES_PATH, file),
                         "r",
                         encoding="utf-8",
                     ) as f:
                         text = f.read()
                         data.append({"id": conference_id, "text": text})
 
-        unseen_df = pd.DataFrame(data)
-
-        return unseen_df
+        self.unseen_df = pd.DataFrame(data)
 
     def train_xgboost(self):
         """
@@ -127,16 +128,10 @@ class XGBoost:
         dtest = xgb.DMatrix(X_test, label=y_test)
 
         # Define the parameters
-        param = {
-            "max_depth": 8,
-            "eta": 0.15,
-            "objective": "reg:squarederror",
-            "eval_metric": "rmse",
-        }
 
         # Train the model
         num_round = 250
-        self.model = xgb.train(param, dtrain, num_round)
+        self.model = xgb.train(self.xgb_params, dtrain, num_round)
 
         # Make predictions
         y_pred = self.model.predict(dtest)
@@ -148,12 +143,12 @@ class XGBoost:
         print(f"Mean Squared Error: {mse}")
         print(f"R^2 Score: {r2}")
 
-    def predict_xgboost(self, unseen_df):
+    def predict_xgboost(self):
         """
         Predicts the labels for the unseen data
         """
         # Fit and transform the 'text' column
-        X_unseen = self.tfidf_vectorizer.fit_transform(unseen_df["text"])
+        X_unseen = self.tfidf_vectorizer.fit_transform(self.unseen_df["text"])
 
         # Create the DMatrix
         d_unseen = xgb.DMatrix(X_unseen)
@@ -162,20 +157,18 @@ class XGBoost:
         y_unseen = self.model.predict(d_unseen)
 
         # Add the predictions to the DataFrame
-        unseen_df["score"] = y_unseen
+        self.unseen_df["score"] = y_unseen
 
-        return unseen_df
-
-    def train_all(self):
+    def complete_pipeline(self):
         """
         Trains the model and predicts the unseen data
         """
         self.create_regression_training_df()
         self.train_xgboost()
-        unseen_df = self.create_unseen_df(self.training_set, self.training_df)
-        results_df = self.predict_xgboost(unseen_df)
+        self.create_unseen_df()
+        self.predict_xgboost()
 
-        complete_df = pd.concat([self.training_df, results_df], ignore_index=True)
+        complete_df = pd.concat([self.training_df, self.unseen_df], ignore_index=True)
 
         scaler = MinMaxScaler()
         # Normalize the score
@@ -185,6 +178,9 @@ class XGBoost:
 
         # Add a column with the length of the text
         complete_df["num_words"] = complete_df["text"].apply(lambda x: len(x.split()))
+
+        # Drop the text column
+        complete_df.drop(columns=["text"], inplace=True)
 
         # Save the complete DataFrame
         return complete_df
