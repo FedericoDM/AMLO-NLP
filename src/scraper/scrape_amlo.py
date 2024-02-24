@@ -176,11 +176,11 @@ class AMLOScraper:
         )
 
         # Remove duplicates and sort by date
-        self.conferences_data_df = self.conferences_data_df.drop_duplicates(
+        self.conferences_df = self.conferences_df.drop_duplicates(
             subset="conference_id", keep="first"
         )
-        self.conferences_data_df.sort_values(by="date", ascending=True, inplace=True)
-        self.conferences_data_df = self.conferences_data_df.reset_index(drop=True)
+        self.conferences_df.sort_values(by="date", ascending=True, inplace=True)
+        self.conferences_df = self.conferences_df.reset_index(drop=True)
 
         return self.conferences_df
 

@@ -3,7 +3,6 @@ This script is used to score all the words in the president's dialogues
 using TF-IDF and then save the results to several CSV files
 """
 
-import re
 import os
 import pandas as pd
 from tqdm import tqdm
