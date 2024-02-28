@@ -2,6 +2,7 @@
 This script will scrape the murder incidents in Mexico
 """
 
+import time
 import os
 import re
 import requests
@@ -83,7 +84,7 @@ class IncidentScraper:
 
         self.table = table
 
-    def get_pdfs(self):
+    def get_pdfs(self, pdfs_to_skip=0):
         """
         Downloads pdfs provided in the table
         """
@@ -102,36 +103,47 @@ class IncidentScraper:
             pdf_url_abierto = row["homicidios_fuentes_abiertas"]
             date = row["dates"]
 
-            pdf_gob = requests.get(pdf_url_gob, headers=self.headers, stream=True)
-
-            if "pdf" in pdf_url_gob:
-                with open(
-                    f"{DATA_PATH}/homicidios_gobierno/homicidios_{date}_gob.pdf", "wb"
-                ) as f:
-                    f.write(pdf_gob.content)
+            if counter < pdfs_to_skip:
+                counter += 1
+                continue
 
             else:
-                jpg_gob = requests.get(pdf_url_gob, headers=self.headers, stream=True)
-                with open(
-                    f"{DATA_PATH}/homicidios_gobierno/homicidios_{date}_gob.jpg", "wb"
-                ) as f:
-                    f.write(jpg_gob.content)
+                pdf_gob = requests.get(pdf_url_gob, headers=self.headers, stream=True)
 
-            pdf_abierto = requests.get(
-                pdf_url_abierto, headers=self.headers, stream=True
-            )
+                if "pdf" in pdf_url_gob:
+                    with open(
+                        f"{DATA_PATH}/homicidios_gobierno/homicidios_{date}_gob.pdf",
+                        "wb",
+                    ) as f:
+                        f.write(pdf_gob.content)
 
-            if "pdf" in pdf_url_abierto:
-                with open(
-                    f"{DATA_PATH}/homicidios_abierto/homicidios_{date}_abierto.pdf",
-                    "wb",
-                ) as f:
-                    f.write(pdf_abierto.content)
+                else:
+                    jpg_gob = requests.get(
+                        pdf_url_gob, headers=self.headers, stream=True
+                    )
+                    with open(
+                        f"{DATA_PATH}/homicidios_gobierno/homicidios_{date}_gob.jpg",
+                        "wb",
+                    ) as f:
+                        f.write(jpg_gob.content)
 
-            counter += 1
+                pdf_abierto = requests.get(
+                    pdf_url_abierto, headers=self.headers, stream=True
+                )
 
-            if counter % 50 == 0:
-                print(f"Done with {counter} dates")
+                if "pdf" in pdf_url_abierto:
+                    with open(
+                        f"{DATA_PATH}/homicidios_abierto/homicidios_{date}_abierto.pdf",
+                        "wb",
+                    ) as f:
+                        f.write(pdf_abierto.content)
+
+                counter += 1
+
+                if counter % 50 == 0:
+                    print(f"Done with {counter} dates")
+
+                    time.sleep(5)
 
 
 if __name__ == "__main__":
@@ -141,7 +153,7 @@ if __name__ == "__main__":
     incindent_scraper.table.to_csv(f"{DATA_PATH}/homicidios.csv", index=False)
     print("Table saved")
 
-    incindent_scraper.get_pdfs()
+    incindent_scraper.get_pdfs(pdfs_to_skip=1350)
     print("PDFs and jpgs saved")
 
     # Get pdfs and jpgs
