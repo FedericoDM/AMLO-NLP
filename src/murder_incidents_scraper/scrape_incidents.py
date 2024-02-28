@@ -2,11 +2,11 @@
 This script will scrape the murder incidents in Mexico
 """
 
+import os
 import re
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup
-
 
 URL = "http://www.informeseguridad.cns.gob.mx/"
 HEADERS = {
@@ -15,6 +15,8 @@ HEADERS = {
     "Upgrade-Insecure-Requests": "1",
     "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36",
 }
+
+DATA_PATH = "C:/Users/fdmol/Desktop/AMLO-NLP/src/data"
 
 
 class IncidentScraper:
@@ -81,13 +83,64 @@ class IncidentScraper:
 
         self.table = table
 
+    def get_pdfs(self):
+        """
+        Downloads pdfs provided in the table
+        """
+
+        # Check if the folders exist
+        if not os.path.exists(f"{DATA_PATH}/homicidios_gobierno"):
+            os.makedirs(f"{DATA_PATH}/homicidios_gobierno")
+
+        if not os.path.exists(f"{DATA_PATH}/homicidios_abierto"):
+            os.makedirs(f"{DATA_PATH}/homicidios_abierto")
+
+        counter = 1
+
+        for index, row in self.table.iterrows():
+            pdf_url_gob = row["homicidios_fuentes_gobierno"]
+            pdf_url_abierto = row["homicidios_fuentes_abiertas"]
+            date = row["dates"]
+
+            pdf_gob = requests.get(pdf_url_gob, headers=self.headers, stream=True)
+
+            if "pdf" in pdf_url_gob:
+                with open(
+                    f"{DATA_PATH}/homicidios_gobierno/homicidios_{date}_gob.pdf", "wb"
+                ) as f:
+                    f.write(pdf_gob.content)
+
+            else:
+                jpg_gob = requests.get(pdf_url_gob, headers=self.headers, stream=True)
+                with open(
+                    f"{DATA_PATH}/homicidios_gobierno/homicidios_{date}_gob.jpg", "wb"
+                ) as f:
+                    f.write(jpg_gob.content)
+
+            pdf_abierto = requests.get(
+                pdf_url_abierto, headers=self.headers, stream=True
+            )
+
+            if "pdf" in pdf_url_abierto:
+                with open(
+                    f"{DATA_PATH}/homicidios_abierto/homicidios_{date}_abierto.pdf",
+                    "wb",
+                ) as f:
+                    f.write(pdf_abierto.content)
+
+            counter += 1
+
+            if counter % 50 == 0:
+                print(f"Done with {counter} dates")
+
 
 if __name__ == "__main__":
 
     incindent_scraper = IncidentScraper()
-
     incindent_scraper.get_table()
-
     print(incindent_scraper.table)
+    incindent_scraper.table.to_csv(f"{DATA_PATH}/homicidios.csv", index=False)
 
-    incindent_scraper.table.to_csv("homicidios.csv", index=False)
+    incindent_scraper.get_pdfs()
+
+    # Get pdfs and jpgs
