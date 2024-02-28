@@ -138,9 +138,10 @@ if __name__ == "__main__":
 
     incindent_scraper = IncidentScraper()
     incindent_scraper.get_table()
-    print(incindent_scraper.table)
     incindent_scraper.table.to_csv(f"{DATA_PATH}/homicidios.csv", index=False)
+    print("Table saved")
 
     incindent_scraper.get_pdfs()
+    print("PDFs and jpgs saved")
 
     # Get pdfs and jpgs
