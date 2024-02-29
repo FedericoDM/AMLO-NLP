@@ -6,6 +6,7 @@ homicides from them
 import re
 import os
 
+from tqdm import tqdm
 import pandas as pd
 import PyPDF2
 
@@ -59,7 +60,7 @@ class PDFParser:
         """
         self.total_homicides_gov = []
 
-        for file_gob in self.all_files_gob:
+        for file_gob in tqdm(self.all_files_gob):
             if file_gob.endswith(".pdf"):
                 text_gob = self.extract_homicides_from_pdf(
                     os.path.join(self.HOMICIDIOS_GOB_PATH, file_gob)
@@ -76,7 +77,7 @@ class PDFParser:
         """
         self.total_homicides_abierto = []
 
-        for file_abierto in self.all_files_abiertos:
+        for file_abierto in tqdm(self.all_files_abiertos):
             if file_abierto.endswith(".pdf"):
                 text_abierto = self.extract_homicides_from_pdf(
                     os.path.join(self.HOMICIDIOS_ABIERTOS_PATH, file_abierto)
