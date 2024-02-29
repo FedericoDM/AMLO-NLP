@@ -103,12 +103,12 @@ class PDFParser:
         # Extract dates from files
         dates = [re.findall(r"\d+", homicide)[0] for homicide in self.all_files_gob]
         homicides_gov = [
-            re.findall(r"\d+")[0] if homicide else None
+            re.findall(r"\d+", homicide)[0] if homicide else None
             for homicide in self.total_homicides_gov
         ]
 
         homicides_abierto = [
-            re.findall(r"\d+")[0] if homicide else None
+            re.findall(r"\d+", homicide)[0] if homicide else None
             for homicide in self.total_homicides_abierto
         ]
 
