@@ -8,7 +8,7 @@ import os
 
 from tqdm import tqdm
 import pandas as pd
-import pdfplumber
+import PyPDF2
 
 
 DATA_PATH = "C:/Users/fdmol/Desktop/AMLO-NLP/src/data/"
@@ -32,13 +32,29 @@ class PDFParser:
         """
         This function extracts the text from a PDF file
         """
-        text_data = ""
-        with pdfplumber.open(pdf_file_path) as pdf:
-            # Extract text from each page
-            for page in pdf.pages:
+        with open(pdf_file_path, "rb") as file:
+
+            try:
+                reader = PyPDF2.PdfReader(file)
+                num_pages = len(reader.pages)
+
+                # Extract text from each page
+                text_data = ""
+                page = reader.pages[0]
                 text_data += page.extract_text()
 
-        data = re.findall(r"Total(?:es)?\s+\d+", text_data)
+                # Extract text from each page
+                text_data = ""
+                for page_num in range(num_pages):
+                    page = reader.pages[page_num]
+                    text_data += page.extract_text()
+
+                data = re.findall(r"Total(?:es)?\s+\d+", text_data)
+
+            except Exception as e:
+                print(f"Error with file {pdf_file_path}")
+                data = None
+                print(e)
 
         # Clean up the text to remove special characters (if needed)
         # text_data = re.sub(r'[^\w\s]', '', text_data)
@@ -86,13 +102,24 @@ class PDFParser:
 
         # Extract dates from files
         dates = [re.findall(r"\d+", homicide)[0] for homicide in self.all_files_gob]
+        homicides_gov = [
+            re.findall(r"\d+")[0] if homicide else None
+            for homicide in self.total_homicides_gov
+        ]
+
+        homicides_abierto = [
+            re.findall(r"\d+")[0] if homicide else None
+            for homicide in self.total_homicides_abierto
+        ]
 
         # Create the table
         table = pd.DataFrame(
             {
                 "dates": dates,
-                "homicidios_fuentes_gobierno": self.total_homicides_gov,
-                "homicidios_fuentes_abiertas": self.total_homicides_abierto,
+                "homicidios_fuentes_gobierno_raw": self.total_homicides_gov,
+                "homicidios_fuentes_abiertas_raw": self.total_homicides_abierto,
+                "homicidios_fuentes_gobierno_clean": homicides_gov,
+                "homicidios_fuentes_abiertas_clean": homicides_abierto,
             }
         )
 
