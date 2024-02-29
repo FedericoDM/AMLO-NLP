@@ -8,7 +8,7 @@ import os
 
 from tqdm import tqdm
 import pandas as pd
-import PyPDF2
+import pdfplumber
 
 
 DATA_PATH = "C:/Users/fdmol/Desktop/AMLO-NLP/src/data/"
@@ -32,27 +32,18 @@ class PDFParser:
         """
         This function extracts the text from a PDF file
         """
-        with open(pdf_file_path, "rb") as file:
-            reader = PyPDF2.PdfReader(file)
-            num_pages = len(reader.pages)
-
+        text_data = ""
+        with pdfplumber.open(pdf_file_path) as pdf:
             # Extract text from each page
-            text_data = ""
-            page = reader.pages[0]
-            text_data += page.extract_text()
-
-            # Extract text from each page
-            text_data = ""
-            for page_num in range(num_pages):
-                page = reader.pages[page_num]
+            for page in pdf.pages:
                 text_data += page.extract_text()
 
-            data = re.findall(r"Total(?:es)?\s+\d+", text_data)
+        data = re.findall(r"Total(?:es)?\s+\d+", text_data)
 
-            # Clean up the text to remove special characters (if needed)
-            # text_data = re.sub(r'[^\w\s]', '', text_data)
+        # Clean up the text to remove special characters (if needed)
+        # text_data = re.sub(r'[^\w\s]', '', text_data)
 
-            return data
+        return data
 
     def get_total_homicides_government(self):
         """
