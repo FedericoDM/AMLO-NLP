@@ -114,3 +114,8 @@ if __name__ == "__main__":
     pdf_parser.get_total_homicides_government()
     print("Processing total homicides from open sources PDFs")
     pdf_parser.get_total_homicides_abierto()
+    print("Creating table")
+    table = pdf_parser.create_table()
+
+    # Save the table
+    table.to_csv(os.path.join(DATA_PATH, "homicidios_totales.csv"), index=False)
