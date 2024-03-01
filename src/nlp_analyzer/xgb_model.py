@@ -57,18 +57,33 @@ class XGBoost:
                     ) as f:
                         dialogues = f.read()
 
+                length_total = len(dialogues.split())
+
                 if label == 1:
                     # Ratio of agressive phrases
                     length_agressive = len(text.split())
-                    length_total = len(dialogues.split())
 
                     ratio = length_agressive / length_total
 
-                    data.append({"id": id, "text": text, "score": ratio})
+                    data.append(
+                        {
+                            "id": id,
+                            "text": text,
+                            "num_words": length_total,
+                            "score": ratio,
+                        }
+                    )
 
                 else:
 
-                    data.append({"id": id, "text": dialogues, "score": 0})
+                    data.append(
+                        {
+                            "id": id,
+                            "text": dialogues,
+                            "num_words": length_total,
+                            "score": 0,
+                        }
+                    )
 
         # Convert the list to a DataFrame
         self.training_df = pd.DataFrame(data)
@@ -99,7 +114,14 @@ class XGBoost:
                         encoding="utf-8",
                     ) as f:
                         text = f.read()
-                        data.append({"id": conference_id, "text": text})
+                        length_total = len(text.split())
+                        data.append(
+                            {
+                                "id": conference_id,
+                                "text": text,
+                                "num_words": length_total,
+                            }
+                        )
 
         self.unseen_df = pd.DataFrame(data)
 
@@ -130,7 +152,7 @@ class XGBoost:
         # Define the parameters
 
         # Train the model
-        num_round = 250
+        num_round = 500
         self.model = xgb.train(self.xgb_params, dtrain, num_round)
 
         # Make predictions
@@ -175,9 +197,6 @@ class XGBoost:
         scores = np.array(complete_df["score"]).reshape(-1, 1)
         scaler.fit(scores)
         complete_df["score"] = scaler.transform(scores)
-
-        # Add a column with the length of the text
-        complete_df["num_words"] = complete_df["text"].apply(lambda x: len(x.split()))
 
         # Drop the text column
         complete_df.drop(columns=["text"], inplace=True)

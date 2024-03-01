@@ -51,13 +51,17 @@ class PDFParser:
 
                 data = re.findall(r"Total(?:es)?\s+\d+", text_data)
 
+                if data:
+                    data = data[0]
+                    data = re.findall(r"\d+", data)[0]
+
+                else:
+                    data = 0
+
             except Exception as e:
                 print(f"Error with file {pdf_file_path}")
                 data = None
                 print(e)
-
-        # Clean up the text to remove special characters (if needed)
-        # text_data = re.sub(r'[^\w\s]', '', text_data)
 
         return data
 
@@ -100,14 +104,19 @@ class PDFParser:
         Create a table with the total homicides
         """
         # Extract dates from files
-        dates = [re.findall(r"\d+", homicide)[0] for homicide in self.all_files_gob]
+
+        dates = []
+        for file_abierto in self.all_files_abiertos:
+            file_split = file_abierto.split("_")
+            date = file_split[1]
+            dates.append(date)
 
         # Create the table
         table = pd.DataFrame(
             {
                 "dates": dates,
-                "homicidios_fuentes_gobierno_raw": self.total_homicides_gov,
-                "homicidios_fuentes_abiertas_raw": self.total_homicides_abierto,
+                "homicidios_fuentes_gobierno": self.total_homicides_gov,
+                "homicidios_fuentes_abiertas": self.total_homicides_abierto,
             }
         )
 

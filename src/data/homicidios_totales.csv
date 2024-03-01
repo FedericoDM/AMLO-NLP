@@ -1,1881 +1,1881 @@
-dates,homicidios_fuentes_gobierno_raw,homicidios_fuentes_abiertas_raw
-01012019,,['Total 79']
-01012020,['Total 64'],['Totales  55']
-01012021,['Total 73'],['Totales  61']
-01012022,['Total 74'],['Totales  58']
-01012023,['Total 87'],['Totales  65']
-01012024,['Total 60'],['Totales  50']
-01022019,,[]
-01022020,['Total 91'],['Totales  60']
-01022021,['Total 74'],['Totales  66']
-01022022,['Total 71'],['Totales  78']
-01022023,['Total 82'],['Totales  87']
-01022024,['Total 69'],[]
-01032019,,[]
-01032020,['Total 82'],['Totales  60']
-01032021,['Total 62'],['Totales  78']
-01032022,['Total 66'],['Totales  69']
-01032023,['Total 70'],['Totales  51']
-01042019,,['Totales 71']
-01042020,['Total 79'],['Totales  70']
-01042021,['Total 84'],['Totales  67']
-01042022,['Total 71'],['Totales  62']
-01042023,['Total 81'],['Totales  59']
-01052019,['Total 64'],['Totales  59']
-01052020,['Total 73'],['Totales 58']
-01052021,['Total 86'],['Totales  62']
-01052022,['Total 112'],['Totales  71']
-01052023,['Total 81'],['Totales  57']
-01062019,['Total 84'],['Totales  67']
-01062020,['Total 67'],['Totales  87']
-01062021,['Total 57'],['Totales  66']
-01062022,['Total 75'],['Totales  71']
-01062023,['Total 71'],['Totales  75']
-01072019,['Total 77'],['Totales  99']
-01072020,['Total  92'],['Totales  110']
-01072021,['Total 64'],['Totales  67']
-01072022,['Total 79'],['Totales  76']
-01072023,['Total 67'],['Totales  66']
-01082019,['Total 54'],['Totales  71']
-01082020,['Total 100'],['Totales  62']
-01082021,['Total 83'],['Totales  61']
-01082022,['Total 63'],['Totales  75']
-01082023,['Total 69'],['Totales  52']
-01092019,['Total 102'],['Totales  104']
-01092020,['Total 53'],['Totales  61']
-01092021,['Total 66'],['Totales  66']
-01092022,['Total 71'],['Totales  51']
-01092023,['Total 64'],['Totales  70']
-01102019,['Total 81'],['Totales  86']
-01102020,['Total 68'],['Totales  72']
-01102021,['Total 80'],['Totales  72']
-01102022,['Total 67'],['Totales  56']
-01102023,['Total 92'],['Totales  47']
-01112019,['Total 50'],['Totales  57']
-01112020,['Total 92'],['Totales  63']
-01112021,['Total 76'],['Totales  75']
-01112022,['Total 59'],['Totales  62']
-01112023,['Total 53'],['Totales  56']
-01122019,['Total 127'],['Totales  74']
-01122020,['Total 85'],['Totales  71']
-01122021,['Total 72'],['Totales  70']
-01122022,['Total 68'],['Totales  65']
-01122023,['Total 63'],['Totales  58']
-02012020,['Total 59'],['Totales  69']
-02012021,['Total 68'],['Totales  63']
-02012022,['Total 49'],['Totales  61']
-02012023,['Total 93'],['Totales  91']
-02012024,['Total 58'],['Totales  58']
-02022019,,[]
-02022020,['Total 100'],['Totales 63']
-02022021,['Total 83'],['Totales  89']
-02022022,['Total 67'],['Totales  61']
-02022023,['Total 67'],['Totales  74']
-02022024,['Total 76'],[]
-02032019,,[]
-02032020,['Total 82'],['Totales  93']
-02032021,['Total 73'],['Totales  71']
-02032022,['Total 61'],['Totales  70']
-02032023,['Total 78'],['Totales  78']
-02042019,,['Totales 84']
-02042020,['Total 66'],['Totales 66']
-02042021,['Total 68'],['Totales  60']
-02042022,['Total 78'],['Totales  75']
-02042023,['Total 80'],['Totales  60']
-02052019,['Total 85'],['Totales  78']
-02052020,['Total 98'],['Totales 61']
-02052021,['Total 90'],['Totales  65']
-02052022,['Total 93'],['Totales  86']
-02052023,['Total 88'],['Totales  84']
-02062019,['Total 83'],['Totales 73']
-02062020,['Total 71'],['Totales  73']
-02062021,['Total 95'],['Totales  70']
-02062022,['Total 73'],['Totales  86']
-02062023,['Total 76'],['Totales  67']
-02072019,['Total 80'],['Totales  84']
-02072020,['Total  68'],['Totales  66']
-02072021,['Total 68'],['Totales  71']
-02072022,['Total 80'],['Totales  67']
-02072023,['Total 86'],['Totales  62']
-02082019,['Total 83'],['Totales  69']
-02082020,['Total 104'],['Totales  72']
-02082021,['Total 87'],['Totales  70']
-02082022,['Total 74'],['Totales  60']
-02082023,['Total 70'],['Totales  50']
-02092019,['Total 76'],['Totales  91']
-02092020,['Total 69'],['Totales  77']
-02092021,['Total 90'],['Totales  71']
-02092022,['Total 77'],['Totales  73']
-02092023,['Total 85'],['Totales  66']
-02102019,['Total 88'],['Totales  76']
-02102020,['Total 71'],['Totales  56']
-02102021,['Total 75'],['Totales  62']
-02102022,['Total 77'],['Totales  66']
-02102023,['Total 58'],['Totales  60']
-02112019,['Total 57'],['Totales  51']
-02112020,['Total 65'],['Totales  68']
-02112021,['Total 78'],['Totales  86']
-02112022,['Total 74'],['Totales  61']
-02112023,['Total 98'],['Totales  65']
-02122019,['Total 77'],['Totales  80']
-02122020,['Total 85'],['Totales  71']
-02122021,['Total 77'],['Totales  74']
-02122022,['Total 72'],['Totales  53']
-02122023,['Total 66'],['Totales  52']
-03012019,,['Total 66']
-03012020,['Total 74'],['Totales  78']
-03012021,['Total 69'],['Totales  62']
-03012022,['Total 62'],['Totales  61']
-03012023,['Total 69'],['Totales  77']
-03012024,['Total 68'],['Totales  59']
-03022019,,[]
-03022020,['Total 90'],['Totales 89']
-03022021,['Total 74'],['Totales  85']
-03022022,['Total 79'],['Totales  71']
-03022023,['Total 65'],['Totales  74']
-03022024,[],[]
-03032019,,['Totales 64']
-03032020,['Total 95'],['Totales  68']
-03032021,['Total 60'],['Totales  64']
-03032022,['Total 72'],['Totales  68']
-03032023,['Total 63'],['Totales  62']
-03042019,['Total 67'],['Totales 72']
-03042020,['Total 88'],['Totales 87']
-03042021,['Total 77'],['Totales  61']
-03042022,['Total 74'],['Totales  60']
-03042023,['Total 73'],['Totales  64']
-03052019,['Total 84'],"['Totales  97', 'Totales  11']"
-03052020,['Total 90'],['Totales 67']
-03052021,['Total 94'],['Totales  71']
-03052022,['Total 64'],['Totales  60']
-03052023,['Total 65'],['Totales  62']
-03062019,['Total 81'],['Totales  67']
-03062020,['Total 77'],['Totales  73']
-03062021,['Total 58'],['Totales  62']
-03062022,['Total 57'],['Totales  64']
-03062023,['Total 91'],['Totales  76']
-03072019,['Total 73'],['Totales 74']
-03072020,['Total 98'],['Totales  74']
-03072021,['Total 83'],['Totales  63']
-03072022,['Total 103'],['Totales  69']
-03072023,['Total 54'],['Totales  84']
-03082019,['Total 67'],['Totales  55']
-03082020,['Total 75'],['Totales  78']
-03082021,['Total 68'],['Totales  62']
-03082022,['Total 86'],['Totales  68']
-03082023,['Total 70'],['Totales  65']
-03092019,['Total 79'],['Totales  78']
-03092020,['Total 85'],['Totales  78']
-03092021,['Total 69'],['Totales  60']
-03092022,['Total 75'],['Totales  82']
-03092023,['Total 78'],['Totales  60']
-03102019,['Total 87'],['Totales  81']
-03102020,['Total 90'],['Totales  66']
-03102021,['Total 68'],['Totales  64']
-03102022,['Total 78'],['Totales  65']
-03102023,['Total 71'],['Totales  63']
-03112019,['Total 101'],['Totales  80']
-03112020,['Total 61'],['Totales  77']
-03112021,['Total 71'],['Totales  73']
-03112022,['Total 91'],['Totales  104']
-03112023,['Total 79'],['Totales  80']
-03122019,['Total 73'],['Totales  67']
-03122020,['Total 85'],['Totales  62']
-03122021,['Total 71'],['Totales  65']
-03122022,['Total 89'],['Totales  84']
-03122023,['Total 73'],['Totales  63']
-04012019,,['Total 83']
-04012020,['Total 73'],['Totales  51']
-04012021,['Total 78'],['Totales  81']
-04012022,['Total 59'],['Totales  56']
-04012023,['Total 71'],['Totales  74']
-04012024,['Total 66'],['Totales  53']
-04022019,,[]
-04022020,['Total 83'],['Totales  77']
-04022021,['Total 82'],['Totales  76']
-04022022,['Total 53'],['Totales  58']
-04022023,['Total 59'],['Totales  55']
-04022024,[],[]
-04032019,,['Totales 88']
-04032020,['Total 62'],['Totales 65']
-04032021,['Total 81'],['Totales  71']
-04032022,['Total 68'],['Totales  66']
-04032023,['Total 67'],['Totales  55']
-04042019,['Total 85'],['Totales 77']
-04042020,['Total 104'],['Totales  67']
-04042021,['Total 80'],['Totales  61']
-04042022,['Total 84'],['Totales  78']
-04042023,['Total 82'],['Totales  75']
-04052019,['Total 90'],"['Totales  58', 'Totales  11']"
-04052020,['Total  76'],['Totales  78']
-04052021,['Total 80'],['Totales  84']
-04052022,['Total 77'],['Totales  65']
-04052023,['Total 78'],['Totales  70']
-04062019,['Total 65'],['Totales  74']
-04062020,['Total 79'],['Totales  74']
-04062021,['Total 58'],['Totales  58']
-04062022,['Total 78'],['Totales  59']
-04062023,['Total 82'],['Totales  61']
-04072019,['Total 67'],['Totales  76']
-04072020,['Total 69'],['Totales  54']
-04072021,['Total 115'],['Totales  82']
-04072022,['Total 76'],['Totales  80']
-04072023,['Total 77'],['Totales  58']
-04082019,['Total 101'],['Totales  56']
-04082020,['Total 73'],['Totales  76']
-04082021,['Total 97'],['Totales  78']
-04082022,['Total 74'],['Totales  71']
-04082023,['Total 77'],['Totales  70']
-04092019,['Total 63'],['Totales  86']
-04092020,['Total 90'],['Totales  73']
-04092021,['Total 89'],['Totales  74']
-04092022,['Total 73'],[]
-04092023,['Total 93'],['Totales  60']
-04102019,['Total 61'],['Totales  73']
-04102020,['Total 81'],['Totales  70']
-04102021,['Total 70'],['Totales  70']
-04102022,['Total 71'],['Totales  75']
-04102023,['Total 65'],['Totales  65']
-04112019,['Total 73'],['Totales  87']
-04112020,['Total 94'],['Totales  64']
-04112021,['Total 79'],['Totales  79']
-04112022,['Total 82'],['Totales  92']
-04112023,['Total 74'],['Totales  70']
-04122019,['Total 90'],['Totales  84']
-04122020,['Total 60'],['Totales  71']
-04122021,['Total 80'],['Totales  64']
-04122022,['Total 72'],['Totales  81']
-04122023,['Total 77'],['Totales  60']
-05012019,,['Total 103']
-05012020,['Total 69'],['Totales  55']
-05012021,['Total 79'],['Totales  81']
-05012022,['Total 76'],['Totales  70']
-05012023,['Total 77'],['Totales  77']
-05012024,['Total 56'],['Totales  65']
-05022019,,[]
-05022020,['Total 75'],['Totales  93']
-05022021,['Total 67'],['Totales  79']
-05022022,['Total 69'],['Totales  68']
-05022023,['Total 82'],['Totales  59']
-05022024,[],[]
-05032019,,['Totales 78']
-05032020,['Total 97'],['Totales  92']
-05032021,['Total 77'],['Totales  77']
-05032022,['Total 76'],['Totales  62']
-05032023,['Total 72'],['Totales  62']
-05042019,['Total 74'],['Totales  73']
-05042020,['Total 92'],['Totales  64']
-05042021,['Total 61'],['Totales  65']
-05042022,['Total 64'],['Totales  61']
-05042023,['Total 58'],['Totales  57']
-05052019,['Total 80'],['Totales  76']
-05052020,['Total  76'],['Totales  67']
-05052021,['Total 80'],['Totales  64']
-05052022,['Total 77'],['Totales  66']
-05052023,['Total 78'],['Totales  67']
-05062019,['Total 59'],['Totales  78']
-05062020,['Total 60'],['Totales  69']
-05062021,['Total 70'],['Totales  54']
-05062022,['Total 86'],['Totales  77']
-05062023,['Total 73'],['Totales  74']
-05072019,['Total 81'],['Totales  73']
-05072020,['Total 102'],['Totales  72']
-05072021,['Total 85'],['Totales  103']
-05072022,['Total 53'],['Totales  54']
-05072023,['Total 63'],['Totales  64']
-05082019,['Total 82'],['Totales  108']
-05082020,['Total 70'],['Totales  71']
-05082021,['Total 77'],['Totales  72']
-05082022,['Total 90'],['Totales  77']
-05082023,['Total 69'],['Totales  56']
-05092019,['Total 64'],['Totales  75']
-05092020,['Total 95'],['Totales  65']
-05092021,['Total 93'],['Totales  83']
-05092022,['Total 67'],['Totales  61']
-05092023,['Total 69'],['Totales  61']
-05102019,['Total 57'],['Totales  59']
-05102020,['Total 102'],['Totales  100']
-05102021,['Total 69'],['Totales  70']
-05102022,['Total 87'],['Totales  64']
-05102023,['Total 65'],['Totales  75']
-05112019,['Total 89'],['Totales  94']
-05112020,['Total 78'],['Totales  85']
-05112021,['Total 69'],['Totales  80']
-05112022,['Total 78'],['Totales  58']
-05112023,['Total 65'],['Totales  50']
-05122019,['Total 77'],['Totales  83']
-05122020,['Total 69'],['Totales  51']
-05122021,['Total 71'],['Totales  64']
-05122022,['Total 92'],['Totales  75']
-05122023,['Total 58'],['Totales  75']
-06012019,,['Total  74']
-06012020,['Total 68'],['Totales  63']
-06012021,['Total 58'],['Totales  62']
-06012022,['Total 77'],['Totales  77']
-06012023,['Total 71'],['Totales  90']
-06012024,[],[]
-06022019,,[]
-06022020,['Total 62'],['Totales 70']
-06022021,['Total 80'],['Totales  77']
-06022022,['Total 90'],['Totales  71']
-06022023,['Total 57'],['Totales  59']
-06022024,[],[]
-06032019,,['Totales 60']
-06032020,['Total 71'],['Totales  63']
-06032021,['Total 73'],['Totales  69']
-06032022,['Total 76'],['Totales  63']
-06032023,['Total 74'],['Totales  85']
-06042019,['Total 101'],['Totales  77']
-06042020,['Total 80'],['Totales 79']
-06042021,['Total 77'],['Totales  76']
-06042022,['Total 80'],['Totales  57']
-06042023,['Total 65'],['Totales  68']
-06052019,['Total 68'],['Totales  63']
-06052020,['Total  57'],['Totales  73']
-06052021,['Total 83'],['Totales  75']
-06052022,['Total 70'],['Totales  75']
-06052023,['Total 74'],['Totales  71']
-06062019,['Total 70'],['Totales  83']
-06062020,['Total 94'],['Totales  61']
-06062021,['Total 81'],['Totales  63']
-06062022,['Total 94'],['Totales  90']
-06062023,['Total 83'],['Totales  94']
-06072019,['Total 101'],['Totales 63']
-06072020,['Total 90'],['Totales  74']
-06072021,['Total 80'],['Totales  103']
-06072022,['Total 70'],['Totales  57']
-06072023,['Total 58'],['Totales  63']
-06082019,['Total 74'],['Totales  77']
-06082020,['Total 76'],['Totales  65']
-06082021,['Total 84'],['Totales  74']
-06082022,['Total 78'],['Totales  77']
-06082023,['Total 89'],['Totales  59']
-06092019,['Total 64'],['Totales  75']
-06092020,['Total 91'],['Totales  70']
-06092021,['Total 74'],['Totales  108']
-06092022,['Total 68'],['Totales  73']
-06092023,['Total 68'],['Totales  54']
-06102019,['Total 84'],['Totales  74']
-06102020,['Total 65'],['Totales  72']
-06102021,['Total 81'],['Totales  72']
-06102022,['Total 63'],['Totales  64']
-06102023,['Total 65'],['Totales  61']
-06112019,['Total 97'],['Totales  92']
-06112020,['Total 83'],['Totales  69']
-06112021,['Total 73'],['Totales  62']
-06112022,['Total 83'],['Totales  56']
-06112023,['Total 86'],['Totales  66']
-06122019,['Total 88'],['Totales  63']
-06122020,['Total 70'],['Totales  67']
-06122021,['Total 59'],['Totales  67']
-06122022,['Total 78'],['Totales  71']
-06122023,['Total 57'],['Totales  53']
-07012019,,['Total 88']
-07012020,['Total 77'],['Totales  65']
-07012021,['Total 85'],['Totales  80']
-07012022,['Total 78'],['Totales  72']
-07012023,['Total 109'],['Totales  68']
-07012024,[],[]
-07022019,,[]
-07022020,['Total 81'],['Totales 70']
-07022021,['Total 79'],['Totales  69']
-07022022,['Total 58'],['Totales  71']
-07022023,['Total 69'],['Totales  71']
-07022024,[],[]
-07032019,,['Totales 75']
-07032020,['Total 80'],['Totales  68']
-07032021,['Total 103'],['Totales  67']
-07032022,['Total 63'],['Totales  62']
-07032023,['Total 76'],['Totales  64']
-07042019,['Total 79'],['Totales 82']
-07042020,['Total 61'],['Totales  66']
-07042021,['Total 64'],['Totales  80']
-07042022,['Total 82'],['Totales  60']
-07042023,['Total 67'],['Totales  55']
-07052019,['Total 60'],['Totales  85']
-07052020,['Total 73'],['Totales 73']
-07052021,['Total 81'],['Totales  72']
-07052022,['Total 92'],['Totales  67']
-07052023,['Total 77'],['Totales  68']
-07062019,['Total 87'],['Totales 79']
-07062020,['Total 117'],['Totales  60']
-07062021,['Total 70'],['Totales  62']
-07062022,['Total 78'],['Totales  65']
-07062023,['Total 79'],['Totales  71']
-07072019,['Total 84'],['Totales 64']
-07072020,['Total 62'],['Totales  68']
-07072021,['Total 83'],['Totales  92']
-07072022,['Total 91'],['Totales  78']
-07072023,['Total 64'],['Totales  59']
-07082019,['Total 73'],['Totales  86']
-07082020,['Total 91'],['Totales  79']
-07082021,['Total 74'],['Totales  68']
-07082022,['Total 95'],['Totales  62']
-07082023,['Total 77'],['Totales  89']
-07092019,['Total 105'],['Totales  65']
-07092020,['Total 64'],['Totales  93']
-07092021,['Total 105'],['Totales  78']
-07092022,['Total 70'],['Totales  61']
-07092023,['Total 71'],['Totales  63']
-07102019,['Total 77'],['Totales  72']
-07102020,['Total 73'],['Totales  83']
-07102021,['Total 79'],['Totales  73']
-07102022,['Total 70'],['Totales  50']
-07102023,['Total 79'],['Totales  60']
-07112019,['Total 68'],['Totales  75']
-07112020,['Total 82'],['Totales  64']
-07112021,['Total 85'],['Totales  66']
-07112022,['Total 70'],['Totales  104']
-07112023,['Total 81'],['Totales  53']
-07122019,['Total 69'],['Totales  82']
-07122020,['Total 87'],['Totales  100']
-07122021,['Total 72'],['Totales  85']
-07122022,['Total 82'],['Totales  77']
-07122023,['Total 67'],['Totales  62']
-08012019,,['Total  80']
-08012020,['Total 71'],['Totales  76']
-08012021,['Total 72'],['Totales  65']
-08012022,['Total 77'],['Totales  66']
-08012023,['Total 89'],['Totales  75']
-08012024,[],[]
-08022019,,[]
-08022020,['Total 93'],['Totales 71']
-08022021,['Total 89'],['Totales  76']
-08022022,['Total 60'],['Totales  71']
-08022023,['Total 81'],['Totales  67']
-08022024,[],[]
-08032019,,['Totales 75']
-08032020,['Total 93'],['Totales  62']
-08032021,['Total 76'],['Totales  82']
-08032022,['Total 65'],['Totales  74']
-08032023,['Total 71'],['Totales  68']
-08042019,['Total 79'],['Totales 70']
-08042020,['Total 79'],['Totales  80']
-08042021,['Total 70'],['Totales  70']
-08042022,['Total 57'],['Totales  63']
-08042023,['Total 69'],['Totales  53']
-08052019,['Total 71'],['Totales  77']
-08052020,['Total 81'],['Totales  67']
-08052021,['Total 84'],['Totales  61']
-08052022,['Total 85'],['Totales  78']
-08052023,['Total 73'],['Totales  91']
-08062019,['Total 113'],['Totales 86']
-08062020,['Total 96'],['Totales  102']
-08062021,['Total 81'],['Totales  64']
-08062022,['Total 76'],['Totales  62']
-08062023,['Total 63'],['Totales  66']
-08072019,['Total 85'],['Totales  102']
-08072020,['Total 76'],['Totales  76']
-08072021,['Total 57'],['Totales  65']
-08072022,['Total 78'],['Totales  68']
-08072023,['Total 74'],['Totales  63']
-08082019,['Total 88'],['Totales  94']
-08082020,['Total 66'],['Totales  63']
-08082021,['Total 107'],['Totales  78']
-08082022,['Total 81'],['Totales  76']
-08082023,['Total 62'],['Totales  76']
-08092019,['Total 101'],['Totales  71']
-08092020,['Total 71'],['Totales  74']
-08092021,['Total 73'],['Totales  82']
-08092022,['Total 74'],['Totales  79']
-08092023,['Total 69'],['Totales  63']
-08102019,['Total 86'],['Totales  80']
-08102020,['Total 67'],['Totales  78']
-08102021,['Total 73'],['Totales  75']
-08102022,['Total 66'],['Totales  50']
-08102023,['Total 72'],['Totales  54']
-08112019,['Total 68'],['Totales  67']
-08112020,['Total 74'],['Totales  63']
-08112021,['Total 67'],['Totales  73']
-08112022,['Total 56'],['Totales  64']
-08112023,['Total 68'],['Totales  63']
-08122019,['Total 76'],['Totales  63']
-08122020,['Total 74'],['Totales  65']
-08122021,['Total 68'],['Totales  64']
-08122022,['Total 80'],['Totales  85']
-08122023,['Total 95'],"['Totales  62', 'Totales  11']"
-09012019,,['Total  78']
-09012020,['Total 93'],['Totales  80']
-09012021,['Total 82'],['Totales  67']
-09012022,['Total 96'],['Totales  66']
-09012023,['Total 72'],['Totales  97']
-09012024,['Total 75'],['Totales  55']
-09022019,,[]
-09022020,['Total 75'],['Totales  61']
-09022021,['Total 76'],['Totales  92']
-09022022,['Total 47'],['Totales  62']
-09022023,['Total 84'],['Totales  82']
-09022024,['Total 68'],[]
-09032019,,['Totales  71']
-09032020,['Total 72'],['Totales 85']
-09032021,['Total 63'],['Totales  76']
-09032022,['Total 84'],['Totales  79']
-09032023,['Total 71'],['Totales  84']
-09042019,['Total 60'],['Totales  73']
-09042020,['Total 102'],[]
-09042021,['Total 79'],['Totales  54']
-09042022,['Total 55'],['Totales  68']
-09042023,['Total 66'],['Totales  51']
-09052019,['Total 59'],['Totales  69']
-09052020,['Total 72'],['Totales  52']
-09052021,['Total 74'],['Totales  62']
-09052022,['Total 90'],['Totales  72']
-09052023,['Total 67'],['Totales  66']
-09062019,['Total 101'],['Totales  91']
-09062020,['Total  73'],['Totales  76']
-09062021,['Total 80'],['Totales  94']
-09062022,['Total 73'],['Totales  66']
-09062023,['Total 76'],['Totales  70']
-09072019,['Total 67'],['Totales 98']
-09072020,['Total 71'],['Totales  70']
-09072021,['Total 52'],['Totales  59']
-09072022,['Total 78'],['Totales  60']
-09072023,['Total 76'],['Totales  56']
-09082019,['Total 73'],['Totales  72']
-09082020,['Total 94'],['Totales  56']
-09082021,['Total 83'],['Totales  72']
-09082022,['Total 53'],['Totales  60']
-09082023,['Total 56'],['Totales  77']
-09092019,['Total 75'],['Totales  93']
-09092020,['Total 78'],['Totales  66']
-09092021,['Total 85'],['Totales  75']
-09092022,['Total 76'],['Totales  64']
-09092023,['Total 74'],['Totales  58']
-09102019,['Total 80'],['Totales  96']
-09102020,['Total 77'],['Totales  71']
-09102021,['Total 70'],['Totales  87']
-09102022,['Total 87'],['Totales  56']
-09102023,['Total 60'],['Totales  62']
-09112019,['Total 85'],['Totales  84']
-09112020,['Total 80'],['Totales  77']
-09112021,['Total 75'],['Totales  79']
-09112022,['Total 64'],['Totales  79']
-09112023,['Total 78'],['Totales  76']
-09122019,['Total 79'],['Totales  70']
-09122020,['Total 65'],['Totales  78']
-09122021,['Total 53'],['Totales  65']
-09122022,['Total 71'],['Totales  54']
-09122023,[],[]
-10012019,,['Total  60']
-10012020,['Total 82'],['Totales  61']
-10012021,['Total 62'],['Totales  69']
-10012022,['Total 69'],['Totales  78']
-10012023,['Total 71'],['Totales  68']
-10012024,[],[]
-10022019,,[]
-10022020,['Total 80'],['Totales  83']
-10022021,['Total 66'],['Totales  44']
-10022022,['Total 78'],['Totales  74']
-10022023,['Total 92'],['Totales  77']
-10022024,['Total 71'],[]
-10032019,,['Totales  92']
-10032020,['Total 79'],['Totales  81']
-10032021,['Total 71'],['Totales  75']
-10032022,['Total 72'],['Totales  69']
-10032023,['Total 70'],['Totales  74']
-10042019,['Total 55'],['Totales 60']
-10042020,['Total 87'],['Totales  53']
-10042021,['Total 85'],['Totales  64']
-10042022,['Total 78'],['Totales  78']
-10042023,['Total 70'],['Totales  70']
-10052019,['Total 58'],['Totales  81']
-10052020,['Total 67'],['Totales  81']
-10052021,['Total 65'],['Totales  61']
-10052022,['Total 72'],['Totales  65']
-10052023,['Total 65'],['Totales  91']
-10062019,['Total 92'],['Totales  93']
-10062020,['Total 75'],['Totales  81']
-10062021,['Total 88'],['Totales  72']
-10062022,['Total 78'],['Totales  74']
-10062023,['Total 77'],['Totales  69']
-10072019,['Total 76'],['Totales  96']
-10072020,['Total 87'],['Totales  73']
-10072021,['Total 75'],['Totales  64']
-10072022,['Total 88'],['Totales  66']
-10072023,['Total 73'],['Totales  79']
-10082019,['Total 69'],['Totales  64']
-10082020,['Total 81'],['Totales  74']
-10082021,['Total 63'],['Totales  73']
-10082022,['Total 64'],['Totales  64']
-10082023,['Total 62'],['Totales  61']
-10092019,['Total 78'],['Totales  80']
-10092020,['Total 87'],['Totales  76']
-10092021,['Total 82'],['Totales  80']
-10092022,['Total 67'],['Totales  57']
-10092023,['Total 71'],['Totales  55']
-10102019,['Total 78'],['Totales  75']
-10102020,['Total 82'],['Totales  60']
-10102021,['Total 76'],['Totales  63']
-10102022,['Total 78'],['Totales  96']
-10102023,['Total 47'],['Totales  56']
-10112019,['Total 79'],['Totales  76']
-10112020,['Total 71'],['Totales  79']
-10112021,['Total 85'],['Totales  74']
-10112022,['Total 55'],['Totales  68']
-10112023,['Total 67'],['Totales  60']
-10122019,['Total 80'],['Totales  69']
-10122020,['Total 71'],['Totales  72']
-10122021,['Total 77'],['Totales  52']
-10122022,['Total 83'],['Totales  61']
-10122023,[],[]
-11012019,,['Total  74']
-11012020,['Total 87'],['Totales  67']
-11012021,['Total 80'],['Totales  88']
-11012022,['Total 60'],['Totales  100']
-11012023,['Total 69'],['Totales  70']
-11012024,[],[]
-11022019,,['Totales 90']
-11022020,['Total 78'],['Totales 74']
-11022021,['Total 68'],['Totales  87']
-11022022,['Total 66'],['Totales  61']
-11022023,['Total 64'],['Totales  72']
-11022024,['Total 100'],[]
-11032019,,['Totales 71']
-11032020,['Total 88'],['Totales 80']
-11032021,['Total 88'],['Totales  88']
-11032022,['Total 74'],['Totales  66']
-11032023,['Total 80'],['Totales  67']
-11042019,['Total 69'],['Totales  70']
-11042020,['Total 78'],['Totales  58']
-11042021,['Total 92'],['Totales  64']
-11042022,['Total 81'],['Totales  69']
-11042023,['Total 69'],['Totales  60']
-11052019,['Total 66'],['Totales  85']
-11052020,['Total 72'],['Totales  76']
-11052021,['Total 58'],['Totales  68']
-11052022,['Total 78'],['Totales  78']
-11052023,['Total 78'],['Totales  73']
-11062019,['Total 98'],['Totales  98']
-11062020,['Total 77'],['Totales  78']
-11062021,['Total 79'],['Totales  57']
-11062022,['Total 91'],['Totales  68']
-11062023,['Total 105'],['Totales  83']
-11072019,['Total 85'],['Totales 96']
-11072020,['Total 77'],['Totales  70']
-11072021,['Total 77'],['Totales  61']
-11072022,['Total 71'],['Totales  63']
-11072023,['Total 78'],['Totales  60']
-11082019,['Total 87'],['Totales  64']
-11082020,['Total 79'],['Totales  73']
-11082021,['Total 66'],['Totales  64']
-11082022,['Total 81'],['Totales  66']
-11082023,['Total 79'],['Totales  69']
-11092019,['Total 77'],['Totales  73']
-11092020,['Total 79'],['Totales  79']
-11092021,['Total 76'],['Totales  74']
-11092022,['Total 91'],['Totales  79']
-11092023,['Total 84'],['Totales  91']
-11102019,['Total 75'],['Totales  72']
-11102020,['Total 114'],['Totales  74']
-11102021,['Total 89'],['Totales  88']
-11102022,['Total 74'],['Totales  88']
-11102023,['Total 55'],['Totales  50']
-11112019,['Total 87'],['Totales  65']
-11112020,['Total 87'],['Totales  93']
-11112021,['Total 77'],['Totales  80']
-11112022,['Total 75'],['Totales  85']
-11112023,['Total 81'],['Totales  57']
-11122019,['Total 73'],['Totales  73']
-11122020,['Total 79'],['Totales  68']
-11122021,['Total 64'],['Totales  66']
-11122022,['Total 87'],['Totales  61']
-11122023,[],[]
-12012019,,['Total  79']
-12012020,['Total 73'],['Totales  58']
-12012021,['Total 74'],['Totales  73']
-12012022,['Total 61'],['Totales  69']
-12012023,['Total 66'],['Totales  74']
-12012024,['Total 61'],[]
-12022019,,['Totales 119']
-12022020,['Total 69'],['Totales  78']
-12022021,['Total 79'],['Totales  74']
-12022022,['Total 63'],['Totales  62']
-12022023,['Total 58'],['Totales  54']
-12022024,['Total 80'],[]
-12032019,,['Totales 79']
-12032020,['Total 94'],['Totales 73']
-12032021,['Total 85'],['Totales  74']
-12032022,['Total 70'],['Totales  61']
-12032023,['Total 88'],['Totales  61']
-12042019,['Total 73'],['Totales  74']
-12042020,['Total 97'],['Totales 66']
-12042021,['Total 87'],['Totales  80']
-12042022,['Total 74'],['Totales  73']
-12042023,['Total 64'],['Totales  62']
-12052019,['Total 71'],['Totales 91']
-12052020,['Total  70'],['Totales  73']
-12052021,['Total 75'],['Totales  62']
-12052022,['Total 61'],['Totales  61']
-12052023,['Total 83'],['Totales  61']
-12062019,['Total 89'],['Totales 101']
-12062020,['Total 85'],['Totales 77']
-12062021,['Total 88'],['Totales  63']
-12062022,['Total 88'],['Totales  75']
-12062023,['Total 95'],['Totales  93']
-12072019,['Total 54'],['Totales 77']
-12072020,['Total 92'],['Totales  75']
-12072021,['Total 92'],['Totales  65']
-12072022,['Total 69'],['Totales  66']
-12072023,['Total 68'],['Totales  69']
-12082019,['Total 73'],['Totales  76']
-12082020,['Total 68'],['Totales  73']
-12082021,['Total 73'],['Totales  70']
-12082022,['Total 62'],['Totales  66']
-12082023,['Total 91'],['Totales  66']
-12092019,['Total 74'],['Totales  87']
-12092020,['Total 69'],['Totales  60']
-12092021,['Total 73'],['Totales  76']
-12092022,['Total 70'],['Totales  73']
-12092023,['Total 72'],['Totales  69']
-12102019,['Total 73'],['Totales  63']
-12102020,['Total 77'],['Totales  117']
-12102021,['Total 76'],['Totales  67']
-12102022,['Total 68'],['Totales  80']
-12102023,['Total 62'],['Totales  55']
-12112019,['Total 65'],['Totales  68']
-12112020,['Total 70'],['Totales  64']
-12112021,['Total 79'],['Totales  72']
-12112022,['Total 71'],['Totales  64']
-12112023,['Total 86'],['Totales  54']
-12122019,['Total 63'],['Totales  62']
-12122020,['Total 69'],['Totales  64']
-12122021,['Total 90'],['Totales  62']
-12122022,['Total 62'],['Totales  63']
-12122023,[],[]
-13012019,,['Total  89']
-13012020,['Total 86'],['Totales  106']
-13012021,['Total 68'],['Totales  82']
-13012022,['Total 50'],['Totales  65']
-13012023,['Total 59'],['Totales  72']
-13012024,['Total 71'],[]
-13022019,,['Totales 77']
-13022020,['Total 75'],['Totales 61']
-13022021,['Total 66'],['Totales  70']
-13022022,['Total 68'],['Totales  65']
-13022023,['Total 50'],['Totales  70']
-13022024,['Total 82'],[]
-13032019,,['Totales 65']
-13032020,['Total 76'],['Totales  68']
-13032021,['Total 69'],['Totales  65']
-13032022,['Total 57'],['Totales  59']
-13032023,['Total 59'],['Totales  58']
-13042019,['Total 77'],['Totales  87']
-13042020,['Total  76'],['Totales  76']
-13042021,['Total 105'],['Totales  94']
-13042022,['Total 61'],['Totales  58']
-13042023,['Total 74'],['Totales  65']
-13052019,['Total 78'],['Totales  100']
-13052020,['Total 86'],['Totales  68']
-13052021,['Total 69'],['Totales  71']
-13052022,['Total 71'],['Totales  61']
-13052023,['Total 67'],['Totales  57']
-13062019,['Total 83'],['Totales 93']
-13062020,['Total 70'],['Totales 48']
-13062021,['Total 84'],['Totales  62']
-13062022,['Total 96'],['Totales  64']
-13062023,['Total 55'],['Totales  62']
-13072019,['Total 75'],['Totales 65']
-13072020,['Total 87'],['Totales  87']
-13072021,['Total 86'],['Totales  74']
-13072022,['Total 64'],['Totales  55']
-13072023,['Total 70'],['Totales  74']
-13082019,['Total 83'],['Totales  90']
-13082020,['Total 84'],['Totales  64']
-13082021,['Total 98'],['Totales  75']
-13082022,['Total 72'],['Totales  51']
-13082023,['Total 56'],['Totales  65']
-13092019,['Total 71'],['Totales  96']
-13092020,['Total 84'],['Totales  62']
-13092021,['Total 100'],['Totales  90']
-13092022,['Total 74'],['Totales  81']
-13092023,['Total 63'],['Totales  65']
-13102019,['Total 76'],['Totales  74']
-13102020,['Total 78'],['Totales  68']
-13102021,['Total 72'],['Totales  70']
-13102022,['Total 86'],['Totales  71']
-13102023,['Total 67'],['Totales  68']
-13112019,['Total 60'],['Totales  68']
-13112020,['Total 62'],['Totales  70']
-13112021,['Total 86'],['Totales  75']
-13112022,['Total 69'],['Totales  57']
-13112023,[],[]
-13122019,['Total 96'],['Totales  81']
-13122020,['Total 98'],['Totales  66']
-13122021,['Total 72'],['Totales  65']
-13122022,['Total 58'],['Totales  69']
-13122023,[],[]
-14012019,,['Total  77']
-14012020,['Total 62'],['Totales 82']
-14012021,['Total 85'],['Totales  69']
-14012022,['Total 56'],['Totales  54']
-14012023,['Total 72'],['Totales  63']
-14012024,['Total 83'],[]
-14022019,,['Totales 81']
-14022020,['Total 82'],['Totales  76']
-14022021,['Total 68'],['Totales  65']
-14022022,['Total 74'],['Totales  64']
-14022023,['Total 76'],['Totales  59']
-14022024,['Total 61'],[]
-14032019,,['Totales 76']
-14032020,['Total 73'],['Totales  56']
-14032021,['Total 91'],['Totales  69']
-14032022,['Total 80'],['Totales  74']
-14032023,['Total 65'],['Totales  61']
-14042019,['Total 82'],['Totales  76']
-14042020,['Total  82'],['Totales  80']
-14042021,['Total 84'],['Totales  67']
-14042022,['Total 64'],['Totales  73']
-14042023,['Total 63'],['Totales  63']
-14052019,['Total 80'],['Totales  72']
-14052020,['Total  84'],['Totales  80']
-14052021,['Total 107'],['Totales  69']
-14052022,['Total 79'],['Totales  56']
-14052023,['Total 71'],['Totales  51']
-14062019,['Total 81'],['Totales 82']
-14062020,['Total 94'],['Totales  59']
-14062021,['Total 72'],['Totales  83']
-14062022,['Total 90'],['Totales  72']
-14062023,['Total 71'],['Totales  55']
-14072019,['Total 91'],['Totales  65']
-14072020,['Total 69'],['Totales  70']
-14072021,['Total 69'],['Totales  78']
-14072022,['Total 73'],['Totales  73']
-14072023,['Total 59'],['Totales  45']
-14082019,['Total 82'],['Totales  94']
-14082020,['Total 65'],['Totales  70']
-14082021,['Total 78'],['Totales  68']
-14082022,['Total 62'],['Totales  62']
-14082023,['Total 59'],['Totales  60']
-14092019,['Total 70'],['Totales  60']
-14092020,['Total 75'],['Totales  78']
-14092021,['Total 79'],['Totales  75']
-14092022,['Total 102'],['Totales  67']
-14092023,['Total 61'],['Totales  63']
-14102019,['Total 93'],['Totales  93']
-14102020,['Total 89'],['Totales  80']
-14102021,['Total 59'],['Totales  61']
-14102022,['Total 93'],['Totales  63']
-14102023,['Total 57'],['Totales  58']
-14112019,['Total 86'],['Totales  77']
-14112020,['Total 81'],['Totales  70']
-14112021,['Total 83'],['Totales  72']
-14112022,['Total 70'],[]
-14112023,[],[]
-14122019,['Total 75'],['Totales  69']
-14122020,['Total 77'],['Totales  72']
-14122021,['Total 65'],['Totales  73']
-14122022,['Total 60'],['Totales  62']
-14122023,[],[]
-15012019,,['Total  77']
-15012020,['Total 82'],['Totales  101']
-15012021,['Total 87'],['Totales  75']
-15012022,['Total 72'],['Totales  70']
-15012023,['Total 77'],['Totales  57']
-15012024,['Total 78'],[]
-15022019,,['Totales 67']
-15022020,['Total 82'],['Totales  65']
-15022021,['Total 84'],['Totales  72']
-15022022,['Total 61'],['Totales  73']
-15022023,['Total 65'],['Totales  72']
-15022024,['Total 59'],[]
-15032019,,['Totales 80']
-15032020,['Total 85'],['Totales  54']
-15032021,['Total 68'],['Totales  62']
-15032022,['Total 66'],['Totales  74']
-15032023,['Total 72'],['Totales  57']
-15042019,['Total 94'],['Totales  91']
-15042020,['Total  96'],['Totales  81']
-15042021,['Total 68'],['Totales  67']
-15042022,['Total 74'],['Totales  58']
-15042023,['Total 91'],['Totales  63']
-15052019,['Total 68'],['Totales 77']
-15052020,['Total 91'],['Totales  85']
-15052021,['Total 72'],['Totales  66']
-15052022,['Total 105'],['Totales  67']
-15052023,['Total 59'],['Totales  88']
-15062019,['Total 85'],['Totales 71']
-15062020,['Total 66'],['Totales  79']
-15062021,['Total 74'],['Totales  71']
-15062022,['Total 71'],['Totales  65']
-15062023,['Total 78'],['Totales  62']
-15072019,['Total 68'],['Totales  93']
-15072020,['Total 82'],['Totales  76']
-15072021,['Total 86'],['Totales  91']
-15072022,['Total 64'],['Totales  62']
-15072023,['Total 75'],['Totales  58']
-15082019,['Total 74'],['Totales  90']
-15082020,['Total 62'],['Totales  60']
-15082021,['Total 74'],['Totales  73']
-15082022,['Total 70'],['Totales  62']
-15082023,['Total 60'],['Totales  60']
-15092019,['Total 78'],['Totales  60']
-15092020,['Total 76'],['Totales  71']
-15092021,['Total 88'],['Totales  75']
-15092022,['Total 68'],['Totales  81']
-15092023,['Total 75'],['Totales  76']
-15102019,['Total 87'],['Totales  97']
-15102020,['Total 86'],['Totales  79']
-15102021,['Total 70'],['Totales  70']
-15102022,['Total 107'],['Totales  70']
-15102023,['Total 76'],['Totales  59']
-15112019,['Total 87'],['Totales  68']
-15112020,['Total 68'],['Totales  64']
-15112021,['Total 79'],['Totales  74']
-15112022,['Total 55'],['Totales  60']
-15112023,[],[]
-15122019,['Total 70'],['Totales  53']
-15122020,['Total 48'],['Totales  68']
-15122021,['Total 75'],['Totales  68']
-15122022,['Total 79'],['Totales  61']
-15122023,['Total 67'],['Totales  64']
-16012019,,[]
-16012020,['Total 86'],['Totales  100']
-16012021,['Total 85'],['Totales  60']
-16012022,['Total 95'],['Totales  61']
-16012023,['Total 85'],['Totales  90']
-16012024,[],[]
-16022019,,['Totales 75']
-16022020,['Total 76'],['Totales  63']
-16022021,['Total 69'],['Totales  74']
-16022022,['Total 69'],['Totales  73']
-16022023,['Total 61'],['Totales  62']
-16022024,[],[]
-16032019,,['Totales 61']
-16032020,['Total 82'],['Totales  78']
-16032021,['Total 86'],['Totales  89']
-16032022,['Total 86'],['Totales  67']
-16032023,['Total 74'],['Totales  73']
-16042019,['Total 82'],['Totales  80']
-16042020,['Total  80'],['Totales  71']
-16042021,['Total 58'],['Totales  65']
-16042022,['Total 74'],['Totales  65']
-16042023,['Total 79'],['Totales  62']
-16052019,['Total 87'],['Totales 85']
-16052020,['Total 93'],['Totales  62']
-16052021,['Total 101'],['Totales  61']
-16052022,['Total 82'],['Totales  72']
-16052023,['Total 73'],['Totales  56']
-16062019,['Total 94'],['Totales  82']
-16062020,['Total 85'],['Totales  87']
-16062021,['Total 80'],['Totales  63']
-16062022,['Total 88'],['Totales  87']
-16062023,['Total 82'],['Totales  65']
-16072019,['Total 67'],['Totales  81']
-16072020,['Total 73'],['Totales  88']
-16072021,['Total 73'],['Totales  75']
-16072022,['Total 65'],['Totales  57']
-16072023,['Total 85'],['Totales  50']
-16082019,['Total 60'],['Totales  73']
-16082020,['Total 102'],['Totales  61']
-16082021,['Total 82'],['Totales  73']
-16082022,['Total 62'],['Totales  69']
-16082023,['Total 65'],['Totales  57']
-16092019,['Total 87'],['Totales  77']
-16092020,['Total 92'],['Totales  65']
-16092021,['Total 104'],['Totales  89']
-16092022,['Total 94'],['Totales  64']
-16092023,['Total 77'],['Totales  52']
-16102019,['Total 103'],['Totales  86']
-16102020,['Total 59'],['Totales  59']
-16102021,['Total 72'],['Totales  66']
-16102022,['Total 83'],['Totales  78']
-16102023,['Total 64'],['Totales  62']
-16112019,['Total 79'],['Totales  71']
-16112020,['Total 72'],['Totales  67']
-16112021,['Total 55'],['Totales  70']
-16112022,['Total 55'],['Totales  69']
-16112023,[],[]
-16122019,['Total 75'],['Totales  71']
-16122020,['Total 72'],['Totales  62']
-16122021,['Total 65'],['Totales  69']
-16122022,['Total 76'],"['Totales  60', 'Totales  7']"
-16122023,['Total 72'],['Totales  63']
-17012019,,[]
-17012020,['Total 75'],['Totales  89']
-17012021,['Total 94'],['Totales  71']
-17012022,['Total 76'],['Totales  96']
-17012023,['Total 66'],['Totales  82']
-17012024,['Total 72'],[]
-17022019,,['Totales 71']
-17022020,['Total 96'],['Totales  83']
-17022021,['Total 71'],['Totales  88']
-17022022,['Total 63'],['Totales  65']
-17022023,['Total 64'],['Totales  69']
-17022024,['Total 61'],[]
-17032019,,['Totales 55']
-17032020,['Total 86'],['Totales  89']
-17032021,['Total 75'],['Totales  71']
-17032022,['Total 80'],['Totales  63']
-17032023,['Total 64'],['Totales  81']
-17042019,['Total 65'],['Totales  73']
-17042020,['Total 76'],['Totales  64']
-17042021,['Total 81'],['Totales  66']
-17042022,['Total 78'],['Totales  67']
-17042023,['Total 66'],['Totales  62']
-17052019,['Total 73'],['Totales 72']
-17052020,['Total  82'],['Totales  62']
-17052021,['Total 86'],['Totales  73']
-17052022,['Total 72'],['Totales  74']
-17052023,['Total 44'],['Totales  65']
-17062019,['Total 90'],['Totales  120']
-17062020,['Total 85'],['Totales  77']
-17062021,['Total 85'],['Totales  47']
-17062022,['Total 61'],['Totales  75']
-17062023,['Total 82'],['Totales  57']
-17072019,['Total 83'],['Totales  88']
-17072020,['Total 74'],['Totales 73']
-17072021,['Total 79'],['Totales  63']
-17072022,['Total 76'],['Totales  56']
-17072023,['Total 75'],['Totales  108']
-17082019,['Total 85'],['Totales  75']
-17082020,['Total 76'],['Totales  95']
-17082021,['Total 72'],['Totales  76']
-17082022,['Total 63'],['Totales  61']
-17082023,['Total 57'],['Totales  61']
-17092019,['Total 74'],['Totales  76']
-17092020,['Total 65'],['Totales  75']
-17092021,['Total 78'],['Totales  86']
-17092022,['Total 85'],['Totales  68']
-17092023,['Total 61'],['Totales  50']
-17102019,['Total 60'],['Totales  64']
-17102020,['Total 77'],['Totales  66']
-17102021,['Total 92'],['Totales  73']
-17102022,['Total 88'],['Totales  75']
-17102023,['Total 91'],['Totales  61']
-17112019,['Total 86'],['Totales  64']
-17112020,['Total 91'],['Totales  82']
-17112021,['Total 67'],['Totales  71']
-17112022,['Total 63'],['Totales  62']
-17112023,['Total 61'],['Totales  57']
-17122019,['Total 77'],['Totales  74']
-17122020,['Total 66'],['Totales  70']
-17122021,['Total 76'],['Totales  81']
-17122022,['Total 64'],['Totales  45']
-17122023,['Total 99'],['Totales  61']
-18012020,['Total 77'],['Totales  83']
-18012021,['Total 82'],['Totales  82']
-18012022,['Total 65'],['Totales  62']
-18012023,['Total 57'],['Totales  71']
-18012024,['Total 54'],[]
-18022019,,['Totales 80']
-18022020,['Total 71'],['Totales 73']
-18022021,['Total 89'],['Totales  93']
-18022022,['Total 63'],['Totales  65']
-18022023,['Total 65'],['Totales  59']
-18022024,['Total 77'],[]
-18032019,,['Totales 59']
-18032020,['Total 54'],['Totales  69']
-18032021,['Total 97'],['Totales  85']
-18032022,['Total 80'],['Totales  103']
-18032023,['Total 75'],['Totales  65']
-18042019,['Total 73'],['Totales  64']
-18042020,['Total 77'],['Totales  51']
-18042021,['Total 84'],['Totales  65']
-18042022,['Total 90'],['Totales  62']
-18042023,['Total 60'],['Totales  59']
-18052019,['Total 94'],['Totales 74']
-18052020,['Total 84'],['Totales  75']
-18052021,['Total 88'],['Totales  65']
-18052022,['Total 72'],['Totales  64']
-18052023,['Total 75'],['Totales  64']
-18062019,['Total 93'],['Totales  93']
-18062020,['Total 81'],['Totales  82']
-18062021,['Total 73'],['Totales  74']
-18062022,['Total 70'],['Totales  58']
-18062023,['Total 94'],['Totales  58']
-18072019,['Total 78'],['Totales  85']
-18072020,['Total 82'],['Totales 65']
-18072021,['Total 52'],['Totales  62']
-18072022,['Total 71'],['Totales  92']
-18072023,['Total 74'],['Totales  71']
-18082019,['Total 93'],['Totales  82']
-18082020,['Total 66'],['Totales  80']
-18082021,['Total 89'],['Totales  79']
-18082022,['Total 85'],['Totales  81']
-18082023,['Total 88'],['Totales  74']
-18092019,['Total 62'],['Totales  75']
-18092020,['Total 67'],['Totales  59']
-18092021,['Total 76'],['Totales  65']
-18092022,['Total 71'],['Totales  69']
-18092023,['Total 65'],['Totales  61']
-18102019,['Total 71'],['Totales  75']
-18102020,['Total 92'],['Totales  66']
-18102021,['Total 84'],['Totales  76']
-18102022,['Total 53'],['Totales  72']
-18102023,['Total 72'],['Totales  80']
-18112019,['Total 69'],['Totales  63']
-18112020,['Total 57'],['Totales  72']
-18112021,['Total 79'],['Totales  83']
-18112022,['Total 68'],['Totales  67']
-18112023,['Total 55'],['Totales  57']
-18122019,['Total 80'],['Totales  62']
-18122020,['Total 72'],['Totales  63']
-18122021,['Total 86'],['Totales  61']
-18122022,['Total 73'],['Totales  61']
-18122023,['Total 57'],['Totales  67']
-19012019,,[]
-19012020,['Total 64'],['Totales  64']
-19012021,['Total 71'],['Totales  79']
-19012022,['Total 66'],['Totales  75']
-19012023,['Total 60'],['Totales  70']
-19012024,[],[]
-19022019,,['Totales 80']
-19022020,['Total 96'],['Totales  97']
-19022021,['Total 63'],['Totales  75']
-19022022,['Total 76'],['Totales  68']
-19022023,['Total 82'],['Totales  56']
-19022024,[],[]
-19032019,,['Totales 67']
-19032020,['Total 60'],['Totales  60']
-19032021,['Total 80'],['Totales  64']
-19032022,['Total 54'],['Totales  60']
-19032023,['Total 73'],['Totales  61']
-19042019,['Total 78'],['Totales 63']
-19042020,['Total  105'],['Totales  61']
-19042021,['Total 89'],['Totales  90']
-19042022,['Total 57'],['Totales  65']
-19042023,['Total 77'],['Totales  58']
-19052019,['Total 97'],['Totales  68']
-19052020,['Total  68'],['Totales  80']
-19052021,['Total 61'],['Totales  66']
-19052022,['Total 75'],['Totales  74']
-19052023,['Total 75'],['Totales  59']
-19062019,['Total 87'],['Totales  90']
-19062020,['Total 71'],['Totales  60']
-19062021,['Total 94'],['Totales  65']
-19062022,['Total 84'],['Totales  68']
-19062023,['Total 72'],['Totales  66']
-19072019,['Total 65'],['Totales  69']
-19072020,['Total 99'],['Totales  75']
-19072021,['Total 103'],['Totales  74']
-19072022,['Total 57'],['Totales  56']
-19072023,['Total 66'],['Totales  77']
-19082019,['Total 86'],['Totales  102']
-19082020,['Total 81'],['Totales  102']
-19082021,['Total 67'],['Totales  72']
-19082022,['Total 65'],['Totales  64']
-19082023,['Total 77'],['Totales  57']
-19092019,['Total 97'],['Totales  78']
-19092020,['Total 84'],['Totales  69']
-19092021,['Total 65'],['Totales  62']
-19092022,['Total 75'],['Totales  67']
-19092023,['Total 68'],['Totales  56']
-19102019,['Total 65'],['Totales  71']
-19102020,['Total 76'],['Totales  82']
-19102021,['Total 64'],['Totales  65']
-19102022,['Total 73'],['Totales  83']
-19102023,['Total 63'],['Totales  63']
-19112019,['Total 101'],['Totales  78']
-19112020,['Total 76'],['Totales  73']
-19112021,['Total 64'],['Totales  68']
-19112022,['Total 71'],['Totales  76']
-19112023,[],['Totales  51']
-19122019,['Total 94'],['Totales  101']
-19122020,['Total 81'],['Totales  66']
-19122021,['Total 80'],['Totales  65']
-19122022,['Total 107'],['Totales  97']
-19122023,['Total 59'],['Totales  62']
-20012019,,[]
-20012020,['Total 66'],['Totales  73']
-20012021,['Total 60'],['Totales  63']
-20012022,['Total 39'],['Totales  53']
-20012023,['Total 59'],['Totales  69']
-20012024,['Total 62'],[]
-20022019,,['Totales 70']
-20022020,['Total 87'],['Totales  90']
-20022021,['Total 88'],['Totales  64']
-20022022,['Total 74'],['Totales  66']
-20022023,['Total 72'],['Totales  78']
-20022024,[],[]
-20032019,,['Totales 75']
-20032020,['Total 99'],['Totales  81']
-20032021,['Total 92'],['Totales  71']
-20032022,['Total 75'],['Totales  61']
-20032023,['Total 73'],['Totales  74']
-20042019,['Total 71'],['Totales 66']
-20042020,['Total  114'],['Totales  104']
-20042021,['Total 69'],['Totales  78']
-20042022,['Total 69'],['Totales  56']
-20042023,['Total 69'],['Totales  46']
-20052019,['Total 68'],['Totales 100']
-20052020,['Total 64'],['Totales  65']
-20052021,['Total 83'],['Totales  63']
-20052022,['Total 81'],['Totales  85']
-20052023,['Total 76'],['Totales  67']
-20062019,['Total 93'],['Totales  88']
-20062020,['Total 91'],['Totales  76']
-20062021,['Total 63'],['Totales  61']
-20062022,['Total 63'],['Totales  63']
-20062023,['Total 75'],['Totales  61']
-20072019,['Total 76'],['Totales  69']
-20072020,['Total 79'],['Totales  90']
-20072021,['Total 77'],['Totales  74']
-20072022,['Total 68'],['Totales  70']
-20072023,['Total 70'],['Totales  69']
-20082019,['Total 98'],['Totales  79']
-20082020,['Total 80'],['Totales  80']
-20082021,['Total 69'],['Totales  72']
-20082022,['Total 86'],['Totales  65']
-20082023,['Total 77'],['Totales  53']
-20092019,['Total 114'],['Totales  107']
-20092020,['Total 76'],['Totales  71']
-20092021,['Total 67'],['Totales  72']
-20092022,['Total 82'],['Totales  71']
-20092023,['Total 87'],['Totales  69']
-20102019,['Total 93'],['Totales  73']
-20102020,['Total 67'],['Totales  65']
-20102021,['Total 72'],['Totales  61']
-20102022,['Total 74'],['Totales  64']
-20102023,['Total 73'],['Totales  70']
-20112019,['Total 78'],['Totales  85']
-20112020,['Total 57'],['Totales  72']
-20112021,['Total 71'],['Totales  63']
-20112022,['Total 69'],['Totales  53']
-20112023,[],[]
-20122019,['Total 65'],['Totales  76']
-20122020,['Total 72'],['Totales  61']
-20122021,['Total 68'],['Totales  65']
-20122022,['Total 71'],['Totales  97']
-20122023,['Total 59'],['Totales  40']
-21012019,,['Total  86']
-21012020,['Total 93'],['Totales  79']
-21012021,['Total 82'],['Totales  98']
-21012022,['Total 52'],['Totales  64']
-21012023,['Total 73'],['Totales  59']
-21012024,['Total 51'],[]
-21022019,,[]
-21022020,['Total 78'],['Totales  80']
-21022021,['Total 85'],['Totales  62']
-21022022,['Total 82'],['Totales  70']
-21022023,['Total 78'],['Totales  70']
-21032019,,"['Totales  71', 'Totales  5']"
-21032020,['Total 82'],['Totales  66']
-21032021,['Total 81'],['Totales  69']
-21032022,['Total 50'],['Totales  64']
-21032023,['Total 70'],['Totales  62']
-21042019,['Total 51'],['Totales 47']
-21042020,['Total  80'],['Totales  81']
-21042021,['Total 72'],['Totales  61']
-21042022,['Total 75'],['Totales  72']
-21042023,['Total 59'],['Totales  57']
-21052019,['Total 71'],['Totales  92']
-21052020,['Total 68'],['Totales  69']
-21052021,['Total 70'],['Totales  65']
-21052022,['Total 78'],['Totales  68']
-21052023,['Total 82'],['Totales  56']
-21062019,['Total 93'],['Totales  97']
-21062020,['Total 103'],['Totales  61']
-21062021,['Total 80'],['Totales  74']
-21062022,['Total 73'],['Totales  84']
-21062023,['Total 62'],['Totales  64']
-21072019,['Total 82'],['Totales  60']
-21072020,['Total 83'],['Totales  89']
-21072021,['Total 79'],['Totales  81']
-21072022,['Total 80'],['Totales  66']
-21072023,['Total 75'],['Totales  61']
-21082019,['Total 94'],['Totales  104']
-21082020,['Total 69'],['Totales  74']
-21082021,['Total 60'],['Totales  63']
-21082022,['Total 79'],['Totales  70']
-21082023,['Total 63'],['Totales  60']
-21092019,['Total 74'],['Totales  51']
-21092020,['Total 62'],['Totales  85']
-21092021,['Total 70'],['Totales  77']
-21092022,['Total 91'],['Totales  66']
-21092023,['Total 76'],['Totales  56']
-21102019,['Total 79'],['Totales  121']
-21102020,['Total 72'],['Totales  72']
-21102021,['Total 86'],['Totales  71']
-21102022,['Total 77'],['Totales  87']
-21102023,['Total 74'],['Totales  57']
-21112019,['Total 82'],['Totales  74']
-21112020,['Total 76'],['Totales  64']
-21112021,['Total 78'],['Totales  70']
-21112022,['Total 75'],['Totales  68']
-21112023,['Total 64'],['Totales  58']
-21122019,['Total 80'],['Totales  63']
-21122020,['Total 69'],['Totales  79']
-21122021,['Total 59'],['Totales  68']
-21122022,['Total 66'],['Totales  66']
-21122023,['Total 59'],['Totales  57']
-22012019,,['Total  77']
-22012020,['Total 86'],['Totales  73']
-22012021,['Total 90'],['Totales  75']
-22012022,['Total 55'],['Totales  57']
-22012023,['Total 89'],['Totales  64']
-22012024,[],[]
-22022019,,['Totales 78']
-22022020,['Total 89'],['Totales  64']
-22022021,['Total 80'],['Totales  85']
-22022022,['Total 60'],['Totales  78']
-22022023,['Total 69'],['Totales  65']
-22022024,[],[]
-22032019,,['Totales 72']
-22032020,['Total 95'],['Totales  58']
-22032021,['Total 77'],['Totales  83']
-22032022,['Total 90'],['Totales  63']
-22032023,['Total 75'],['Totales  71']
-22042019,['Total 82'],['Totales  85']
-22042020,['Total  92'],['Totales  90']
-22042021,['Total 66'],['Totales  77']
-22042022,['Total 70'],['Totales  91']
-22042023,['Total 79'],['Totales  52']
-22052019,['Total 70'],['Totales  86']
-22052020,['Total 74'],['Totales  70']
-22052021,['Total 72'],['Totales  61']
-22052022,['Total 107'],['Totales  73']
-22052023,['Total 76'],['Totales  72']
-22062019,['Total 67'],['Totales 79']
-22062020,['Total 89'],['Totales  102']
-22062021,['Total 69'],['Totales  72']
-22062022,['Total 91'],['Totales  81']
-22062023,['Total 78'],['Totales  80']
-22072019,['Total 62'],['Totales  104']
-22072020,['Total 92'],['Totales  94']
-22072021,['Total 53'],['Totales  65']
-22072022,['Total 75'],['Totales  72']
-22072023,['Total 79'],['Totales  68']
-22082019,['Total 62'],['Totales  84']
-22082020,['Total 71'],['Totales  74']
-22082021,['Total 91'],['Totales  70']
-22082022,['Total 78'],['Totales  65']
-22082023,['Total 68'],['Totales  47']
-22092019,['Total 86'],['Totales  76']
-22092020,['Total 75'],['Totales  72']
-22092021,['Total 80'],['Totales  76']
-22092022,['Total 77'],['Totales  69']
-22092023,['Total 65'],['Totales  74']
-22102019,['Total 78'],['Totales  95']
-22102020,['Total 99'],['Totales  86']
-22102021,['Total 54'],['Totales  72']
-22102022,['Total 76'],['Totales  56']
-22102023,['Total 73'],['Totales  58']
-22112019,['Total 73'],['Totales  58']
-22112020,['Total 89'],['Totales  74']
-22112021,['Total 89'],['Totales  74']
-22112022,['Total 72'],['Totales  110']
-22112023,['Total 64'],['Totales  53']
-22122019,['Total 79'],['Totales  46']
-22122020,['Total 56'],['Totales  69']
-22122021,['Total 63'],['Totales  78']
-22122022,['Total 65'],['Totales  70']
-22122023,[],[]
+dates,homicidios_fuentes_gobierno,homicidios_fuentes_abiertas
+01012019,,79
+01012020,64,55
+01012021,73,61
+01012022,74,58
+01012023,87,65
+01012024,60,50
+01022019,,0
+01022020,91,60
+01022021,74,66
+01022022,71,78
+01022023,82,87
+01022024,69,0
+01032019,,0
+01032020,82,60
+01032021,62,78
+01032022,66,69
+01032023,70,51
+01042019,,71
+01042020,79,70
+01042021,84,67
+01042022,71,62
+01042023,81,59
+01052019,64,59
+01052020,73,58
+01052021,86,62
+01052022,112,71
+01052023,81,57
+01062019,84,67
+01062020,67,87
+01062021,57,66
+01062022,75,71
+01062023,71,75
+01072019,77,99
+01072020,92,110
+01072021,64,67
+01072022,79,76
+01072023,67,66
+01082019,54,71
+01082020,100,62
+01082021,83,61
+01082022,63,75
+01082023,69,52
+01092019,102,104
+01092020,53,61
+01092021,66,66
+01092022,71,51
+01092023,64,70
+01102019,81,86
+01102020,68,72
+01102021,80,72
+01102022,67,56
+01102023,92,47
+01112019,50,57
+01112020,92,63
+01112021,76,75
+01112022,59,62
+01112023,53,56
+01122019,127,74
+01122020,85,71
+01122021,72,70
+01122022,68,65
+01122023,63,58
+02012020,59,69
+02012021,68,63
+02012022,49,61
+02012023,93,91
+02012024,58,58
+02022019,,0
+02022020,100,63
+02022021,83,89
+02022022,67,61
+02022023,67,74
+02022024,76,0
+02032019,,0
+02032020,82,93
+02032021,73,71
+02032022,61,70
+02032023,78,78
+02042019,,84
+02042020,66,66
+02042021,68,60
+02042022,78,75
+02042023,80,60
+02052019,85,78
+02052020,98,61
+02052021,90,65
+02052022,93,86
+02052023,88,84
+02062019,83,73
+02062020,71,73
+02062021,95,70
+02062022,73,86
+02062023,76,67
+02072019,80,84
+02072020,68,66
+02072021,68,71
+02072022,80,67
+02072023,86,62
+02082019,83,69
+02082020,104,72
+02082021,87,70
+02082022,74,60
+02082023,70,50
+02092019,76,91
+02092020,69,77
+02092021,90,71
+02092022,77,73
+02092023,85,66
+02102019,88,76
+02102020,71,56
+02102021,75,62
+02102022,77,66
+02102023,58,60
+02112019,57,51
+02112020,65,68
+02112021,78,86
+02112022,74,61
+02112023,98,65
+02122019,77,80
+02122020,85,71
+02122021,77,74
+02122022,72,53
+02122023,66,52
+03012019,,66
+03012020,74,78
+03012021,69,62
+03012022,62,61
+03012023,69,77
+03012024,68,59
+03022019,,0
+03022020,90,89
+03022021,74,85
+03022022,79,71
+03022023,65,74
+03022024,0,0
+03032019,,64
+03032020,95,68
+03032021,60,64
+03032022,72,68
+03032023,63,62
+03042019,67,72
+03042020,88,87
+03042021,77,61
+03042022,74,60
+03042023,73,64
+03052019,84,97
+03052020,90,67
+03052021,94,71
+03052022,64,60
+03052023,65,62
+03062019,81,67
+03062020,77,73
+03062021,58,62
+03062022,57,64
+03062023,91,76
+03072019,73,74
+03072020,98,74
+03072021,83,63
+03072022,103,69
+03072023,54,84
+03082019,67,55
+03082020,75,78
+03082021,68,62
+03082022,86,68
+03082023,70,65
+03092019,79,78
+03092020,85,78
+03092021,69,60
+03092022,75,82
+03092023,78,60
+03102019,87,81
+03102020,90,66
+03102021,68,64
+03102022,78,65
+03102023,71,63
+03112019,101,80
+03112020,61,77
+03112021,71,73
+03112022,91,104
+03112023,79,80
+03122019,73,67
+03122020,85,62
+03122021,71,65
+03122022,89,84
+03122023,73,63
+04012019,,83
+04012020,73,51
+04012021,78,81
+04012022,59,56
+04012023,71,74
+04012024,66,53
+04022019,,0
+04022020,83,77
+04022021,82,76
+04022022,53,58
+04022023,59,55
+04022024,0,0
+04032019,,88
+04032020,62,65
+04032021,81,71
+04032022,68,66
+04032023,67,55
+04042019,85,77
+04042020,104,67
+04042021,80,61
+04042022,84,78
+04042023,82,75
+04052019,90,58
+04052020,76,78
+04052021,80,84
+04052022,77,65
+04052023,78,70
+04062019,65,74
+04062020,79,74
+04062021,58,58
+04062022,78,59
+04062023,82,61
+04072019,67,76
+04072020,69,54
+04072021,115,82
+04072022,76,80
+04072023,77,58
+04082019,101,56
+04082020,73,76
+04082021,97,78
+04082022,74,71
+04082023,77,70
+04092019,63,86
+04092020,90,73
+04092021,89,74
+04092022,73,0
+04092023,93,60
+04102019,61,73
+04102020,81,70
+04102021,70,70
+04102022,71,75
+04102023,65,65
+04112019,73,87
+04112020,94,64
+04112021,79,79
+04112022,82,92
+04112023,74,70
+04122019,90,84
+04122020,60,71
+04122021,80,64
+04122022,72,81
+04122023,77,60
+05012019,,103
+05012020,69,55
+05012021,79,81
+05012022,76,70
+05012023,77,77
+05012024,56,65
+05022019,,0
+05022020,75,93
+05022021,67,79
+05022022,69,68
+05022023,82,59
+05022024,0,0
+05032019,,78
+05032020,97,92
+05032021,77,77
+05032022,76,62
+05032023,72,62
+05042019,74,73
+05042020,92,64
+05042021,61,65
+05042022,64,61
+05042023,58,57
+05052019,80,76
+05052020,76,67
+05052021,80,64
+05052022,77,66
+05052023,78,67
+05062019,59,78
+05062020,60,69
+05062021,70,54
+05062022,86,77
+05062023,73,74
+05072019,81,73
+05072020,102,72
+05072021,85,103
+05072022,53,54
+05072023,63,64
+05082019,82,108
+05082020,70,71
+05082021,77,72
+05082022,90,77
+05082023,69,56
+05092019,64,75
+05092020,95,65
+05092021,93,83
+05092022,67,61
+05092023,69,61
+05102019,57,59
+05102020,102,100
+05102021,69,70
+05102022,87,64
+05102023,65,75
+05112019,89,94
+05112020,78,85
+05112021,69,80
+05112022,78,58
+05112023,65,50
+05122019,77,83
+05122020,69,51
+05122021,71,64
+05122022,92,75
+05122023,58,75
+06012019,,74
+06012020,68,63
+06012021,58,62
+06012022,77,77
+06012023,71,90
+06012024,0,0
+06022019,,0
+06022020,62,70
+06022021,80,77
+06022022,90,71
+06022023,57,59
+06022024,0,0
+06032019,,60
+06032020,71,63
+06032021,73,69
+06032022,76,63
+06032023,74,85
+06042019,101,77
+06042020,80,79
+06042021,77,76
+06042022,80,57
+06042023,65,68
+06052019,68,63
+06052020,57,73
+06052021,83,75
+06052022,70,75
+06052023,74,71
+06062019,70,83
+06062020,94,61
+06062021,81,63
+06062022,94,90
+06062023,83,94
+06072019,101,63
+06072020,90,74
+06072021,80,103
+06072022,70,57
+06072023,58,63
+06082019,74,77
+06082020,76,65
+06082021,84,74
+06082022,78,77
+06082023,89,59
+06092019,64,75
+06092020,91,70
+06092021,74,108
+06092022,68,73
+06092023,68,54
+06102019,84,74
+06102020,65,72
+06102021,81,72
+06102022,63,64
+06102023,65,61
+06112019,97,92
+06112020,83,69
+06112021,73,62
+06112022,83,56
+06112023,86,66
+06122019,88,63
+06122020,70,67
+06122021,59,67
+06122022,78,71
+06122023,57,53
+07012019,,88
+07012020,77,65
+07012021,85,80
+07012022,78,72
+07012023,109,68
+07012024,0,0
+07022019,,0
+07022020,81,70
+07022021,79,69
+07022022,58,71
+07022023,69,71
+07022024,0,0
+07032019,,75
+07032020,80,68
+07032021,103,67
+07032022,63,62
+07032023,76,64
+07042019,79,82
+07042020,61,66
+07042021,64,80
+07042022,82,60
+07042023,67,55
+07052019,60,85
+07052020,73,73
+07052021,81,72
+07052022,92,67
+07052023,77,68
+07062019,87,79
+07062020,117,60
+07062021,70,62
+07062022,78,65
+07062023,79,71
+07072019,84,64
+07072020,62,68
+07072021,83,92
+07072022,91,78
+07072023,64,59
+07082019,73,86
+07082020,91,79
+07082021,74,68
+07082022,95,62
+07082023,77,89
+07092019,105,65
+07092020,64,93
+07092021,105,78
+07092022,70,61
+07092023,71,63
+07102019,77,72
+07102020,73,83
+07102021,79,73
+07102022,70,50
+07102023,79,60
+07112019,68,75
+07112020,82,64
+07112021,85,66
+07112022,70,104
+07112023,81,53
+07122019,69,82
+07122020,87,100
+07122021,72,85
+07122022,82,77
+07122023,67,62
+08012019,,80
+08012020,71,76
+08012021,72,65
+08012022,77,66
+08012023,89,75
+08012024,0,0
+08022019,,0
+08022020,93,71
+08022021,89,76
+08022022,60,71
+08022023,81,67
+08022024,0,0
+08032019,,75
+08032020,93,62
+08032021,76,82
+08032022,65,74
+08032023,71,68
+08042019,79,70
+08042020,79,80
+08042021,70,70
+08042022,57,63
+08042023,69,53
+08052019,71,77
+08052020,81,67
+08052021,84,61
+08052022,85,78
+08052023,73,91
+08062019,113,86
+08062020,96,102
+08062021,81,64
+08062022,76,62
+08062023,63,66
+08072019,85,102
+08072020,76,76
+08072021,57,65
+08072022,78,68
+08072023,74,63
+08082019,88,94
+08082020,66,63
+08082021,107,78
+08082022,81,76
+08082023,62,76
+08092019,101,71
+08092020,71,74
+08092021,73,82
+08092022,74,79
+08092023,69,63
+08102019,86,80
+08102020,67,78
+08102021,73,75
+08102022,66,50
+08102023,72,54
+08112019,68,67
+08112020,74,63
+08112021,67,73
+08112022,56,64
+08112023,68,63
+08122019,76,63
+08122020,74,65
+08122021,68,64
+08122022,80,85
+08122023,95,62
+09012019,,78
+09012020,93,80
+09012021,82,67
+09012022,96,66
+09012023,72,97
+09012024,75,55
+09022019,,0
+09022020,75,61
+09022021,76,92
+09022022,47,62
+09022023,84,82
+09022024,68,0
+09032019,,71
+09032020,72,85
+09032021,63,76
+09032022,84,79
+09032023,71,84
+09042019,60,73
+09042020,102,0
+09042021,79,54
+09042022,55,68
+09042023,66,51
+09052019,59,69
+09052020,72,52
+09052021,74,62
+09052022,90,72
+09052023,67,66
+09062019,101,91
+09062020,73,76
+09062021,80,94
+09062022,73,66
+09062023,76,70
+09072019,67,98
+09072020,71,70
+09072021,52,59
+09072022,78,60
+09072023,76,56
+09082019,73,72
+09082020,94,56
+09082021,83,72
+09082022,53,60
+09082023,56,77
+09092019,75,93
+09092020,78,66
+09092021,85,75
+09092022,76,64
+09092023,74,58
+09102019,80,96
+09102020,77,71
+09102021,70,87
+09102022,87,56
+09102023,60,62
+09112019,85,84
+09112020,80,77
+09112021,75,79
+09112022,64,79
+09112023,78,76
+09122019,79,70
+09122020,65,78
+09122021,53,65
+09122022,71,54
+09122023,0,0
+10012019,,60
+10012020,82,61
+10012021,62,69
+10012022,69,78
+10012023,71,68
+10012024,0,0
+10022019,,0
+10022020,80,83
+10022021,66,44
+10022022,78,74
+10022023,92,77
+10022024,71,0
+10032019,,92
+10032020,79,81
+10032021,71,75
+10032022,72,69
+10032023,70,74
+10042019,55,60
+10042020,87,53
+10042021,85,64
+10042022,78,78
+10042023,70,70
+10052019,58,81
+10052020,67,81
+10052021,65,61
+10052022,72,65
+10052023,65,91
+10062019,92,93
+10062020,75,81
+10062021,88,72
+10062022,78,74
+10062023,77,69
+10072019,76,96
+10072020,87,73
+10072021,75,64
+10072022,88,66
+10072023,73,79
+10082019,69,64
+10082020,81,74
+10082021,63,73
+10082022,64,64
+10082023,62,61
+10092019,78,80
+10092020,87,76
+10092021,82,80
+10092022,67,57
+10092023,71,55
+10102019,78,75
+10102020,82,60
+10102021,76,63
+10102022,78,96
+10102023,47,56
+10112019,79,76
+10112020,71,79
+10112021,85,74
+10112022,55,68
+10112023,67,60
+10122019,80,69
+10122020,71,72
+10122021,77,52
+10122022,83,61
+10122023,0,0
+11012019,,74
+11012020,87,67
+11012021,80,88
+11012022,60,100
+11012023,69,70
+11012024,0,0
+11022019,,90
+11022020,78,74
+11022021,68,87
+11022022,66,61
+11022023,64,72
+11022024,100,0
+11032019,,71
+11032020,88,80
+11032021,88,88
+11032022,74,66
+11032023,80,67
+11042019,69,70
+11042020,78,58
+11042021,92,64
+11042022,81,69
+11042023,69,60
+11052019,66,85
+11052020,72,76
+11052021,58,68
+11052022,78,78
+11052023,78,73
+11062019,98,98
+11062020,77,78
+11062021,79,57
+11062022,91,68
+11062023,105,83
+11072019,85,96
+11072020,77,70
+11072021,77,61
+11072022,71,63
+11072023,78,60
+11082019,87,64
+11082020,79,73
+11082021,66,64
+11082022,81,66
+11082023,79,69
+11092019,77,73
+11092020,79,79
+11092021,76,74
+11092022,91,79
+11092023,84,91
+11102019,75,72
+11102020,114,74
+11102021,89,88
+11102022,74,88
+11102023,55,50
+11112019,87,65
+11112020,87,93
+11112021,77,80
+11112022,75,85
+11112023,81,57
+11122019,73,73
+11122020,79,68
+11122021,64,66
+11122022,87,61
+11122023,0,0
+12012019,,79
+12012020,73,58
+12012021,74,73
+12012022,61,69
+12012023,66,74
+12012024,61,0
+12022019,,119
+12022020,69,78
+12022021,79,74
+12022022,63,62
+12022023,58,54
+12022024,80,0
+12032019,,79
+12032020,94,73
+12032021,85,74
+12032022,70,61
+12032023,88,61
+12042019,73,74
+12042020,97,66
+12042021,87,80
+12042022,74,73
+12042023,64,62
+12052019,71,91
+12052020,70,73
+12052021,75,62
+12052022,61,61
+12052023,83,61
+12062019,89,101
+12062020,85,77
+12062021,88,63
+12062022,88,75
+12062023,95,93
+12072019,54,77
+12072020,92,75
+12072021,92,65
+12072022,69,66
+12072023,68,69
+12082019,73,76
+12082020,68,73
+12082021,73,70
+12082022,62,66
+12082023,91,66
+12092019,74,87
+12092020,69,60
+12092021,73,76
+12092022,70,73
+12092023,72,69
+12102019,73,63
+12102020,77,117
+12102021,76,67
+12102022,68,80
+12102023,62,55
+12112019,65,68
+12112020,70,64
+12112021,79,72
+12112022,71,64
+12112023,86,54
+12122019,63,62
+12122020,69,64
+12122021,90,62
+12122022,62,63
+12122023,0,0
+13012019,,89
+13012020,86,106
+13012021,68,82
+13012022,50,65
+13012023,59,72
+13012024,71,0
+13022019,,77
+13022020,75,61
+13022021,66,70
+13022022,68,65
+13022023,50,70
+13022024,82,0
+13032019,,65
+13032020,76,68
+13032021,69,65
+13032022,57,59
+13032023,59,58
+13042019,77,87
+13042020,76,76
+13042021,105,94
+13042022,61,58
+13042023,74,65
+13052019,78,100
+13052020,86,68
+13052021,69,71
+13052022,71,61
+13052023,67,57
+13062019,83,93
+13062020,70,48
+13062021,84,62
+13062022,96,64
+13062023,55,62
+13072019,75,65
+13072020,87,87
+13072021,86,74
+13072022,64,55
+13072023,70,74
+13082019,83,90
+13082020,84,64
+13082021,98,75
+13082022,72,51
+13082023,56,65
+13092019,71,96
+13092020,84,62
+13092021,100,90
+13092022,74,81
+13092023,63,65
+13102019,76,74
+13102020,78,68
+13102021,72,70
+13102022,86,71
+13102023,67,68
+13112019,60,68
+13112020,62,70
+13112021,86,75
+13112022,69,57
+13112023,0,0
+13122019,96,81
+13122020,98,66
+13122021,72,65
+13122022,58,69
+13122023,0,0
+14012019,,77
+14012020,62,82
+14012021,85,69
+14012022,56,54
+14012023,72,63
+14012024,83,0
+14022019,,81
+14022020,82,76
+14022021,68,65
+14022022,74,64
+14022023,76,59
+14022024,61,0
+14032019,,76
+14032020,73,56
+14032021,91,69
+14032022,80,74
+14032023,65,61
+14042019,82,76
+14042020,82,80
+14042021,84,67
+14042022,64,73
+14042023,63,63
+14052019,80,72
+14052020,84,80
+14052021,107,69
+14052022,79,56
+14052023,71,51
+14062019,81,82
+14062020,94,59
+14062021,72,83
+14062022,90,72
+14062023,71,55
+14072019,91,65
+14072020,69,70
+14072021,69,78
+14072022,73,73
+14072023,59,45
+14082019,82,94
+14082020,65,70
+14082021,78,68
+14082022,62,62
+14082023,59,60
+14092019,70,60
+14092020,75,78
+14092021,79,75
+14092022,102,67
+14092023,61,63
+14102019,93,93
+14102020,89,80
+14102021,59,61
+14102022,93,63
+14102023,57,58
+14112019,86,77
+14112020,81,70
+14112021,83,72
+14112022,70,0
+14112023,0,0
+14122019,75,69
+14122020,77,72
+14122021,65,73
+14122022,60,62
+14122023,0,0
+15012019,,77
+15012020,82,101
+15012021,87,75
+15012022,72,70
+15012023,77,57
+15012024,78,0
+15022019,,67
+15022020,82,65
+15022021,84,72
+15022022,61,73
+15022023,65,72
+15022024,59,0
+15032019,,80
+15032020,85,54
+15032021,68,62
+15032022,66,74
+15032023,72,57
+15042019,94,91
+15042020,96,81
+15042021,68,67
+15042022,74,58
+15042023,91,63
+15052019,68,77
+15052020,91,85
+15052021,72,66
+15052022,105,67
+15052023,59,88
+15062019,85,71
+15062020,66,79
+15062021,74,71
+15062022,71,65
+15062023,78,62
+15072019,68,93
+15072020,82,76
+15072021,86,91
+15072022,64,62
+15072023,75,58
+15082019,74,90
+15082020,62,60
+15082021,74,73
+15082022,70,62
+15082023,60,60
+15092019,78,60
+15092020,76,71
+15092021,88,75
+15092022,68,81
+15092023,75,76
+15102019,87,97
+15102020,86,79
+15102021,70,70
+15102022,107,70
+15102023,76,59
+15112019,87,68
+15112020,68,64
+15112021,79,74
+15112022,55,60
+15112023,0,0
+15122019,70,53
+15122020,48,68
+15122021,75,68
+15122022,79,61
+15122023,67,64
+16012019,,0
+16012020,86,100
+16012021,85,60
+16012022,95,61
+16012023,85,90
+16012024,0,0
+16022019,,75
+16022020,76,63
+16022021,69,74
+16022022,69,73
+16022023,61,62
+16022024,0,0
+16032019,,61
+16032020,82,78
+16032021,86,89
+16032022,86,67
+16032023,74,73
+16042019,82,80
+16042020,80,71
+16042021,58,65
+16042022,74,65
+16042023,79,62
+16052019,87,85
+16052020,93,62
+16052021,101,61
+16052022,82,72
+16052023,73,56
+16062019,94,82
+16062020,85,87
+16062021,80,63
+16062022,88,87
+16062023,82,65
+16072019,67,81
+16072020,73,88
+16072021,73,75
+16072022,65,57
+16072023,85,50
+16082019,60,73
+16082020,102,61
+16082021,82,73
+16082022,62,69
+16082023,65,57
+16092019,87,77
+16092020,92,65
+16092021,104,89
+16092022,94,64
+16092023,77,52
+16102019,103,86
+16102020,59,59
+16102021,72,66
+16102022,83,78
+16102023,64,62
+16112019,79,71
+16112020,72,67
+16112021,55,70
+16112022,55,69
+16112023,0,0
+16122019,75,71
+16122020,72,62
+16122021,65,69
+16122022,76,60
+16122023,72,63
+17012019,,0
+17012020,75,89
+17012021,94,71
+17012022,76,96
+17012023,66,82
+17012024,72,0
+17022019,,71
+17022020,96,83
+17022021,71,88
+17022022,63,65
+17022023,64,69
+17022024,61,0
+17032019,,55
+17032020,86,89
+17032021,75,71
+17032022,80,63
+17032023,64,81
+17042019,65,73
+17042020,76,64
+17042021,81,66
+17042022,78,67
+17042023,66,62
+17052019,73,72
+17052020,82,62
+17052021,86,73
+17052022,72,74
+17052023,44,65
+17062019,90,120
+17062020,85,77
+17062021,85,47
+17062022,61,75
+17062023,82,57
+17072019,83,88
+17072020,74,73
+17072021,79,63
+17072022,76,56
+17072023,75,108
+17082019,85,75
+17082020,76,95
+17082021,72,76
+17082022,63,61
+17082023,57,61
+17092019,74,76
+17092020,65,75
+17092021,78,86
+17092022,85,68
+17092023,61,50
+17102019,60,64
+17102020,77,66
+17102021,92,73
+17102022,88,75
+17102023,91,61
+17112019,86,64
+17112020,91,82
+17112021,67,71
+17112022,63,62
+17112023,61,57
+17122019,77,74
+17122020,66,70
+17122021,76,81
+17122022,64,45
+17122023,99,61
+18012020,77,83
+18012021,82,82
+18012022,65,62
+18012023,57,71
+18012024,54,0
+18022019,,80
+18022020,71,73
+18022021,89,93
+18022022,63,65
+18022023,65,59
+18022024,77,0
+18032019,,59
+18032020,54,69
+18032021,97,85
+18032022,80,103
+18032023,75,65
+18042019,73,64
+18042020,77,51
+18042021,84,65
+18042022,90,62
+18042023,60,59
+18052019,94,74
+18052020,84,75
+18052021,88,65
+18052022,72,64
+18052023,75,64
+18062019,93,93
+18062020,81,82
+18062021,73,74
+18062022,70,58
+18062023,94,58
+18072019,78,85
+18072020,82,65
+18072021,52,62
+18072022,71,92
+18072023,74,71
+18082019,93,82
+18082020,66,80
+18082021,89,79
+18082022,85,81
+18082023,88,74
+18092019,62,75
+18092020,67,59
+18092021,76,65
+18092022,71,69
+18092023,65,61
+18102019,71,75
+18102020,92,66
+18102021,84,76
+18102022,53,72
+18102023,72,80
+18112019,69,63
+18112020,57,72
+18112021,79,83
+18112022,68,67
+18112023,55,57
+18122019,80,62
+18122020,72,63
+18122021,86,61
+18122022,73,61
+18122023,57,67
+19012019,,0
+19012020,64,64
+19012021,71,79
+19012022,66,75
+19012023,60,70
+19012024,0,0
+19022019,,80
+19022020,96,97
+19022021,63,75
+19022022,76,68
+19022023,82,56
+19022024,0,0
+19032019,,67
+19032020,60,60
+19032021,80,64
+19032022,54,60
+19032023,73,61
+19042019,78,63
+19042020,105,61
+19042021,89,90
+19042022,57,65
+19042023,77,58
+19052019,97,68
+19052020,68,80
+19052021,61,66
+19052022,75,74
+19052023,75,59
+19062019,87,90
+19062020,71,60
+19062021,94,65
+19062022,84,68
+19062023,72,66
+19072019,65,69
+19072020,99,75
+19072021,103,74
+19072022,57,56
+19072023,66,77
+19082019,86,102
+19082020,81,102
+19082021,67,72
+19082022,65,64
+19082023,77,57
+19092019,97,78
+19092020,84,69
+19092021,65,62
+19092022,75,67
+19092023,68,56
+19102019,65,71
+19102020,76,82
+19102021,64,65
+19102022,73,83
+19102023,63,63
+19112019,101,78
+19112020,76,73
+19112021,64,68
+19112022,71,76
+19112023,0,51
+19122019,94,101
+19122020,81,66
+19122021,80,65
+19122022,107,97
+19122023,59,62
+20012019,,0
+20012020,66,73
+20012021,60,63
+20012022,39,53
+20012023,59,69
+20012024,62,0
+20022019,,70
+20022020,87,90
+20022021,88,64
+20022022,74,66
+20022023,72,78
+20022024,0,0
+20032019,,75
+20032020,99,81
+20032021,92,71
+20032022,75,61
+20032023,73,74
+20042019,71,66
+20042020,114,104
+20042021,69,78
+20042022,69,56
+20042023,69,46
+20052019,68,100
+20052020,64,65
+20052021,83,63
+20052022,81,85
+20052023,76,67
+20062019,93,88
+20062020,91,76
+20062021,63,61
+20062022,63,63
+20062023,75,61
+20072019,76,69
+20072020,79,90
+20072021,77,74
+20072022,68,70
+20072023,70,69
+20082019,98,79
+20082020,80,80
+20082021,69,72
+20082022,86,65
+20082023,77,53
+20092019,114,107
+20092020,76,71
+20092021,67,72
+20092022,82,71
+20092023,87,69
+20102019,93,73
+20102020,67,65
+20102021,72,61
+20102022,74,64
+20102023,73,70
+20112019,78,85
+20112020,57,72
+20112021,71,63
+20112022,69,53
+20112023,0,0
+20122019,65,76
+20122020,72,61
+20122021,68,65
+20122022,71,97
+20122023,59,40
+21012019,,86
+21012020,93,79
+21012021,82,98
+21012022,52,64
+21012023,73,59
+21012024,51,0
+21022019,,0
+21022020,78,80
+21022021,85,62
+21022022,82,70
+21022023,78,70
+21032019,,71
+21032020,82,66
+21032021,81,69
+21032022,50,64
+21032023,70,62
+21042019,51,47
+21042020,80,81
+21042021,72,61
+21042022,75,72
+21042023,59,57
+21052019,71,92
+21052020,68,69
+21052021,70,65
+21052022,78,68
+21052023,82,56
+21062019,93,97
+21062020,103,61
+21062021,80,74
+21062022,73,84
+21062023,62,64
+21072019,82,60
+21072020,83,89
+21072021,79,81
+21072022,80,66
+21072023,75,61
+21082019,94,104
+21082020,69,74
+21082021,60,63
+21082022,79,70
+21082023,63,60
+21092019,74,51
+21092020,62,85
+21092021,70,77
+21092022,91,66
+21092023,76,56
+21102019,79,121
+21102020,72,72
+21102021,86,71
+21102022,77,87
+21102023,74,57
+21112019,82,74
+21112020,76,64
+21112021,78,70
+21112022,75,68
+21112023,64,58
+21122019,80,63
+21122020,69,79
+21122021,59,68
+21122022,66,66
+21122023,59,57
+22012019,,77
+22012020,86,73
+22012021,90,75
+22012022,55,57
+22012023,89,64
+22012024,0,0
+22022019,,78
+22022020,89,64
+22022021,80,85
+22022022,60,78
+22022023,69,65
+22022024,0,0
+22032019,,72
+22032020,95,58
+22032021,77,83
+22032022,90,63
+22032023,75,71
+22042019,82,85
+22042020,92,90
+22042021,66,77
+22042022,70,91
+22042023,79,52
+22052019,70,86
+22052020,74,70
+22052021,72,61
+22052022,107,73
+22052023,76,72
+22062019,67,79
+22062020,89,102
+22062021,69,72
+22062022,91,81
+22062023,78,80
+22072019,62,104
+22072020,92,94
+22072021,53,65
+22072022,75,72
+22072023,79,68
+22082019,62,84
+22082020,71,74
+22082021,91,70
+22082022,78,65
+22082023,68,47
+22092019,86,76
+22092020,75,72
+22092021,80,76
+22092022,77,69
+22092023,65,74
+22102019,78,95
+22102020,99,86
+22102021,54,72
+22102022,76,56
+22102023,73,58
+22112019,73,58
+22112020,89,74
+22112021,89,74
+22112022,72,110
+22112023,64,53
+22122019,79,46
+22122020,56,69
+22122021,63,78
+22122022,65,70
+22122023,0,0
 23012019,,
-23012020,['Total 70'],['Totales  65']
-23012021,['Total 98'],['Totales  78']
-23012022,['Total 84'],['Totales  67']
-23012023,['Total 70'],['Totales  93']
-23012024,[],[]
-23022019,,['Totales 53']
-23022020,['Total 90'],['Totales  60']
-23022021,['Total 93'],['Totales  78']
-23022022,['Total 56'],['Totales  61']
-23022023,['Total 63'],['Totales  67']
-23022024,['Total 87'],[]
-23032019,,['Totales 61']
-23032020,['Total 92'],['Totales  78']
-23032021,['Total 72'],['Totales  127']
-23032022,['Total 67'],['Totales  62']
-23032023,['Total 80'],['Totales  70']
-23042019,['Total 79'],['Totales  71']
-23042020,['Total  59'],['Totales  67']
-23042021,['Total 78'],['Totales  77']
-23042022,['Total 70'],['Totales  70']
-23042023,['Total 89'],['Totales  72']
-23052019,['Total 92'],['Totales  91']
-23052020,['Total 97'],['Totales  59']
-23052021,['Total 101'],['Totales  64']
-23052022,['Total 69'],['Totales  72']
-23052023,['Total 76'],['Totales  67']
-23062019,['Total 107'],['Totales 73']
-23062020,['Total  52'],['Totales  62']
-23062021,['Total 75'],['Totales  50']
-23062022,['Total 69'],['Totales  79']
-23062023,['Total 90'],"['Totales  80', 'Totales  6']"
-23072019,['Total 57'],['Totales  87']
-23072020,['Total 69'],['Totales  93']
-23072021,['Total 78'],['Totales  73']
-23072022,['Total 79'],['Totales  61']
-23072023,['Total 86'],['Totales  67']
-23082019,['Total 70'],['Totales  75']
-23082020,['Total 97'],['Totales  68']
-23082021,['Total 71'],['Totales  71']
-23082022,['Total 83'],['Totales  74']
-23082023,['Total 65'],['Totales  60']
-23092019,['Total 85'],['Totales  91']
-23092020,['Total 71'],['Totales  71']
-23092021,['Total 66'],['Totales  74']
-23092022,['Total 86'],['Totales  85']
-23092023,['Total 71'],['Totales  59']
-23102019,['Total 74'],['Totales  90']
-23102020,['Total 76'],['Totales  69']
-23102021,['Total 71'],['Totales  67']
-23102022,['Total 90'],['Totales  64']
-23102023,['Total 81'],['Totales  97']
-23112019,['Total 95'],['Totales  74']
-23112020,['Total 76'],['Totales  105']
-23112021,['Total 76'],['Totales  94']
-23112022,['Total 58'],['Totales  68']
-23112023,['Total 56'],['Totales  59']
-23122019,['Total 93'],['Totales  87']
-23122020,['Total 76'],['Totales  72']
-23122021,['Total 81'],['Totales  63']
-23122022,['Total 59'],['Totales  63']
-23122023,['Total 58'],['Totales  52']
-24012019,,['Total  68']
-24012020,['Total 86'],['Totales 84']
-24012021,['Total 86'],['Totales  71']
-24012022,['Total 61'],['Totales  63']
-24012023,['Total 62'],['Totales  63']
-24012024,[],[]
-24022019,,[]
-24022020,['Total 83'],['Totales 96']
-24022021,['Total 82'],['Totales  78']
-24022022,['Total 71'],['Totales  60']
-24022023,['Total 84'],['Totales  65']
-24022024,['Total 78'],[]
-24032019,,['Totales 73']
-24032020,['Total 82'],['Totales  63']
-24032021,['Total 85'],['Totales  72']
-24032022,['Total 68'],['Totales  78']
-24032023,['Total 76'],['Totales  71']
-24042019,['Total 67'],['Totales  78']
-24042020,['Total 81'],['Totales  61']
-24042021,['Total 66'],['Totales  69']
-24042022,['Total 82'],['Totales  63']
-24042023,['Total 75'],['Totales  92']
-24052019,['Total 83'],['Totales  78']
-24052020,['Total 77'],['Totales  58']
-24052021,['Total 80'],['Totales  60']
-24052022,['Total 118'],['Totales  89']
-24052023,['Total 86'],['Totales  76']
-24062019,['Total 81'],['Totales 94']
-24062020,['Total  74'],['Totales  70']
-24062021,['Total 73'],['Totales  71']
-24062022,['Total 62'],['Totales  69']
-24062023,['Total 67'],['Totales  60']
-24072019,['Total 70'],['Totales  75']
-24072020,['Total 89'],['Totales  82']
-24072021,['Total 75'],['Totales  65']
-24072022,['Total 108'],['Totales  65']
-24072023,['Total 57'],['Totales  64']
-24082019,['Total 60'],['Totales  52']
-24082020,['Total 83'],['Totales  109']
-24082021,['Total 73'],['Totales  80']
-24082022,['Total 96'],['Totales  93']
-24082023,['Total 68'],['Totales  78']
-24092019,['Total 71'],['Totales  80']
-24092020,['Total 82'],['Totales  70']
-24092021,['Total 77'],['Totales  74']
-24092022,['Total 88'],['Totales  63']
-24092023,['Total 81'],['Totales  62']
-24102019,['Total 82'],['Totales  76']
-24102020,['Total 66'],['Totales  61']
-24102021,['Total 80'],['Totales  69']
-24102022,['Total 82'],['Totales  75']
-24102023,['Total 56'],['Totales  68']
-24112019,['Total 100'],['Totales  83']
-24112020,['Total 90'],['Totales  77']
-24112021,['Total 78'],['Totales  70']
-24112022,['Total 71'],['Totales  66']
-24112023,[],[]
-24122019,['Total 61'],['Totales  54']
-24122020,['Total 50'],['Totales  58']
-24122021,['Total 66'],['Totales  70']
-24122022,['Total 63'],['Totales  65']
-24122023,['Total 65'],['Totales  41']
-25012019,,['Total  81']
-25012020,['Total 80'],['Totales 55']
-25012021,['Total 67'],['Totales  75']
-25012022,['Total 81'],['Totales  68']
-25012023,['Total 74'],['Totales  66']
-25012024,[],[]
-25022019,,[]
-25022020,['Total 86'],['Totales 82']
-25022021,['Total 81'],['Totales  71']
-25022022,['Total 80'],['Totales  71']
-25022023,['Total 64'],['Totales  63']
-25022024,['Total 86'],[]
-25032019,,['Totales  80']
-25032020,['Total 95'],['Totales  72']
-25032021,['Total 89'],['Totales  74']
-25032022,['Total 68'],['Totales  83']
-25032023,['Total 69'],['Totales  55']
-25042019,['Total 88'],['Totales  85']
-25042020,['Total 91'],['Totales  61']
-25042021,['Total 115'],['Totales  69']
-25042022,['Total 73'],['Totales  70']
-25042023,['Total 88'],['Totales  89']
-25052019,['Total 79'],['Totales  68']
-25052020,['Total 78'],['Totales  80']
-25052021,['Total 64'],['Totales  60']
-25052022,['Total 65'],['Totales  75']
-25052023,['Total 80'],['Totales  82']
-25062019,['Total 69'],['Totales 87']
-25062020,['Total  79'],['Totales  90']
-25062021,['Total 80'],['Totales  71']
-25062022,['Total 65'],['Totales  62']
-25062023,['Total 72'],['Totales  65']
-25072019,['Total 89'],['Totales  79']
-25072020,['Total  89'],['Totales  66']
-25072021,['Total 83'],['Totales  64']
-25072022,['Total 84'],['Totales  81']
-25072023,['Total 77'],['Totales  60']
-25082019,['Total 87'],['Totales  64']
-25082020,['Total 101'],['Totales  102']
-25082021,['Total 63'],['Totales  62']
-25082022,['Total 58'],['Totales  62']
-25082023,['Total 74'],['Totales  69']
-25092019,['Total 77'],['Totales  87']
-25092020,['Total 70'],['Totales  77']
-25092021,['Total 66'],['Totales  61']
-25092022,['Total 77'],['Totales  70']
-25092023,['Total 74'],['Totales  58']
-25102019,['Total 52'],['Totales  67']
-25102020,['Total 86'],['Totales  63']
-25102021,['Total 80'],['Totales  79']
-25102022,['Total 91'],['Totales  80']
-25102023,['Total 62'],['Totales  66']
-25112019,['Total 83'],['Totales  90']
-25112020,['Total 90'],['Totales  80']
-25112021,['Total 67'],['Totales  84']
-25112022,['Total 68'],['Totales  62']
-25112023,[],[]
-25122019,['Total 60'],['Totales  51']
-25122020,['Total 56'],['Totales  53']
-25122021,['Total 79'],['Totales  59']
-25122022,['Total 74'],['Totales  54']
-25122023,[],[]
-26012019,,['Total  71']
-26012020,['Total 104'],['Totales  74']
-26012021,['Total 70'],['Totales  77']
-26012022,['Total 55'],['Totales  78']
-26012023,['Total 62'],['Totales  60']
-26012024,['Total 74'],[]
-26022019,,[]
-26022020,['Total 80'],['Totales  70']
-26022021,['Total 80'],['Totales  96']
-26022022,['Total 66'],['Totales  54']
-26022023,['Total 88'],['Totales  62']
-26022024,['Total 77'],[]
-26032019,,['Totales  75']
-26032020,['Total 86'],['Totales  77']
-26032021,['Total 73'],['Totales  76']
-26032022,['Total 76'],['Totales  83']
-26032023,['Total 89'],['Totales  55']
-26042019,['Total 54'],['Totales  75']
-26042020,['Total  76'],['Totales  56']
-26042021,['Total 81'],['Totales  80']
-26042022,['Total 70'],['Totales  63']
-26042023,['Total 70'],['Totales  65']
-26052019,['Total 99'],['Totales  61']
-26052020,['Total 72'],['Totales  76']
-26052021,['Total 78'],['Totales  67']
-26052022,['Total 86'],['Totales  73']
-26052023,['Total 74'],['Totales  84']
-26062019,['Total 69'],['Totales 82']
-26062020,['Total 83'],['Totales  84']
-26062021,['Total 50'],['Totales  53']
-26062022,['Total 79'],['Totales  61']
-26062023,['Total 79'],['Totales  80']
-26072019,['Total 87'],['Totales  77']
-26072020,['Total  85'],['Totales  60']
-26072021,['Total 81'],['Totales  71']
-26072022,['Total 60'],['Totales  69']
-26072023,['Total 70'],['Totales  46']
-26082019,['Total 86'],['Totales  98']
-26082020,['Total 101'],['Totales  84']
-26082021,['Total 77'],['Totales  75']
-26082022,['Total 66'],['Totales  64']
-26082023,['Total 73'],['Totales  59']
-26092019,['Total 81'],['Totales  88']
-26092020,['Total 73'],['Totales  73']
-26092021,['Total 94'],['Totales  70']
-26092022,['Total 60'],['Totales  98']
-26092023,['Total 93'],['Totales  65']
-26102019,['Total 78'],['Totales  94']
-26102020,['Total 87'],['Totales  83']
-26102021,['Total 65'],['Totales  78']
-26102022,['Total 88'],['Totales  75']
-26102023,['Total 67'],['Totales  57']
-26112019,['Total 90'],['Totales  77']
-26112020,['Total 83'],['Totales  68']
-26112021,['Total 62'],['Totales  62']
-26112022,['Total 69'],['Totales  60']
-26112023,[],[]
-26122019,['Total 86'],['Totales  75']
-26122020,['Total 57'],['Totales  54']
-26122021,['Total 73'],['Totales  57']
-26122022,['Total 81'],['Totales  78']
-26122023,[],[]
-27012019,,['Total  75']
-27012020,['Total 79'],['Totales  83']
-27012021,['Total 69'],['Totales  63']
-27012022,['Total 63'],['Totales  68']
-27012023,['Total 79'],['Totales  59']
-27012024,['Total 63'],[]
-27022019,,[]
-27022020,['Total 61'],['Totales  73']
-27022021,['Total 101'],['Totales  56']
-27022022,['Total 88'],['Totales  73']
-27022023,['Total 88'],['Totales  74']
-27032019,,['Totales 73']
-27032020,['Total 91'],['Totales 63']
-27032021,['Total 79'],['Totales  62']
-27032022,['Total 72'],['Totales  63']
-27032023,['Total 73'],['Totales  68']
-27042019,['Total 92'],['Totales 80']
-27042020,['Total 72'],['Totales  78']
-27042021,['Total 76'],['Totales  82']
-27042022,['Total 58'],['Totales  61']
-27042023,['Total 72'],['Totales  96']
-27052019,['Total 78'],['Totales  89']
-27052020,['Total 84'],['Totales  85']
-27052021,['Total 83'],['Totales  72']
-27052022,['Total 77'],['Totales  86']
-27052023,['Total 76'],['Totales  57']
-27062019,['Total 66'],['Totales 90']
-27062020,['Total 70'],['Totales  57']
-27062021,['Total 67'],['Totales  61']
-27062022,['Total 54'],['Totales  55']
-27062023,['Total 76'],['Totales  72']
-27072019,['Total 78'],['Totales  63']
-27072020,['Total  84'],['Totales  78']
-27072021,['Total 76'],['Totales  68']
-27072022,['Total 66'],['Totales  61']
-27072023,['Total 70'],['Totales  72']
-27082019,['Total 100'],['Totales  87']
-27082020,['Total 70'],['Totales  85']
-27082021,['Total 55'],['Totales  69']
-27082022,['Total 63'],['Totales  62']
-27082023,['Total 72'],['Totales  55']
-27092019,['Total 75'],['Totales  82']
-27092020,['Total 92'],['Totales  72']
-27092021,['Total 79'],['Totales  74']
-27092022,['Total 79'],['Totales  76']
-27092023,['Total 81'],['Totales  74']
-27102019,['Total 69'],['Totales  83']
-27102020,['Total 67'],['Totales  60']
-27102021,['Total 60'],['Totales  70']
-27102022,['Total 92'],['Totales  107']
-27102023,['Total 78'],['Totales  58']
-27112019,['Total 60'],['Totales  80']
-27112020,['Total 77'],['Totales  63']
-27112021,['Total 82'],['Totales  72']
-27112022,['Total 76'],['Totales  57']
-27112023,[],[]
-27122019,['Total 67'],['Totales  50']
-27122020,['Total 58'],['Totales  60']
-27122021,['Total 90'],['Totales  74']
-27122022,['Total 66'],['Totales  68']
-27122023,[],[]
-28012019,,['Total  73']
-28012020,['Total 87'],['Totales  90']
-28012021,['Total 79'],['Totales  72']
-28012022,['Total 52'],['Totales  73']
-28012023,['Total 52'],['Totales  60']
-28012024,['Total 82'],[]
-28022019,,[]
-28022020,['Total 60'],['Totales 58']
-28022021,['Total 89'],['Totales  56']
-28022022,['Total 81'],['Totales  63']
-28022023,['Total 58'],['Totales  73']
-28032019,,['Totales  65']
-28032020,['Total 102'],['Totales 71']
-28032021,['Total 76'],['Totales  65']
-28032022,['Total 92'],['Totales  73']
-28032023,['Total 66'],['Totales  62']
-28042019,['Total 81'],['Totales  70']
-28042020,['Total  68'],['Totales  69']
-28042021,['Total 93'],['Totales  81']
-28042022,['Total 71'],['Totales  69']
-28042023,['Total 60'],['Totales  61']
-28052019,['Total 81'],['Totales  74']
-28052020,['Total 85'],['Totales  79']
-28052021,['Total 63'],['Totales  67']
-28052022,['Total 65'],['Totales  59']
-28052023,['Total 93'],['Totales  58']
-28062019,['Total 80'],['Totales  89']
-28062020,['Total  84'],['Totales  64']
-28062021,['Total 61'],['Totales  71']
-28062022,['Total 70'],['Totales  62']
-28062023,['Total 69'],['Totales  69']
-28072019,['Total 106'],['Totales  81']
-28072020,['Total 74'],['Totales  81']
-28072021,['Total 66'],['Totales  73']
-28072022,['Total 79'],['Totales  66']
-28072023,['Total 66'],['Totales  67']
-28082019,['Total 79'],['Totales  105']
-28082020,['Total 81'],['Totales 76']
-28082021,['Total 77'],['Totales  58']
-28082022,['Total 68'],['Totales  54']
-28082023,['Total 100'],['Totales  73']
-28092019,['Total 78'],['Totales  50']
-28092020,['Total 85'],['Totales  80']
-28092021,['Total 88'],['Totales  77']
-28092022,['Total 85'],['Totales  88']
-28092023,['Total 73'],['Totales  83']
-28102019,['Total 77'],['Totales  74']
-28102020,['Total 95'],['Totales  128']
-28102021,['Total 82'],['Totales  78']
-28102022,['Total 77'],['Totales  56']
-28102023,['Total 71'],['Totales  59']
-28112019,['Total 65'],['Totales  69']
-28112020,['Total 61'],['Totales  63']
-28112021,['Total 70'],['Totales  66']
-28112022,['Total 62'],['Totales  72']
-28112023,[],[]
-28122019,['Total 64'],['Totales  64']
-28122020,['Total 90'],['Totales  64']
-28122021,['Total 75'],['Totales  74']
-28122022,['Total 68'],['Totales  96']
-28122023,[],[]
-29012019,,['Total  68']
-29012020,['Total 78'],['Totales  84']
-29012021,['Total 83'],['Totales  68']
-29012022,['Total 55'],['Totales  54']
-29012023,['Total 108'],['Totales  59']
-29012024,['Total 91'],[]
-29022020,['Total 83'],['Totales 60']
-29032019,,['Totales 75']
-29032020,['Total 98'],['Totales  53']
-29032021,['Total 94'],['Totales  78']
-29032022,['Total 53'],['Totales  57']
-29032023,['Total 72'],['Totales  57']
-29042019,['Total 75'],['Totales 93']
-29042020,['Total  79'],['Totales  77']
-29042021,['Total 83'],['Totales  76']
-29042022,['Total 42'],['Totales  60']
-29042023,['Total 79'],['Totales  52']
-29052019,['Total 87'],['Totales  101']
-29052020,['Total 61'],['Totales  88']
-29052021,['Total 58'],['Totales  61']
-29052022,['Total 86'],['Totales  58']
-29052023,['Total 91'],['Totales  91']
-29062019,['Total 86'],['Totales 59']
-29062020,['Total  92'],['Totales  77']
-29062021,['Total 78'],['Totales  61']
-29062022,['Total 83'],['Totales  81']
-29062023,['Total 77'],['Totales  65']
-29072019,['Total 82'],['Totales  85']
-29072020,['Total  72'],['Totales  67']
-29072021,['Total 91'],['Totales  86']
-29072022,['Total 63'],['Totales  60']
-29072023,['Total 55'],['Totales  66']
-29082019,['Total 56'],['Totales  65']
-29082020,['Total 81'],['Totales 82']
-29082021,['Total 84'],['Totales  76']
-29082022,['Total 98'],['Totales  76']
-29082023,['Total 79'],['Totales  76']
-29092019,['Total 83'],['Totales  65']
-29092020,['Total 72'],['Totales  61']
-29092021,['Total 86'],['Totales  77']
-29092022,['Total 83'],['Totales  60']
-29092023,['Total 61'],['Totales  67']
-29102019,['Total 78'],['Totales  81']
-29102020,['Total 50'],['Totales  60']
-29102021,['Total 81'],['Totales  60']
-29102022,['Total 78'],['Totales  60']
-29102023,['Total 72'],['Totales  62']
-29112019,['Total 75'],['Totales  71']
-29112020,['Total 81'],['Totales  64']
-29112021,['Total 65'],['Totales  74']
-29112022,['Total 81'],['Totales  75']
-29112023,[],[]
-29122019,['Total 81'],['Totales  64']
-29122020,['Total 72'],['Totales  70']
-29122021,['Total 89'],['Totales  73']
-29122022,['Total 65'],['Totales  66']
-29122023,['Total 73'],['Totales  56']
-30012019,,['Total  76']
-30012020,['Total 67'],['Totales  66']
-30012021,['Total 73'],['Totales  61']
-30012022,['Total 58'],['Totales  61']
-30012023,['Total 88'],['Totales  96']
-30012024,['Total 59'],[]
-30032019,,['Totales  63']
-30032020,['Total 72'],['Totales 72']
-30032021,['Total 68'],['Totales  82']
-30032022,['Total 91'],['Totales  76']
-30032023,['Total 73'],['Totales  60']
-30042019,['Total 63'],['Totales 71']
-30042020,['Total 75'],['Totales  66']
-30042021,['Total 78'],['Totales  64']
-30042022,['Total 76'],['Totales  56']
-30042023,['Total 65'],['Totales  73']
-30052019,['Total 86'],['Totales  69']
-30052020,['Total 82'],['Totales  57']
-30052021,['Total 96'],['Totales  63']
-30052022,['Total 64'],['Totales  63']
-30052023,['Total 79'],['Totales  74']
-30062019,['Total 97'],['Totales 62']
-30062020,['Total  73'],['Totales  69']
-30062021,['Total 88'],['Totales  77']
-30062022,['Total 73'],['Totales  65']
-30062023,['Total 53'],['Totales  62']
-30072019,['Total 80'],['Totales  72']
-30072020,['Total  69'],['Totales  60']
-30072021,['Total 67'],['Totales  68']
-30072022,['Total 71'],['Totales  61']
-30072023,['Total 75'],['Totales  54']
-30082019,['Total 94'],['Totales  79']
-30082020,['Total  89'],['Totales  63']
-30082021,['Total 94'],['Totales  84']
-30082022,['Total 71'],['Totales  63']
-30082023,['Total 69'],['Totales  71']
-30092019,['Total 65'],['Totales  78']
-30092020,['Total 83'],['Totales  69']
-30092021,['Total 67'],['Totales  68']
-30092022,['Total 73'],['Totales  65']
-30092023,['Total 66'],['Totales  57']
-30102019,['Total 62'],['Totales  56']
-30102020,['Total 70'],['Totales  84']
-30102021,['Total 89'],['Totales  62']
-30102022,['Total 95'],['Totales  67']
-30102023,['Total 71'],['Totales  65']
-30112019,['Total 82'],['Totales  76']
-30112020,['Total 79'],['Totales  76']
-30112021,['Total 77'],['Totales  92']
-30112022,['Total 61'],['Totales  73']
-30112023,[],[]
-30122019,['Total 95'],['Totales  86']
-30122020,['Total 72'],['Totales  62']
-30122021,['Total 78'],['Totales  61']
-30122022,['Total 84'],['Totales  86']
-30122023,['Total 57'],['Totales  55']
-31012019,,['Total  74']
-31012020,['Total 58'],['Totales  67']
-31012021,['Total 70'],['Totales  62']
-31012022,['Total 88'],['Totales  78']
-31012023,['Total 67'],['Totales  65']
-31012024,['Total 77'],[]
-31032019,,['Totales 54']
-31032020,['Total 80'],['Totales 71']
-31032021,['Total 80'],['Totales  76']
-31032022,['Total 89'],['Totales  78']
-31032023,['Total 105'],['Totales  78']
-31052019,['Total 57'],['Totales  60']
-31052020,['Total 88'],['Totales  70']
-31052021,['Total 80'],['Totales  70']
-31052022,['Total 49'],['Totales  68']
-31052023,['Total 90'],['Totales  74']
-31072019,['Total 88'],['Totales  77']
-31072020,['Total 84'],['Totales  69']
-31072021,['Total 76'],['Totales  57']
-31072022,['Total 92'],['Totales  61']
-31072023,['Total 82'],['Totales  71']
-31082019,['Total 96'],['Totales  53']
-31082020,['Total 88'],['Totales  92']
-31082021,['Total 78'],['Totales  74']
-31082022,['Total 78'],['Totales  75']
-31082023,['Total 75'],['Totales  63']
-31102019,['Total 52'],['Totales  56']
-31102020,['Total 70'],['Totales  63']
-31102021,['Total 106'],['Totales  66']
-31102022,['Total 92'],['Totales  111']
-31102023,['Total 89'],['Totales  69']
-31122019,['Total 74'],['Totales  74']
-31122020,['Total 56'],['Totales  61']
-31122021,['Total 80'],['Totales  65']
-31122022,['Total 62'],['Totales  64']
-31122023,['Total 56'],['Totales  51']
+23012020,70,65
+23012021,98,78
+23012022,84,67
+23012023,70,93
+23012024,0,0
+23022019,,53
+23022020,90,60
+23022021,93,78
+23022022,56,61
+23022023,63,67
+23022024,87,0
+23032019,,61
+23032020,92,78
+23032021,72,127
+23032022,67,62
+23032023,80,70
+23042019,79,71
+23042020,59,67
+23042021,78,77
+23042022,70,70
+23042023,89,72
+23052019,92,91
+23052020,97,59
+23052021,101,64
+23052022,69,72
+23052023,76,67
+23062019,107,73
+23062020,52,62
+23062021,75,50
+23062022,69,79
+23062023,90,80
+23072019,57,87
+23072020,69,93
+23072021,78,73
+23072022,79,61
+23072023,86,67
+23082019,70,75
+23082020,97,68
+23082021,71,71
+23082022,83,74
+23082023,65,60
+23092019,85,91
+23092020,71,71
+23092021,66,74
+23092022,86,85
+23092023,71,59
+23102019,74,90
+23102020,76,69
+23102021,71,67
+23102022,90,64
+23102023,81,97
+23112019,95,74
+23112020,76,105
+23112021,76,94
+23112022,58,68
+23112023,56,59
+23122019,93,87
+23122020,76,72
+23122021,81,63
+23122022,59,63
+23122023,58,52
+24012019,,68
+24012020,86,84
+24012021,86,71
+24012022,61,63
+24012023,62,63
+24012024,0,0
+24022019,,0
+24022020,83,96
+24022021,82,78
+24022022,71,60
+24022023,84,65
+24022024,78,0
+24032019,,73
+24032020,82,63
+24032021,85,72
+24032022,68,78
+24032023,76,71
+24042019,67,78
+24042020,81,61
+24042021,66,69
+24042022,82,63
+24042023,75,92
+24052019,83,78
+24052020,77,58
+24052021,80,60
+24052022,118,89
+24052023,86,76
+24062019,81,94
+24062020,74,70
+24062021,73,71
+24062022,62,69
+24062023,67,60
+24072019,70,75
+24072020,89,82
+24072021,75,65
+24072022,108,65
+24072023,57,64
+24082019,60,52
+24082020,83,109
+24082021,73,80
+24082022,96,93
+24082023,68,78
+24092019,71,80
+24092020,82,70
+24092021,77,74
+24092022,88,63
+24092023,81,62
+24102019,82,76
+24102020,66,61
+24102021,80,69
+24102022,82,75
+24102023,56,68
+24112019,100,83
+24112020,90,77
+24112021,78,70
+24112022,71,66
+24112023,0,0
+24122019,61,54
+24122020,50,58
+24122021,66,70
+24122022,63,65
+24122023,65,41
+25012019,,81
+25012020,80,55
+25012021,67,75
+25012022,81,68
+25012023,74,66
+25012024,0,0
+25022019,,0
+25022020,86,82
+25022021,81,71
+25022022,80,71
+25022023,64,63
+25022024,86,0
+25032019,,80
+25032020,95,72
+25032021,89,74
+25032022,68,83
+25032023,69,55
+25042019,88,85
+25042020,91,61
+25042021,115,69
+25042022,73,70
+25042023,88,89
+25052019,79,68
+25052020,78,80
+25052021,64,60
+25052022,65,75
+25052023,80,82
+25062019,69,87
+25062020,79,90
+25062021,80,71
+25062022,65,62
+25062023,72,65
+25072019,89,79
+25072020,89,66
+25072021,83,64
+25072022,84,81
+25072023,77,60
+25082019,87,64
+25082020,101,102
+25082021,63,62
+25082022,58,62
+25082023,74,69
+25092019,77,87
+25092020,70,77
+25092021,66,61
+25092022,77,70
+25092023,74,58
+25102019,52,67
+25102020,86,63
+25102021,80,79
+25102022,91,80
+25102023,62,66
+25112019,83,90
+25112020,90,80
+25112021,67,84
+25112022,68,62
+25112023,0,0
+25122019,60,51
+25122020,56,53
+25122021,79,59
+25122022,74,54
+25122023,0,0
+26012019,,71
+26012020,104,74
+26012021,70,77
+26012022,55,78
+26012023,62,60
+26012024,74,0
+26022019,,0
+26022020,80,70
+26022021,80,96
+26022022,66,54
+26022023,88,62
+26022024,77,0
+26032019,,75
+26032020,86,77
+26032021,73,76
+26032022,76,83
+26032023,89,55
+26042019,54,75
+26042020,76,56
+26042021,81,80
+26042022,70,63
+26042023,70,65
+26052019,99,61
+26052020,72,76
+26052021,78,67
+26052022,86,73
+26052023,74,84
+26062019,69,82
+26062020,83,84
+26062021,50,53
+26062022,79,61
+26062023,79,80
+26072019,87,77
+26072020,85,60
+26072021,81,71
+26072022,60,69
+26072023,70,46
+26082019,86,98
+26082020,101,84
+26082021,77,75
+26082022,66,64
+26082023,73,59
+26092019,81,88
+26092020,73,73
+26092021,94,70
+26092022,60,98
+26092023,93,65
+26102019,78,94
+26102020,87,83
+26102021,65,78
+26102022,88,75
+26102023,67,57
+26112019,90,77
+26112020,83,68
+26112021,62,62
+26112022,69,60
+26112023,0,0
+26122019,86,75
+26122020,57,54
+26122021,73,57
+26122022,81,78
+26122023,0,0
+27012019,,75
+27012020,79,83
+27012021,69,63
+27012022,63,68
+27012023,79,59
+27012024,63,0
+27022019,,0
+27022020,61,73
+27022021,101,56
+27022022,88,73
+27022023,88,74
+27032019,,73
+27032020,91,63
+27032021,79,62
+27032022,72,63
+27032023,73,68
+27042019,92,80
+27042020,72,78
+27042021,76,82
+27042022,58,61
+27042023,72,96
+27052019,78,89
+27052020,84,85
+27052021,83,72
+27052022,77,86
+27052023,76,57
+27062019,66,90
+27062020,70,57
+27062021,67,61
+27062022,54,55
+27062023,76,72
+27072019,78,63
+27072020,84,78
+27072021,76,68
+27072022,66,61
+27072023,70,72
+27082019,100,87
+27082020,70,85
+27082021,55,69
+27082022,63,62
+27082023,72,55
+27092019,75,82
+27092020,92,72
+27092021,79,74
+27092022,79,76
+27092023,81,74
+27102019,69,83
+27102020,67,60
+27102021,60,70
+27102022,92,107
+27102023,78,58
+27112019,60,80
+27112020,77,63
+27112021,82,72
+27112022,76,57
+27112023,0,0
+27122019,67,50
+27122020,58,60
+27122021,90,74
+27122022,66,68
+27122023,0,0
+28012019,,73
+28012020,87,90
+28012021,79,72
+28012022,52,73
+28012023,52,60
+28012024,82,0
+28022019,,0
+28022020,60,58
+28022021,89,56
+28022022,81,63
+28022023,58,73
+28032019,,65
+28032020,102,71
+28032021,76,65
+28032022,92,73
+28032023,66,62
+28042019,81,70
+28042020,68,69
+28042021,93,81
+28042022,71,69
+28042023,60,61
+28052019,81,74
+28052020,85,79
+28052021,63,67
+28052022,65,59
+28052023,93,58
+28062019,80,89
+28062020,84,64
+28062021,61,71
+28062022,70,62
+28062023,69,69
+28072019,106,81
+28072020,74,81
+28072021,66,73
+28072022,79,66
+28072023,66,67
+28082019,79,105
+28082020,81,76
+28082021,77,58
+28082022,68,54
+28082023,100,73
+28092019,78,50
+28092020,85,80
+28092021,88,77
+28092022,85,88
+28092023,73,83
+28102019,77,74
+28102020,95,128
+28102021,82,78
+28102022,77,56
+28102023,71,59
+28112019,65,69
+28112020,61,63
+28112021,70,66
+28112022,62,72
+28112023,0,0
+28122019,64,64
+28122020,90,64
+28122021,75,74
+28122022,68,96
+28122023,0,0
+29012019,,68
+29012020,78,84
+29012021,83,68
+29012022,55,54
+29012023,108,59
+29012024,91,0
+29022020,83,60
+29032019,,75
+29032020,98,53
+29032021,94,78
+29032022,53,57
+29032023,72,57
+29042019,75,93
+29042020,79,77
+29042021,83,76
+29042022,42,60
+29042023,79,52
+29052019,87,101
+29052020,61,88
+29052021,58,61
+29052022,86,58
+29052023,91,91
+29062019,86,59
+29062020,92,77
+29062021,78,61
+29062022,83,81
+29062023,77,65
+29072019,82,85
+29072020,72,67
+29072021,91,86
+29072022,63,60
+29072023,55,66
+29082019,56,65
+29082020,81,82
+29082021,84,76
+29082022,98,76
+29082023,79,76
+29092019,83,65
+29092020,72,61
+29092021,86,77
+29092022,83,60
+29092023,61,67
+29102019,78,81
+29102020,50,60
+29102021,81,60
+29102022,78,60
+29102023,72,62
+29112019,75,71
+29112020,81,64
+29112021,65,74
+29112022,81,75
+29112023,0,0
+29122019,81,64
+29122020,72,70
+29122021,89,73
+29122022,65,66
+29122023,73,56
+30012019,,76
+30012020,67,66
+30012021,73,61
+30012022,58,61
+30012023,88,96
+30012024,59,0
+30032019,,63
+30032020,72,72
+30032021,68,82
+30032022,91,76
+30032023,73,60
+30042019,63,71
+30042020,75,66
+30042021,78,64
+30042022,76,56
+30042023,65,73
+30052019,86,69
+30052020,82,57
+30052021,96,63
+30052022,64,63
+30052023,79,74
+30062019,97,62
+30062020,73,69
+30062021,88,77
+30062022,73,65
+30062023,53,62
+30072019,80,72
+30072020,69,60
+30072021,67,68
+30072022,71,61
+30072023,75,54
+30082019,94,79
+30082020,89,63
+30082021,94,84
+30082022,71,63
+30082023,69,71
+30092019,65,78
+30092020,83,69
+30092021,67,68
+30092022,73,65
+30092023,66,57
+30102019,62,56
+30102020,70,84
+30102021,89,62
+30102022,95,67
+30102023,71,65
+30112019,82,76
+30112020,79,76
+30112021,77,92
+30112022,61,73
+30112023,0,0
+30122019,95,86
+30122020,72,62
+30122021,78,61
+30122022,84,86
+30122023,57,55
+31012019,,74
+31012020,58,67
+31012021,70,62
+31012022,88,78
+31012023,67,65
+31012024,77,0
+31032019,,54
+31032020,80,71
+31032021,80,76
+31032022,89,78
+31032023,105,78
+31052019,57,60
+31052020,88,70
+31052021,80,70
+31052022,49,68
+31052023,90,74
+31072019,88,77
+31072020,84,69
+31072021,76,57
+31072022,92,61
+31072023,82,71
+31082019,96,53
+31082020,88,92
+31082021,78,74
+31082022,78,75
+31082023,75,63
+31102019,52,56
+31102020,70,63
+31102021,106,66
+31102022,92,111
+31102023,89,69
+31122019,74,74
+31122020,56,61
+31122021,80,65
+31122022,62,64
+31122023,56,51

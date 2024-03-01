@@ -1,5 +1,5 @@
 """
-Processes the obtained dataframe from the PDF scraper
+Merges the AMLO and Homicides datasets
 """
 
 import os
@@ -10,20 +10,26 @@ DATA_PATH = "C:/Users/fdmol/Desktop/AMLO-NLP/src/data/"
 
 
 class DFParser:
-    FILENAME = "homicidios_totales.csv"
+    HOMICIDES_FILENAME = "homicidios_totales.csv"
+    AMLO_SCORE_FILENAME = "xgb_agressivity_scores.csv"
 
-    def __init__(self) -> None:
-        self.df = pd.read_csv(os.path.join(DATA_PATH, self.FILENAME))
-
-    def find_digit(self, string):
-        """
-        Finds a digit in a string
-        """
-        return re.findall(r"\d+", string)
+    def __init__(self):
+        self.homicides_df = pd.read_csv(
+            os.path.join(DATA_PATH, self.HOMICIDES_FILENAME)
+        )
+        self.amlo_df = pd.read_csv(os.path.join(DATA_PATH, self.AMLO_SCORE_FILENAME))
 
     def process_df(self):
-        """
-        Processes the dataframe
-        """
-        # Add zero as a value for NaN
-        self.df.fillna(0, inplace=True)
+        pass
+
+
+if __name__ == "__main__":
+
+    parser = DFParser()
+    parser.process_df()
+
+    parser.df.to_csv(
+        os.path.join(DATA_PATH, "homicidios_totales_clean.csv"), index=False
+    )
+
+    print(parser.df.head())
