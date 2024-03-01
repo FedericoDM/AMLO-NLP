@@ -9,6 +9,10 @@ from datetime import datetime
 DATA_PATH = "C:/Users/fdmol/Desktop/AMLO-NLP/src/data/"
 
 
+FIRST_DATE = "20190101"
+LAST_DATE = "20240227"
+
+
 class DFParser:
     HOMICIDES_FILENAME = "homicidios_totales.csv"
     AMLO_SCORE_FILENAME = "xgb_agressivity_scores.csv"
