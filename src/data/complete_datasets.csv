@@ -1,4 +1,4 @@
-id,num_words,score,date,homicidios_fuentes_gobierno,homicidios_fuentes_abiertas
+id,num_words,score,dates,homicidios_fuentes_gobierno,homicidios_fuentes_abiertas
 20190103,3118,0.2181476181615953,2019-01-03,,66.0
 20190104,2143,0.4655208985766638,2019-01-04,,83.0
 20190107,2272,0.5712074917425279,2019-01-07,,88.0

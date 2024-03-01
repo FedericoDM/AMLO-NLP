@@ -49,7 +49,7 @@ class PDFParser:
                     page = reader.pages[page_num]
                     text_data += page.extract_text()
 
-                data = re.findall(r"Total(?:es)?\s+\d+", text_data)
+                data = re.findall(r"Total(?:es)?:?\s+\d+", text_data)
 
                 if data:
                     data = data[0]
