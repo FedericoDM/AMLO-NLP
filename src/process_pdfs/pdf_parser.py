@@ -49,7 +49,7 @@ class PDFParser:
                     page = reader.pages[page_num]
                     text_data += page.extract_text()
 
-                data = re.findall(r"Total(?:es)?\s+\d+", text_data)
+                data = re.findall(r"Total(?:es)?:?\s+\d+", text_data)
 
                 if data:
                     data = data[0]
@@ -109,6 +109,13 @@ class PDFParser:
         for file_abierto in self.all_files_abiertos:
             file_split = file_abierto.split("_")
             date = file_split[1]
+
+            # Date is DDMMYYYY, but we want it to be YYYYMMDD
+            year = date[-4:]
+            month = date[2:4]
+            day = date[:2]
+            date = f"{year}{month}{day}"
+
             dates.append(date)
 
         # Create the table
