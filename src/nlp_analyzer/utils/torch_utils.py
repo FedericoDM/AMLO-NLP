@@ -4,15 +4,9 @@ This file defines several utility functions for working with PyTorch.
 
 from collections import Counter
 
-import numpy as np
-import pandas as pd
 import torch
-import torch.nn as nn
-import torch.nn.functional as F
-import torch.optim as optim
+from torch.utils.data import Dataset, DataLoader
 from torch.nn.utils.rnn import pad_sequence
-from torch.utils.data import DataLoader, Dataset
-from tqdm import tqdm
 
 
 class AggressivityDataset(Dataset):
@@ -104,3 +98,34 @@ class DataPreprocessor:
             if scores is not None
             else text_sequences_padded
         )
+
+    def prepare_data(self, training_df, unseen_df):
+        """
+        Preprocesses the training and unseen data.
+        """
+        # Build vocab from training data
+        self.vocab = self.build_vocab(
+            training_df["text"], self.tokenizer, min_freq=self.min_freq
+        )
+
+        # Create datasets
+        self.train_dataset = AggressivityDataset(
+            training_df["text"], self.vocab, scores=training_df["score"]
+        )
+        self.unseen_dataset = AggressivityDataset(unseen_df["text"], self.vocab)
+
+        # Create data loaders
+        self.train_loader = DataLoader(
+            self.train_dataset,
+            batch_size=32,
+            shuffle=True,
+            collate_fn=self.collate_fn,
+        )
+        self.unseen_loader = DataLoader(
+            self.unseen_dataset,
+            batch_size=32,
+            shuffle=False,
+            collate_fn=self.collate_fn,
+        )
+
+        return self.train_loader, self.unseen_loader
