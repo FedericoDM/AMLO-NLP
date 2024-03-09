@@ -78,7 +78,7 @@ class NeuralTrainer:
                 loss.backward()
                 optimizer.step()
 
-            print(f"Epoch {epoch+1}/{self.num_epochs}, Loss: {loss.item():.4f}")
+            print(f"Epoch {epoch+1}/{self.NUM_EPOCHS}, Loss: {loss.item():.4f}")
 
     def predict_unseen_data(self):
         """

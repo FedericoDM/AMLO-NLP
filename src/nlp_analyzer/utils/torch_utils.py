@@ -84,7 +84,7 @@ class DataPreprocessor:
         return text.split()
 
     # Functions
-    def collate_fn(batch):
+    def collate_fn(self, batch):
         text_sequences = [
             torch.tensor(item["text"], dtype=torch.long) for item in batch
         ]  # Ensure conversion to tensor
