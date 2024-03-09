@@ -18,7 +18,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 import xgboost as xgb
 
 # Local imports
-from training_set import TrainingSet
+from utils.training_set import TrainingSet
 
 
 class XGBoost:
