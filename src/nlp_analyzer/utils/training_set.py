@@ -7,17 +7,15 @@ import re
 import pandas as pd
 from tqdm import tqdm
 from utils.amlo_parser import AMLOParser
-
-PATH = "C:/Users/fdmol/Desktop/AMLO-NLP/src/data/text_files/"
-LABELED_PATH = "C:/Users/fdmol/Desktop/AMLO-NLP/src/data/amlo_labeling.xlsx"
+from utils.constants import TRAINING_PATH, LABELED_PATH, TEXT_FILES_PATH, DIALOGUES_PATH
 
 
 # Read the labeled data
 class TrainingSet:
-    TRAINING_PATH = "C:/Users/fdmol/Desktop/AMLO-NLP/src/data/training_data/"
-    LABELED_PATH = "C:/Users/fdmol/Desktop/AMLO-NLP/src/data/amlo_labeling.xlsx"
-    TEXT_FILES_PATH = "C:/Users/fdmol/Desktop/AMLO-NLP/src/data/text_files/"
-    DIALOGUES_PATH = "C:/Users/fdmol/Desktop/AMLO-NLP/src/data/presidents_dialogues/"
+    TRAINING_PATH = TRAINING_PATH
+    LABELED_PATH = LABELED_PATH
+    TEXT_FILES_PATH = TEXT_FILES_PATH
+    DIALOGUES_PATH = DIALOGUES_PATH
 
     def __init__(self, remove_stopwords):
         self.amlo_parser = AMLOParser(self.TEXT_FILES_PATH)
