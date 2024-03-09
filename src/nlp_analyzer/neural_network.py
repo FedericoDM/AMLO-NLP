@@ -13,7 +13,7 @@ import torch.optim as optim
 # Minmaxscaler
 from sklearn.preprocessing import MinMaxScaler
 
-from utils.constants import DATA_PATH
+from utils.constants import DATA_PATH, NUM_EPOCHS, EMBEDDING_DIM
 
 
 # Classes and functions
@@ -33,19 +33,18 @@ class NeuralRegressor(nn.Module):
 
 
 class NeuralTrainer:
+    NUM_EPOCHS = NUM_EPOCHS
+    EMBEDDING_DIM = EMBEDDING_DIM
+
     def __init__(
         self,
-        num_epochs,
         vocab,
-        embedding_dim,
         train_loader,
         unseen_loader,
         training_df,
         unseen_df,
     ) -> None:
-        self.num_epochs = num_epochs
         self.vocab = vocab
-        self.embedding_dim = embedding_dim
         self.train_loader = train_loader
         self.unseen_loader = unseen_loader
         self.training_df = training_df
@@ -58,13 +57,14 @@ class NeuralTrainer:
         """
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
+        # Instantiate model, loss and optimizer
         self.model = NeuralRegressor(
-            vocab_size=len(self.vocab) + 1, embedding_dim=self.embedding_dim
+            vocab_size=len(self.vocab) + 1, embedding_dim=self.EMBEDDING_DIM
         ).to(self.device)
         criterion = nn.MSELoss()
         optimizer = optim.Adam(self.model.parameters(), lr=0.001)
 
-        for epoch in range(self.num_epochs):
+        for epoch in range(self.NUM_EPOCHS):
             self.model.train()
 
             for batch in self.train_loader:

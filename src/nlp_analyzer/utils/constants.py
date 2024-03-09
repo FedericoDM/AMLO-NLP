@@ -10,3 +10,5 @@ DIALOGUES_PATH = "C:/Users/fdmol/Desktop/AMLO-NLP/src/data/presidents_dialogues/
 WORD_SCORES_PATH = "C:/Users/fdmol/Desktop/AMLO-NLP/src/data/word_scores/"
 
 BATCH_SIZE = 32
+NUM_EPOCHS = 100
+EMBEDDING_DIM = 100

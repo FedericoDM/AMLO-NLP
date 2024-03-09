@@ -44,6 +44,7 @@ class AggressivityDataset(Dataset):
 
 
 class DataPreprocessor:
+    BATCH_SIZE = BATCH_SIZE
 
     def __init__(self, training_df, unseen_df, min_freq=1):
         self.min_freq = min_freq
