@@ -9,7 +9,7 @@ from tqdm import tqdm
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-from amlo_parser import AMLOParser
+from utils.amlo_parser import AMLOParser
 
 
 PATH = "C:/Users/fdmol/Desktop/AMLO-NLP/src/data/text_files/"
