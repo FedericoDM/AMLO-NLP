@@ -6,7 +6,7 @@ import os
 import re
 import pandas as pd
 from tqdm import tqdm
-from amlo_parser import AMLOParser
+from utils.amlo_parser import AMLOParser
 
 PATH = "C:/Users/fdmol/Desktop/AMLO-NLP/src/data/text_files/"
 LABELED_PATH = "C:/Users/fdmol/Desktop/AMLO-NLP/src/data/amlo_labeling.xlsx"
