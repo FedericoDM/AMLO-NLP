@@ -8,8 +8,13 @@ import torch
 from torch.utils.data import Dataset, DataLoader
 from torch.nn.utils.rnn import pad_sequence
 
+# Local imports
+from utils.constants import BATCH_SIZE
+
 
 class AggressivityDataset(Dataset):
+    BATCH_SIZE = BATCH_SIZE
+
     def __init__(self, texts, vocab, scores=None):
         """
         texts: List of text data
@@ -117,13 +122,13 @@ class DataPreprocessor:
         # Create data loaders
         self.train_loader = DataLoader(
             self.train_dataset,
-            batch_size=32,
+            batch_size=self.BATCH_SIZE,
             shuffle=True,
             collate_fn=self.collate_fn,
         )
         self.unseen_loader = DataLoader(
             self.unseen_dataset,
-            batch_size=32,
+            batch_size=self.BATCH_SIZE,
             shuffle=False,
             collate_fn=self.collate_fn,
         )
