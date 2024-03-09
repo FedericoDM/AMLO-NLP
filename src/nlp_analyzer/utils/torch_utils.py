@@ -45,12 +45,12 @@ class AggressivityDataset(Dataset):
 
 class DataPreprocessor:
 
-    def __init__(self, vocab, tokenizer, training_df, unseen_df, min_freq=1):
-        self.vocab = vocab
-        self.tokenizer = tokenizer
+    def __init__(self, training_df, unseen_df, min_freq=1):
         self.min_freq = min_freq
+        self.training_df = training_df
+        self.unseen_df = unseen_df
 
-    def build_vocab(texts, tokenizer, min_freq=1):
+    def build_vocab(self, texts):
         """
         Builds a vocabulary from the given texts based on frequency.
 
@@ -63,13 +63,13 @@ class DataPreprocessor:
         - vocab (dict): Mapping of word to unique index.
         """
         # Tokenize all texts and count word frequencies
-        counter = Counter(token for text in texts for token in tokenizer(text))
+        counter = Counter(token for text in texts for token in self.tokenizer(text))
 
         # Filter words by min_freq and assign unique indices
         vocab = {
             word: i + 2
             for i, (word, freq) in enumerate(counter.items())
-            if freq >= min_freq
+            if freq >= self.min_freq
         }  # Start indexing from 2
 
         # Special tokens
@@ -79,7 +79,7 @@ class DataPreprocessor:
         return vocab
 
     # Example tokenizer function
-    def tokenizer(text):
+    def tokenizer(self, text):
         return text.split()
 
     # Functions
@@ -104,20 +104,18 @@ class DataPreprocessor:
             else text_sequences_padded
         )
 
-    def prepare_data(self, training_df, unseen_df):
+    def prepare_data(self):
         """
         Preprocesses the training and unseen data.
         """
         # Build vocab from training data
-        self.vocab = self.build_vocab(
-            training_df["text"], self.tokenizer, min_freq=self.min_freq
-        )
+        self.vocab = self.build_vocab(self.training_df["text"], self.tokenizer)
 
         # Create datasets
         self.train_dataset = AggressivityDataset(
-            training_df["text"], self.vocab, scores=training_df["score"]
+            self.training_df["text"], self.vocab, scores=self.training_df["score"]
         )
-        self.unseen_dataset = AggressivityDataset(unseen_df["text"], self.vocab)
+        self.unseen_dataset = AggressivityDataset(self.unseen_df["text"], self.vocab)
 
         # Create data loaders
         self.train_loader = DataLoader(
