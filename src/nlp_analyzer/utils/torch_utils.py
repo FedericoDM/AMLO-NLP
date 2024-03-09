@@ -109,7 +109,7 @@ class DataPreprocessor:
         Preprocesses the training and unseen data.
         """
         # Build vocab from training data
-        self.vocab = self.build_vocab(self.training_df["text"], self.tokenizer)
+        self.vocab = self.build_vocab(self.training_df["text"])
 
         # Create datasets
         self.train_dataset = AggressivityDataset(
