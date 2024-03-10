@@ -1,0 +1,422 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Models},
+  pdfauthor={Domínguez F., González L., Landáburu J.},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Models}
+\author{Domínguez F., González L., Landáburu J.}
+\date{2024-03-10}
+
+\begin{document}
+\maketitle
+
+\hypertarget{discourse-as-x}{%
+\subsubsection{Discourse as x}\label{discourse-as-x}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{model\_1}\FloatTok{.2} \OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(homicides\_open }\SpecialCharTok{\textasciitilde{}}\NormalTok{ nnet\_score }\SpecialCharTok{+}\NormalTok{ num\_words, }\AttributeTok{data =}\NormalTok{ data\_day)}
+\FunctionTok{summary}\NormalTok{(model\_1}\FloatTok{.2}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = homicides_open ~ nnet_score + num_words, data = data_day)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -75.710  -8.569  -1.004   6.082  54.607 
+## 
+## Coefficients:
+##               Estimate Std. Error t value             Pr(>|t|)    
+## (Intercept) 77.0254051  1.4243228  54.079 < 0.0000000000000002 ***
+## nnet_score   5.9657969  3.2283474   1.848               0.0649 .  
+## num_words   -0.0013983  0.0003048  -4.587           0.00000495 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 12.35 on 1229 degrees of freedom
+## Multiple R-squared:  0.01704,    Adjusted R-squared:  0.01544 
+## F-statistic: 10.65 on 2 and 1229 DF,  p-value: 0.00002594
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{model\_3}\FloatTok{.2} \OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(approves\_mean }\SpecialCharTok{\textasciitilde{}}\NormalTok{ mean\_nnet }\SpecialCharTok{+}\NormalTok{ mean\_words, }\AttributeTok{data =}\NormalTok{ data\_month)}
+\FunctionTok{summary}\NormalTok{(model\_3}\FloatTok{.2}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = approves_mean ~ mean_nnet + mean_words, data = data_month)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -10.8168  -3.8282  -0.3674   3.1063  13.6326 
+## 
+## Coefficients:
+##              Estimate Std. Error t value             Pr(>|t|)    
+## (Intercept) 73.731765   6.729290  10.957 0.000000000000000942 ***
+## mean_nnet   33.120363  20.377820   1.625             0.109518    
+## mean_words  -0.005292   0.001357  -3.901             0.000252 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 5.764 on 58 degrees of freedom
+##   (1 observation deleted due to missingness)
+## Multiple R-squared:  0.2232, Adjusted R-squared:  0.1964 
+## F-statistic: 8.334 on 2 and 58 DF,  p-value: 0.0006585
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{model\_3}\FloatTok{.6} \OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(homicides\_open }\SpecialCharTok{\textasciitilde{}}\NormalTok{ median\_nnet }\SpecialCharTok{+}\NormalTok{ mean\_words }\SpecialCharTok{+}\NormalTok{ approves\_mean, }\AttributeTok{data =}\NormalTok{ data\_month)}
+\FunctionTok{summary}\NormalTok{(model\_3}\FloatTok{.6}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = homicides_open ~ median_nnet + mean_words + approves_mean, 
+##     data = data_month)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -590.87 -151.43   38.95  147.37  414.29 
+## 
+## Coefficients:
+##                 Estimate Std. Error t value     Pr(>|t|)    
+## (Intercept)   2752.26094  423.52918   6.498 0.0000000217 ***
+## median_nnet    555.67707  657.05928   0.846     0.401255    
+## mean_words      -0.20376    0.05025  -4.055     0.000154 ***
+## approves_mean   -9.52936    4.60543  -2.069     0.043076 *  
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 205 on 57 degrees of freedom
+##   (1 observation deleted due to missingness)
+## Multiple R-squared:  0.2605, Adjusted R-squared:  0.2216 
+## F-statistic: 6.693 on 3 and 57 DF,  p-value: 0.0005995
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{model\_3.}\FloatTok{7.3} \OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(violence\_journalist\_trend2 }\SpecialCharTok{\textasciitilde{}}\NormalTok{ mean\_nnet }\SpecialCharTok{+}\NormalTok{ mean\_words, }\AttributeTok{data =}\NormalTok{ data\_month)}
+\FunctionTok{summary}\NormalTok{(model\_3.}\FloatTok{7.3}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = violence_journalist_trend2 ~ mean_nnet + mean_words, 
+##     data = data_month)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -29.236  -9.426  -1.926   4.283  37.535 
+## 
+## Coefficients:
+##               Estimate Std. Error t value Pr(>|t|)  
+## (Intercept) -22.870527  16.482490  -1.388   0.1705  
+## mean_nnet    71.473801  50.795357   1.407   0.1646  
+## mean_words    0.007941   0.003493   2.274   0.0266 *
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 14.84 on 59 degrees of freedom
+## Multiple R-squared:  0.2607, Adjusted R-squared:  0.2356 
+## F-statistic:  10.4 on 2 and 59 DF,  p-value: 0.0001351
+\end{verbatim}
+
+\hypertarget{discourse-as-y}{%
+\subsubsection{Discourse as y}\label{discourse-as-y}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{model\_2}\FloatTok{.1} \OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(mean\_words }\SpecialCharTok{\textasciitilde{}}\NormalTok{ homicides\_open }\SpecialCharTok{+}\NormalTok{ approves\_mean }\SpecialCharTok{+}\NormalTok{ violence\_journalist\_trend2 }\SpecialCharTok{+}\NormalTok{ president\_journalist\_trend, }\AttributeTok{data =}\NormalTok{ data\_month)}
+\FunctionTok{summary}\NormalTok{(model\_2}\FloatTok{.1}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = mean_words ~ homicides_open + approves_mean + violence_journalist_trend2 + 
+##     president_journalist_trend, data = data_month)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -1231.81  -286.36    93.66   300.63  1060.66 
+## 
+## Coefficients:
+##                             Estimate Std. Error t value           Pr(>|t|)    
+## (Intercept)                9089.6780   928.9041   9.785 0.0000000000000998 ***
+## homicides_open               -0.9117     0.3196  -2.853           0.006061 ** 
+## approves_mean               -56.8712    10.6194  -5.355 0.0000016549557346 ***
+## violence_journalist_trend2   17.1205     4.8212   3.551           0.000786 ***
+## president_journalist_trend   -9.7189     5.4522  -1.783           0.080081 .  
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 515.4 on 56 degrees of freedom
+##   (1 observation deleted due to missingness)
+## Multiple R-squared:  0.5253, Adjusted R-squared:  0.4914 
+## F-statistic: 15.49 on 4 and 56 DF,  p-value: 0.00000001367
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{model\_2}\FloatTok{.2} \OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(mean\_nnet }\SpecialCharTok{\textasciitilde{}}\NormalTok{ homicides\_open }\SpecialCharTok{+}\NormalTok{ approves\_mean }\SpecialCharTok{+}\NormalTok{ president\_journalist\_trend, }\AttributeTok{data =}\NormalTok{ data\_month)}
+\FunctionTok{summary}\NormalTok{(model\_2}\FloatTok{.2}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = mean_nnet ~ homicides_open + approves_mean + president_journalist_trend, 
+##     data = data_month)
+## 
+## Residuals:
+##       Min        1Q    Median        3Q       Max 
+## -0.101264 -0.025958 -0.000614  0.023985  0.102916 
+## 
+## Coefficients:
+##                               Estimate  Std. Error t value         Pr(>|t|)    
+## (Intercept)                 0.66749329  0.07392864   9.029 0.00000000000139 ***
+## homicides_open             -0.00006987  0.00002452  -2.850          0.00608 ** 
+## approves_mean              -0.00147178  0.00090381  -1.628          0.10895    
+## president_journalist_trend -0.00105435  0.00046665  -2.259          0.02770 *  
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 0.04411 on 57 degrees of freedom
+##   (1 observation deleted due to missingness)
+## Multiple R-squared:  0.2014, Adjusted R-squared:  0.1594 
+## F-statistic: 4.792 on 3 and 57 DF,  p-value: 0.004791
+\end{verbatim}
+
+\hypertarget{stargazer}{%
+\subsubsection{Stargazer}\label{stargazer}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{stargazer}\NormalTok{(model\_1}\FloatTok{.2}\NormalTok{, model\_3}\FloatTok{.2}\NormalTok{, model\_3}\FloatTok{.6}\NormalTok{, model\_3.}\FloatTok{7.3}\NormalTok{, }\AttributeTok{type =} \StringTok{"latex"}\NormalTok{,}
+          \AttributeTok{title =} \StringTok{"Regression Results Daily vs. Monthly Data"}\NormalTok{,}
+          \AttributeTok{align =} \ConstantTok{TRUE}\NormalTok{,}
+          \AttributeTok{column.labels =} \FunctionTok{c}\NormalTok{(}\StringTok{"Daily Data"}\NormalTok{, }\StringTok{"Monthly Data Model 1"}\NormalTok{, }\StringTok{"Monthly Data Model 2"}\NormalTok{, }\StringTok{"Monthly Data Model 3"}\NormalTok{),}
+          \AttributeTok{covariate.labels =} \FunctionTok{c}\NormalTok{(}\StringTok{"Net Sentiment Score"}\NormalTok{, }\StringTok{"Number of Words"}\NormalTok{, }\StringTok{"Approval Mean"}\NormalTok{, }\StringTok{"Median Net Sentiment"}\NormalTok{, }\StringTok{"Violence against Journalists"}\NormalTok{),}
+          \AttributeTok{digits =} \DecValTok{3}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\% Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy
+Institute. E-mail: marek.hlavac at gmail.com \% Date and time: Sun, Mar
+10, 2024 - 2:15:39 PM \% Requires LaTeX packages: dcolumn
+
+\begin{table}[!htbp] \centering 
+  \caption{Regression Results Daily vs. Monthly Data} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} } 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{4}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-5} 
+\\[-1.8ex] & \multicolumn{1}{c}{homicides\_open} & \multicolumn{1}{c}{approves\_mean} & \multicolumn{1}{c}{homicides\_open} & \multicolumn{1}{c}{violence\_journalist\_trend2} \\ 
+ & \multicolumn{1}{c}{Daily Data} & \multicolumn{1}{c}{Monthly Data Model 1} & \multicolumn{1}{c}{Monthly Data Model 2} & \multicolumn{1}{c}{Monthly Data Model 3} \\ 
+\\[-1.8ex] & \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)}\\ 
+\hline \\[-1.8ex] 
+ Net Sentiment Score & 5.966^{*} &  &  &  \\ 
+  & (3.228) &  &  &  \\ 
+  & & & & \\ 
+ Number of Words & -0.001^{***} &  &  &  \\ 
+  & (0.0003) &  &  &  \\ 
+  & & & & \\ 
+ Approval Mean &  & 33.120 &  & 71.474 \\ 
+  &  & (20.378) &  & (50.795) \\ 
+  & & & & \\ 
+ Median Net Sentiment &  &  & 555.677 &  \\ 
+  &  &  & (657.059) &  \\ 
+  & & & & \\ 
+ Violence against Journalists &  & -0.005^{***} & -0.204^{***} & 0.008^{**} \\ 
+  &  & (0.001) & (0.050) & (0.003) \\ 
+  & & & & \\ 
+ approves\_mean &  &  & -9.529^{**} &  \\ 
+  &  &  & (4.605) &  \\ 
+  & & & & \\ 
+ Constant & 77.025^{***} & 73.732^{***} & 2,752.261^{***} & -22.871 \\ 
+  & (1.424) & (6.729) & (423.529) & (16.482) \\ 
+  & & & & \\ 
+\hline \\[-1.8ex] 
+Observations & \multicolumn{1}{c}{1,232} & \multicolumn{1}{c}{61} & \multicolumn{1}{c}{61} & \multicolumn{1}{c}{62} \\ 
+R$^{2}$ & \multicolumn{1}{c}{0.017} & \multicolumn{1}{c}{0.223} & \multicolumn{1}{c}{0.260} & \multicolumn{1}{c}{0.261} \\ 
+Adjusted R$^{2}$ & \multicolumn{1}{c}{0.015} & \multicolumn{1}{c}{0.196} & \multicolumn{1}{c}{0.222} & \multicolumn{1}{c}{0.236} \\ 
+Residual Std. Error & \multicolumn{1}{c}{12.348 (df = 1229)} & \multicolumn{1}{c}{5.764 (df = 58)} & \multicolumn{1}{c}{204.969 (df = 57)} & \multicolumn{1}{c}{14.840 (df = 59)} \\ 
+F Statistic & \multicolumn{1}{c}{10.651$^{***}$ (df = 2; 1229)} & \multicolumn{1}{c}{8.334$^{***}$ (df = 2; 58)} & \multicolumn{1}{c}{6.693$^{***}$ (df = 3; 57)} & \multicolumn{1}{c}{10.401$^{***}$ (df = 2; 59)} \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{4}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{stargazer}\NormalTok{(model\_2}\FloatTok{.1}\NormalTok{, model\_2}\FloatTok{.2}\NormalTok{, }\AttributeTok{type =} \StringTok{"latex"}\NormalTok{,}
+          \AttributeTok{title =} \StringTok{"Regression Results: Predictors of Discourse Characteristics"}\NormalTok{,}
+          \AttributeTok{align =} \ConstantTok{TRUE}\NormalTok{,}
+          \AttributeTok{column.labels =} \FunctionTok{c}\NormalTok{(}\StringTok{"Model 1: Total Words (Mean)"}\NormalTok{, }\StringTok{"Model 2: Neural Network Sentiment (Mean)"}\NormalTok{),}
+          \AttributeTok{covariate.labels =} \FunctionTok{c}\NormalTok{(}\StringTok{"Total Homicides"}\NormalTok{, }\StringTok{"Approval Mean"}\NormalTok{, }\StringTok{"Presidential Discourse on Journalists"}\NormalTok{),}
+          \AttributeTok{digits =} \DecValTok{3}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\% Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy
+Institute. E-mail: marek.hlavac at gmail.com \% Date and time: Sun, Mar
+10, 2024 - 2:15:39 PM \% Requires LaTeX packages: dcolumn
+
+\begin{table}[!htbp] \centering 
+  \caption{Regression Results: Predictors of Discourse Characteristics} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lD{.}{.}{-3} D{.}{.}{-3} } 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{2}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-3} 
+\\[-1.8ex] & \multicolumn{1}{c}{mean\_words} & \multicolumn{1}{c}{mean\_nnet} \\ 
+ & \multicolumn{1}{c}{Model 1: Total Words (Mean)} & \multicolumn{1}{c}{Model 2: Neural Network Sentiment (Mean)} \\ 
+\\[-1.8ex] & \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)}\\ 
+\hline \\[-1.8ex] 
+ Total Homicides & -0.912^{***} & -0.0001^{***} \\ 
+  & (0.320) & (0.00002) \\ 
+  & & \\ 
+ Approval Mean & -56.871^{***} & -0.001 \\ 
+  & (10.619) & (0.001) \\ 
+  & & \\ 
+ Presidential Discourse on Journalists & 17.121^{***} &  \\ 
+  & (4.821) &  \\ 
+  & & \\ 
+ president\_journalist\_trend & -9.719^{*} & -0.001^{**} \\ 
+  & (5.452) & (0.0005) \\ 
+  & & \\ 
+ Constant & 9,089.678^{***} & 0.667^{***} \\ 
+  & (928.904) & (0.074) \\ 
+  & & \\ 
+\hline \\[-1.8ex] 
+Observations & \multicolumn{1}{c}{61} & \multicolumn{1}{c}{61} \\ 
+R$^{2}$ & \multicolumn{1}{c}{0.525} & \multicolumn{1}{c}{0.201} \\ 
+Adjusted R$^{2}$ & \multicolumn{1}{c}{0.491} & \multicolumn{1}{c}{0.159} \\ 
+Residual Std. Error & \multicolumn{1}{c}{515.410 (df = 56)} & \multicolumn{1}{c}{0.044 (df = 57)} \\ 
+F Statistic & \multicolumn{1}{c}{15.493$^{***}$ (df = 4; 56)} & \multicolumn{1}{c}{4.792$^{***}$ (df = 3; 57)} \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{2}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table}
+
+\end{document}

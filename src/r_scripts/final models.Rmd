@@ -11,13 +11,13 @@ output:
 ```{r setup, include=FALSE, warning = FALSE}
 rm(list=ls())
 knitr::opts_chunk$set(echo = TRUE)
-path <- "~/GitHub/AMLO-NLP/"
+path <- "C:/Users/fdmol/Desktop/AMLO-NLP"
 options(scipen = 999)
 library(tidyverse)
 library(stargazer)
 
-data_day <- read.csv(paste0(path,"complete_data_daily.csv"))
-data_month <- read.csv(paste0(path,"complete_data_monthly.csv"))
+data_day <- read.csv("C:/Users/fdmol/Desktop/AMLO-NLP/complete_data_daily.csv")
+data_month <- read.csv("C:/Users/fdmol/Desktop/AMLO-NLP/complete_data_monthly.csv")
 ```
 
 ### Discourse as x
@@ -56,7 +56,7 @@ summary(model_2.2)
 
 ### Stargazer
 
-```{r warning = FALSE}
+```{r warning = FALSE, results='asis'}
 stargazer(model_1.2, model_3.2, model_3.6, model_3.7.3, type = "latex",
           title = "Regression Results Daily vs. Monthly Data",
           align = TRUE,
@@ -65,7 +65,7 @@ stargazer(model_1.2, model_3.2, model_3.6, model_3.7.3, type = "latex",
           digits = 3)
 ```
 
-```{r}
+```{r, results='asis'}
 stargazer(model_2.1, model_2.2, type = "latex",
           title = "Regression Results: Predictors of Discourse Characteristics",
           align = TRUE,
