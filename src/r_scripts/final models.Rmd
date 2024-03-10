@@ -16,8 +16,8 @@ options(scipen = 999)
 library(tidyverse)
 library(stargazer)
 
-data_day <- read.csv("C:/Users/fdmol/Desktop/AMLO-NLP/complete_data_daily.csv")
-data_month <- read.csv("C:/Users/fdmol/Desktop/AMLO-NLP/complete_data_monthly.csv")
+data_day <- read.csv("C:/Users/fdmol/Desktop/AMLO-NLP/data/csv_files/complete_data_daily.csv")
+data_month <- read.csv("C:/Users/fdmol/Desktop/AMLO-NLP/csv_files/complete_data_monthly.csv")
 ```
 
 ### Discourse as x
