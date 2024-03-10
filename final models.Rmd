@@ -1,0 +1,75 @@
+---
+title: "Models"
+author: "Domínguez F., González L., Landáburu J."
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE, warning = FALSE}
+rm(list=ls())
+knitr::opts_chunk$set(echo = TRUE)
+path <- "~/GitHub/AMLO-NLP/"
+options(scipen = 999)
+library(tidyverse)
+library(stargazer)
+
+data_day <- read.csv(paste0(path,"complete_data_daily.csv"))
+data_month <- read.csv(paste0(path,"complete_data_monthly.csv"))
+```
+
+### Discourse as x
+
+```{r}
+model_1.2 <- lm(homicides_open ~ nnet_score + num_words, data = data_day)
+summary(model_1.2)
+```
+
+```{r}
+model_3.2 <- lm(approves_mean ~ mean_nnet + mean_words, data = data_month)
+summary(model_3.2)
+```
+
+```{r}
+model_3.6 <- lm(homicides_open ~ median_nnet + mean_words + approves_mean, data = data_month)
+summary(model_3.6)
+```
+
+```{r}
+model_3.7.3 <- lm(violence_journalist_trend2 ~ mean_nnet + mean_words, data = data_month)
+summary(model_3.7.3)
+```
+
+### Discourse as y
+
+```{r} 
+model_2.1 <- lm(mean_words ~ homicides_open + approves_mean + violence_journalist_trend2 + president_journalist_trend, data = data_month)
+summary(model_2.1)
+```
+
+```{r} 
+model_2.2 <- lm(mean_nnet ~ homicides_open + approves_mean + president_journalist_trend, data = data_month)
+summary(model_2.2)
+```
+
+### Stargazer
+
+```{r warning = FALSE}
+stargazer(model_1.2, model_3.2, model_3.6, model_3.7.3, type = "latex",
+          title = "Regression Results Daily vs. Monthly Data",
+          align = TRUE,
+          column.labels = c("Daily Data", "Monthly Data Model 1", "Monthly Data Model 2", "Monthly Data Model 3"),
+          covariate.labels = c("Net Sentiment Score", "Number of Words", "Approval Mean", "Median Net Sentiment", "Violence against Journalists"),
+          digits = 3)
+```
+
+```{r}
+stargazer(model_2.1, model_2.2, type = "latex",
+          title = "Regression Results: Predictors of Discourse Characteristics",
+          align = TRUE,
+          column.labels = c("Model 1: Total Words (Mean)", "Model 2: Neural Network Sentiment (Mean)"),
+          covariate.labels = c("Total Homicides", "Approval Mean", "Presidential Discourse on Journalists"),
+          digits = 3)
+```

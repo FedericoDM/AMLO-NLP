@@ -1,0 +1,170 @@
+---
+title: "Big Data - Final"
+author: "Domínguez F., González L., Landáburu J."
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE, warning = FALSE}
+rm(list=ls())
+knitr::opts_chunk$set(echo = TRUE)
+setwd("~/GitHub/AMLO-NLP/")
+options(scipen = 999)
+library(tidyverse)
+library(stargazer)
+library(readxl)
+
+data_day <- read_csv("src/data/complete_dataset_BDD.csv")
+data_month <- read.csv("complete_data.csv")
+
+```
+
+```{r warning = FALSE, message = FALSE}
+data_day |>
+  ggplot(aes(dates, nnet_score_x)) +
+  geom_line() +
+  geom_smooth() +
+  labs(title = "Daily Aggressiveness Score",
+       subtitle = "2018 to 2024",
+       x = "Dates",
+       y = "Neural Network Score") +
+  theme_minimal()
+```
+
+```{r warning = FALSE, message = FALSE}
+
+data_month <- data_month |>
+  mutate(date = as.Date(date))
+
+month_plot <- data_month |>
+  ggplot(aes(date, mean_nnet)) +
+  geom_line() +
+  geom_smooth() +
+  labs(title = "Monthly Aggressiveness Score",
+       subtitle = "2018 to 2024",
+       x = "Dates",
+       y = "Neural Network Score Mean")
+
+ggsave("monthly_aggressiveness.png", 
+       plot = month_plot, 
+       width = 15, 
+       height = 8, 
+       units = "in", 
+       dpi = 300)
+```
+## Model 1
+
+$$
+Homicides_i = \beta_0 + \beta_1[discourse\ sentiment] + \beta_2[discourse\ number\ of\ words] \epsilon
+$$
+
+```{r}
+model_1 <- lm(homicidios_fuentes_gobierno ~ score + num_words, data = data_day)
+summary(model_1)
+```
+
+```{r}
+ggplot(data_day, aes(x = score, y = homicidios_fuentes_abiertas)) +
+  geom_point() + 
+  geom_smooth(method = "lm", se = FALSE) + 
+  theme_minimal()
+```
+
+
+```{r}
+model_1.2 <- lm(homicidios_fuentes_abiertas ~ nnet_score + num_words, data = data_day)
+summary(model_1.2)
+```
+
+## Model 2 - Month
+
+$$
+
+$$
+
+```{r} 
+model_2.1 <- lm(mean_words ~ total_homicides1 + aprueba_mean + presidente_periodista_mx, data = data_month)
+summary(model_2.1)
+```
+
+```{r} 
+model_2.2 <- lm(mean_nnet ~ total_homicides1 + aprueba_mean + presidente_periodista_mx, data = data_month)
+summary(model_2.2)
+```
+
+```{r} 
+model_2.3 <- lm(median_nnet ~ total_homicides1 + total_homicides2 + Indice.Mensual + desaprueba_mean + aprueba_mean, data = data_month)
+summary(model_2.3)
+```
+
+# Model 3
+```{r}
+model_3.1 <- lm(Indice.Mensual ~ mean_nnet + mean_words, data = data_month)
+summary(model_3.1)
+```
+
+```{r}
+model_3.2 <- lm(aprueba_mean ~ mean_nnet + mean_words, data = data_month)
+summary(model_3.2)
+```
+
+```{r}
+model_3.3 <- lm(aprueba_mean ~ median_nnet + mean_words, data = data_month)
+summary(model_3.3)
+```
+
+```{r}
+model_3.4 <- lm(desaprueba_mean ~ median_nnet + median_words, data = data_month)
+summary(model_3.4)
+```
+
+```{r}
+model_3.5 <- lm(desaprueba_mean ~ mean_nnet + mean_words, data = data_month)
+summary(model_3.5)
+```
+
+```{r}
+model_3.6 <- lm(total_homicides1 ~ median_nnet + mean_words + aprueba_mean, data = data_month)
+summary(model_3.6)
+```
+
+```{r}
+model_3.7.1 <- lm(presidente_periodista_violencia_mx ~ median_nnet + mean_words, data = data_month)
+summary(model_3.7.1)
+```
+
+```{r}
+model_3.7.2 <- lm(presidente_periodista_mx ~ median_nnet + mean_words, data = data_month)
+summary(model_3.7.2)
+```
+
+```{r}
+model_3.7.3 <- lm(violencia_periodista.y ~ mean_nnet + mean_words, data = data_month)
+summary(model_3.7.3)
+```
+
+```{r}
+stargazer(model_1.2, model_3.2, model_3.6, model_3.7.3, type = "latex",
+          title = "Regression Results Daily vs. Monthly Data",
+          align = TRUE,
+          column.labels = c("Daily Data", "Monthly Data Model 1", "Monthly Data Model 2", "Monthly Data Model 3"),
+          covariate.labels = c("Net Sentiment Score", "Number of Words", "Approval Mean", "Median Net Sentiment", "Violence against Journalists"),
+          omit.stat = c("f", "ser"),
+          digits = 3)
+
+```
+
+```{r}
+stargazer(model_2.1, model_2.2, type = "latex",
+          title = "Regression Results: Predictors of Discourse Characteristics",
+          align = TRUE,
+          column.labels = c("Model 1: Total Words (Mean)", "Model 2: Neural Network Sentiment (Mean)"),
+          covariate.labels = c("Total Homicides", "Approval Mean", "Presidential Discourse on Journalists"),
+          omit.stat = c("f", "ser"),
+          digits = 3)
+
+```
+
