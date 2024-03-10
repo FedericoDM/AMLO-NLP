@@ -19,8 +19,10 @@ Then, with a small dataset of 'aggressive sentences' we created a custom model u
 All of the code is available in the `nlp_analyzer` folder. You will see the code for an XGBoost model and a neural network model, along with a `utils` folder with helper functions and scripts to preprocess the data.
 
 
-### 3. Cross-reference with homicides data
+### 3. Cross-reference with homicides data and other sources
 
 I then scraped the data of the homicides in Mexico from the official website of the Mexican government. For each day, the official estimate was in a PDF file, so I first scraped those PDFs (see `murder_incidences_scraper` folder) and then extracted the data from the PDFs (see `process_pdfs` folder).
+
+Then, my teammate Lluvia downloaded several datasets to cross-reference the data with. She downloaded the president's approval ratings, and then grouped the data by month to add this covariate to the overall analysis.
 
 
