@@ -12,7 +12,6 @@ import requests
 import numpy as np
 import pandas as pd
 from bs4 import BeautifulSoup
-from http import HTTPStatus
 
 import argparse
 
@@ -29,7 +28,7 @@ HEADERS = {
     "Upgrade-Insecure-Requests": "1",
 }
 
-DATA_PATH = "src/data/"
+DATA_PATH = "src/data"
 
 
 # CONFIGURAR LOGGER
@@ -165,10 +164,15 @@ class AMLOScraper:
 
         dates = []
         conference_ids = []
-        for url in self.all_urls:
-            date = re.findall(r"/\d+/\d+/\d+", url)[0]
+        for url in self.all_urls: 
+            special_chars = ["/", "-"]
+            for special_char in special_chars:
+                target = re.findall(fr"/\d+{special_char}\d+{special_char}\d+", url)
+                if target:
+                    date = target[0]
+                    break
             date = date[1:]
-            conference_id = date.replace("/", "")
+            conference_id = date.replace("/", "").replace("-", "")
             conference_ids.append(conference_id)
             dates.append(date)
 
@@ -270,6 +274,6 @@ if __name__ == "__main__":
         scraper = AMLOScraper(HEADERS)
         print("Getting conferences data")
         conferences_df = scraper.get_conferences_df()
-        conferences_df.to_csv("conferences_data.csv", index=False)
+        conferences_df.to_csv(f"{DATA_PATH}/conferences_data.csv", index=False)
         print("Done!")
         scraper.get_all_conferences_text()
