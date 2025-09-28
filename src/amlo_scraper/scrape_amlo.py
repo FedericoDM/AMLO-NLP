@@ -12,17 +12,18 @@ import requests
 import numpy as np
 import pandas as pd
 from bs4 import BeautifulSoup
+from http import HTTPStatus
 
 import argparse
 
 # Local imports
-URL = "https://lopezobrador.org.mx/secciones/version-estenografica/"
+URL = "https://amlo.presidente.gob.mx/secciones/version-estenografica/"
 
 HEADERS = {
-    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
     "authority": "lopezobrador.org.mx",
-    "Referer": "https://www.google.com/",
-    "sec-ch-ua": '''"Google Chrome";v="95", "Chromium";v="95", ";Not A Brand";v="99"''',
+    "Referer": "https://amlo.presidente.gob.mx/secciones/version-estenografica/page/2/",
+    "sec-ch-ua": '''"Chromium";v="140", "Not=A?Brand";v="24", "Google Chrome";v="140"''',
     "sec-ch-ua-mobile": "?0",
     "sec-ch-ua-platform": "Windows",
     "Upgrade-Insecure-Requests": "1",
@@ -49,7 +50,7 @@ class AMLOScraper:
     COUNT_THRESHOLD = 50
 
     # Checked this by hand
-    TOTAL_PAGES = 144
+    TOTAL_PAGES = 153
 
     def __init__(self, headers):
         self.headers = headers
